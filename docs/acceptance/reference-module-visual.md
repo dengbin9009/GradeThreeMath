@@ -146,6 +146,7 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 | 家长讲解 | 基准模块已接入 `baselineCoachNotes`；其余母题继续使用蓝图数据中的 parentCoach 与常见错因说明，不在动画精修中改写课程内容 |
 | 废弃资产 | 各 manifest 的 `rejectedAssets` 保留拒收原因；典型拒收包括“整张静态图替代动态对象”“图片内烘焙答案文字” |
 | 内容完整性 | 38 个知识点、39 个母题、117 个子题和 K/M 关系由既有内容审计继续覆盖；本阶段只改动画呈现，不改知识图谱 |
+| 源资产清理 | `assets/` 为 `apps/web/public/assets` 的源符号链接；所有保留图片帧会被 Vite 复制到 `apps/web/dist/assets` 并由模块或 manifest 引用，未发现可安全删除的源级重复动画整图 |
 
 阶段性命令结果：
 
@@ -160,6 +161,6 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 | 命令 | 结果 |
 |---|---|
 | `npm run typecheck` | web、api、shared 全部通过 |
-| `npm run test` | web 44 个文件 119 条、api 16 个文件 33 条、shared 3 个文件 11 条全部通过 |
-| `npm run test:e2e` | 507 条 Playwright 测试全部通过，覆盖 desktop、tablet、mobile |
+| `npm run test` | web 48 个文件 130 条、api 16 个文件 33 条、shared 3 个文件 11 条全部通过 |
+| `npm run test:e2e` | 516 条 Playwright 测试全部通过，覆盖 desktop、tablet、mobile |
 | `npm run build` | shared、api、web 生产构建全部通过 |

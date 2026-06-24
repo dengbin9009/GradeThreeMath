@@ -14,4 +14,21 @@ describe("learning store", () => {
     store.closeCoach();
     expect(store.sessionSummary?.step).toBe(2);
   });
+
+  it("tracks variant switching without closing the coach drawer", () => {
+    const store = useLearningStore();
+    store.openCoach();
+    store.selectVariant("M20", "M20-V3");
+
+    expect(store.coachOpen).toBe(true);
+    expect(store.activeVariantId).toBe("M20-V3");
+    expect(store.sessionSummary).toEqual({ archetypeId: "M20", variantId: "M20-V3", step: 0 });
+
+    store.advanceStep(2);
+    store.selectVariant("M20", "M20-V4");
+
+    expect(store.coachOpen).toBe(true);
+    expect(store.activeVariantId).toBe("M20-V4");
+    expect(store.sessionSummary).toEqual({ archetypeId: "M20", variantId: "M20-V4", step: 0 });
+  });
 });

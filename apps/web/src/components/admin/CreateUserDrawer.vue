@@ -27,7 +27,7 @@ function submit() {
   <aside v-if="open" class="drawer" aria-labelledby="create-user-title">
     <header><h2 id="create-user-title">添加用户</h2><button type="button" aria-label="关闭" @click="emit('close')">×</button></header>
     <form @submit.prevent="submit">
-      <label>登录名<input v-model.trim="username" name="username" autocomplete="off" required pattern="[A-Za-z0-9_.]{3,30}" /></label>
+      <label>登录名<input v-model.trim="username" name="username" autocomplete="off" required pattern="[A-Za-z0-9_.-]{3,30}" /></label>
       <label>显示姓名<input v-model.trim="displayName" name="displayName" required /></label>
       <label>临时密码<input v-model="temporaryPassword" name="temporaryPassword" type="text" minlength="15" required /></label>
       <label>生效时间<input v-model="validFrom" name="validFrom" type="datetime-local" required /></label>

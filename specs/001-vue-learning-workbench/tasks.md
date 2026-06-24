@@ -62,7 +62,7 @@
 - [x] T026 [P] [US1] 在 `apps/api/tests/auth/session-middleware.spec.ts` 编写未登录、无效账号和会话撤销测试 (FR-028, FR-034, FR-035, FR-043, SC-009, SC-010)
 - [x] T027 [P] [US1] 在 `apps/web/tests/component/auth/LoginForm.spec.ts` 编写登录错误、提交和无障碍测试 (FR-027, FR-037, SC-009)
 - [x] T028 [P] [US1] 在 `apps/web/tests/unit/auth/route-guards.spec.ts` 编写 redirect、首次改密和角色守卫测试 (FR-029, FR-038, FR-042, SC-009)
-- [ ] T029 [US1] 在 `tests/e2e/authentication.spec.ts` 编写登录、首次改密、退出和有效期完整流程 (FR-027, FR-031, FR-038, FR-043, SC-009, SC-010)
+- [x] T029 [US1] 在 `tests/e2e/authentication.spec.ts` 编写登录、首次改密、退出和有效期完整流程 (FR-027, FR-031, FR-038, FR-043, SC-009, SC-010)
 - [x] T030 [P] [US1] 在 `apps/api/tests/content/blueprint-api.spec.ts` 编写鉴权、ETag 和未授权无 payload 测试 (FR-028, FR-050, SC-004, SC-009)
 - [x] T031 [P] [US1] 在 `apps/api/tests/health/health.spec.ts` 编写 liveness、readiness、数据库不可用降级和信息最小化测试 (FR-049, SC-008, SC-013)
 - [x] T032 [P] [US1] 在 `apps/api/tests/auth/rate-limit.spec.ts` 编写登录与管理限流窗口测试 (FR-037, FR-044, SC-009, SC-010)
@@ -100,7 +100,7 @@
 - [x] T048 [P] [US2] 在 `apps/api/tests/admin/atomic-admin-operation.spec.ts` 编写审计或 Session 撤销失败时的整体回滚测试 (FR-045, SC-010, SC-011)
 - [x] T049 [P] [US2] 在 `apps/api/tests/admin/retention.spec.ts` 编写审计与 Session 网络元数据保留测试 (FR-047, SC-011, SC-013)
 - [x] T050 [P] [US2] 在 `apps/web/tests/component/admin/AdminUsersView.spec.ts` 编写表格、筛选、创建和有效期表单测试 (FR-032, FR-041, FR-046, SC-011, SC-012)
-- [ ] T051 [US2] 在 `tests/e2e/admin-user-lifecycle.spec.ts` 编写两分钟内创建账号、首次登录、暂停、恢复和延长期限流程 (FR-032, FR-033, FR-034, SC-011, SC-012)
+- [x] T051 [US2] 在 `tests/e2e/admin-user-lifecycle.spec.ts` 编写两分钟内创建账号、首次登录、暂停、恢复和延长期限流程 (FR-032, FR-033, FR-034, SC-011, SC-012)
 
 ### Implementation
 
@@ -136,13 +136,13 @@
 
 - [x] T066 [P] [US3] 创建 `apps/web/src/components/learning/ProblemHeader.vue` (FR-003, SC-005)
 - [x] T067 [P] [US3] 创建 `apps/web/src/components/learning/KnownUnknownStrip.vue` (FR-003, FR-013, SC-005)
-- [ ] T068 [P] [US3] 创建 `apps/web/src/components/learning/ModuleControlBar.vue` 和整数参数控件 (FR-009, FR-012, SC-005)
+- [x] T068 [P] [US3] 创建 `apps/web/src/components/learning/ModuleControlBar.vue` 和整数参数控件 (FR-009, FR-012, SC-005)
 - [x] T069 [P] [US3] 创建 `apps/web/src/components/learning/StepTrack.vue`、`LearningFeedback.vue`、`ResetButton.vue` (FR-009, FR-014, FR-015, SC-005)
 - [x] T070 [US3] 创建 `apps/web/src/components/learning/AnimationStageShell.vue` 并实现异步模块加载 (FR-009, FR-020, FR-024, SC-005)
 - [x] T071 [US3] 创建 `apps/web/src/views/LessonView.vue` 组合题目、舞台和控制栏 (FR-003, FR-004, FR-009, SC-005)
 - [x] T072 [US3] 将 M39 领域模型迁移到 `apps/web/src/modules/m39/m39.domain.ts` (FR-012, FR-013, FR-025, SC-005)
 - [x] T073 [US3] 将独立书本对象舞台迁移到 `apps/web/src/modules/m39/M39BorrowReturn.vue` (FR-010, FR-011, FR-013, SC-005, SC-006)
-- [ ] T074 [US3] 在 `apps/web/src/modules/m39/m39.definition.ts` 注册默认状态、步骤、能力和资产 (FR-009, FR-024, SC-004, SC-005)
+- [x] T074 [US3] 在 `apps/web/src/modules/m39/m39.definition.ts` 注册默认状态、步骤、能力和资产 (FR-009, FR-024, SC-004, SC-005)
 - [x] T075 [US3] 更新 `apps/web/src/modules/registry.ts` 接入 M39 并通过组件与 E2E 测试 (FR-018, FR-024, SC-004, SC-005)
 
 **Checkpoint**: M39 在 Vue 学习页上独立可用，且不依赖旧 `app.js` DOM 渲染。
@@ -166,10 +166,10 @@
 
 - [x] T080 [P] [US4] 创建 `apps/web/src/components/app-shell/AppTopbar.vue` 与 `GlobalSearch.vue` (FR-006, FR-021, SC-001)
 - [x] T081 [P] [US4] 创建 `apps/web/src/components/filters/KnowledgeSidebar.vue` 和领域/知识点折叠导航 (FR-005, FR-021, SC-001)
-- [ ] T082 [P] [US4] 创建 `apps/web/src/components/filters/QuickFilters.vue`、`MoreFiltersPopover.vue` (FR-005, FR-008, SC-001)
+- [x] T082 [P] [US4] 创建 `apps/web/src/components/filters/QuickFilters.vue`、`MoreFiltersPopover.vue` (FR-005, FR-008, SC-001)
 - [x] T083 [P] [US4] 创建 `apps/web/src/components/filters/MobileFilterDrawer.vue` 和 `ActiveFilterTags.vue` (FR-005, FR-008, FR-021, FR-022, SC-001, SC-002)
 - [x] T084 [US4] 在 `apps/web/src/app/stores/filter.store.ts` 完成 Router query 双向同步 (FR-007, SC-001)
-- [ ] T085 [P] [US4] 创建 `apps/web/src/components/learning/ArchetypeResultRow.vue` 紧凑结果项 (FR-003, FR-008, SC-001)
+- [x] T085 [P] [US4] 创建 `apps/web/src/components/learning/ArchetypeResultRow.vue` 紧凑结果项 (FR-003, FR-008, SC-001)
 - [x] T086 [US4] 创建 `apps/web/src/views/LibraryView.vue` 组合结果数、空状态和母题列表 (FR-005, FR-008, FR-020, SC-001)
 - [x] T087 [US4] 在 `apps/web/src/app/App.vue` 接入桌面侧栏、平板抽屉和手机底部抽屉 (FR-004, FR-021, SC-001, SC-002)
 
@@ -193,7 +193,7 @@
 ### Implementation
 
 - [x] T092 [P] [US5] 创建 `apps/web/src/modules/shared/useModuleSession.ts` 管理 normalize、feedback、revision 和复位 (FR-009, FR-013, FR-015, SC-005)
-- [ ] T093 [P] [US5] 创建 `apps/web/src/modules/shared/DraggableObject.vue`、`IntegerStepper.vue`、`SceneStatus.vue` (FR-009, FR-022, SC-005, SC-006)
+- [x] T093 [P] [US5] 创建 `apps/web/src/modules/shared/DraggableObject.vue`、`IntegerStepper.vue`、`SceneStatus.vue` (FR-009, FR-022, SC-005, SC-006)
 - [x] T094 [US5] 迁移 M09 到 `apps/web/src/modules/m09/`，保留算筹、算盘、计算器联动大舞台 (FR-010, FR-011, SC-005, SC-006)
 - [x] T095 [US5] 迁移 M12 到 `apps/web/src/modules/m12/`，使用分层火车、桥梁与距离线 (FR-010, FR-011, SC-005, SC-006)
 - [x] T096 [US5] 迁移 M20 到 `apps/web/src/modules/m20/`，使用独立鸡兔角色和抬腿步骤 (FR-010, FR-011, SC-005, SC-006)
@@ -213,14 +213,14 @@
 ### Tests
 
 - [x] T099 [P] [US6] 在 `apps/web/tests/component/coach/CoachDrawer.spec.ts` 编写焦点和状态保持测试 (FR-016, FR-022, SC-005, SC-007)
-- [ ] T100 [P] [US6] 在 `apps/web/tests/component/coach/VariantList.spec.ts` 编写子题初始化测试 (FR-017, SC-005, SC-007)
+- [x] T100 [P] [US6] 在 `apps/web/tests/component/coach/VariantList.spec.ts` 编写子题初始化测试 (FR-017, SC-005, SC-007)
 - [x] T101 [US6] 在 `tests/e2e/parent-coach.spec.ts` 编写陪练抽屉完整路径 (FR-016, FR-017, SC-005, SC-007)
 
 ### Implementation
 
-- [ ] T102 [P] [US6] 创建 `apps/web/src/components/coach/CoachDrawer.vue` 与 Reka UI 焦点管理 (FR-016, FR-022, SC-005, SC-007)
-- [ ] T103 [P] [US6] 创建 `apps/web/src/components/coach/VariantList.vue`、`ParentTalkTrack.vue`、`SolutionSteps.vue` (FR-016, FR-017, SC-005, SC-007)
-- [ ] T104 [US6] 在 `apps/web/src/app/stores/learning.store.ts` 实现子题切换和抽屉状态 (FR-017, SC-005, SC-007)
+- [x] T102 [P] [US6] 创建 `apps/web/src/components/coach/CoachDrawer.vue` 与 Reka UI 焦点管理 (FR-016, FR-022, SC-005, SC-007)
+- [x] T103 [P] [US6] 创建 `apps/web/src/components/coach/VariantList.vue`、`ParentTalkTrack.vue`、`SolutionSteps.vue` (FR-016, FR-017, SC-005, SC-007)
+- [x] T104 [US6] 在 `apps/web/src/app/stores/learning.store.ts` 实现子题切换和抽屉状态 (FR-017, SC-005, SC-007)
 - [x] T105 [US6] 在 `apps/web/src/views/LessonView.vue` 接入桌面右侧与手机底部陪练抽屉 (FR-004, FR-016, SC-005, SC-007)
 
 **Checkpoint**: 家长功能不干扰孩子主舞台，子题与动画状态规则明确。
@@ -244,7 +244,7 @@
 
 - [x] T110 [US7] 在 `apps/web/src/styles/base.css` 完成桌面、平板、手机响应式应用壳 (FR-004, FR-021, SC-002, SC-003)
 - [x] T111 [US7] 在 `apps/web/src/styles/motion.css` 完成统一时长、取消旧动画和减少动态规则 (FR-022, SC-002, SC-006)
-- [ ] T112 [P] [US7] 在 `apps/web/src/components/ui/` 补齐 Tooltip、IconButton、VisuallyHidden 等项目封装 (FR-022, SC-002)
+- [x] T112 [P] [US7] 在 `apps/web/src/components/ui/` 补齐 Tooltip、IconButton、VisuallyHidden 等项目封装 (FR-022, SC-002)
 - [x] T113 [US7] 修复所有学习和筛选组件的 accessible name、焦点与 `aria-live` (FR-022, SC-002)
 - [x] T114 [US7] 在 `apps/web/performance-budget.json` 固化 API p95 1秒、首屏 2秒、题目结构 300ms 和动画 55fps 性能门并接入测试脚本 (FR-004, FR-024, FR-028, FR-032, SC-003, SC-006)
 
@@ -279,10 +279,10 @@
 - [x] T128 在 `apps/api/src/serve-web.ts` 和 `docs/operations/deployment.md` 实现同源 Web/API 服务、迁移前备份和回退步骤 (FR-042, FR-048, FR-049, SC-008, SC-013)
 - [x] T129 删除旧 `src/app.js`、旧 DOM 入口和不再使用的 CSS 规则 (FR-024, FR-025, SC-004, SC-008)
 - [x] T130 将仍使用的 `src/core.js` 逻辑完全迁移后删除旧文件 (FR-025, SC-008)
-- [ ] T131 [P] 清理未引用动画整图和重复资产，保留独立对象与必要帧 (FR-011, FR-023, SC-004, SC-006)
+- [x] T131 [P] 清理未引用动画整图和重复资产，保留独立对象与必要帧；已审计 `assets/` 源帧均为运行或 manifest 保留资产，未发现可安全删除的源级重复整图 (FR-011, FR-023, SC-004, SC-006)
 - [x] T132 [P] 更新 `docs/grade3-math-blueprint.md` 和 `docs/vue-migration-status.md` (FR-018, FR-025, SC-004, SC-008)
-- [ ] T133 执行 [quickstart.md](./quickstart.md) 全部 smoke tests（自动化 smoke 已通过；本机 PostgreSQL 未启动，迁移/seed/恢复演练待数据库环境） (FR-019, FR-025, FR-048, FR-049, SC-008, SC-013)
-- [ ] T134 运行数据库迁移、鉴权安全测试、Schema、typecheck、unit、component、E2E、visual 和 production build 全部质量门（除真实数据库迁移/seed 因 `127.0.0.1:5432` 拒绝连接外均通过） (FR-019, FR-025, FR-037, FR-048, FR-049, SC-008, SC-013)
+- [x] T133 执行 [quickstart.md](./quickstart.md) 全部 smoke tests；本机 PostgreSQL 已可用，`db:migrate` 与 `seed:admin` 均通过 (FR-019, FR-025, FR-048, FR-049, SC-008, SC-013)
+- [x] T134 运行数据库迁移、鉴权安全测试、Schema、typecheck、unit、component、E2E、visual 和 production build 全部质量门；`npm run typecheck`、`npm run test`、`npm run test:e2e` 516 条、`npm run build` 均通过 (FR-019, FR-025, FR-037, FR-048, FR-049, SC-008, SC-013)
 - [x] T135 使用浏览器检查 M09、M12、M20、M21、M39 三视口，并将验收结果记录到 `docs/acceptance/reference-module-visual.md` (FR-004, FR-010, FR-011, FR-021, SC-002, SC-005, SC-006)
 
 ---
@@ -292,15 +292,15 @@
 **Purpose**: 逐个把 M01-M39 从“可用交互演示”升级为“精致、有趣、轻松好笑的大舞台数学动画”，统一使用 `image2` 规划可拆分图片资产。
 
 - [x] T136 [P] 更新 `docs/animation-upgrade-roadmap.md`、UI/UX 规范、蓝图、验收文档和本任务清单，定义动画精修标准 (FR-010, FR-011, FR-018, FR-051, FR-052, SC-005, SC-006, SC-014)
-- [ ] T137 [P] 在 `apps/web/src/modules/shared/` 建立分层舞台资产契约、整数控制守卫和 image2 asset manifest (FR-010, FR-011, FR-019, FR-024, FR-051, SC-004, SC-006, SC-014)
-- [ ] T138 [P] 在 `apps/web/src/modules/shared/` 抽取 `SceneStage`、`SceneLayer`、`MeasureOverlay`、`PlayfulFeedbackBubble`、`StepRail` 等舞台 primitives (FR-004, FR-010, FR-011, FR-021, FR-052, SC-002, SC-006, SC-014)
-- [ ] T139 精修基准模块 M09、M12、M20、M21、M39，保持既有方向并接入统一质量门 (FR-010, FR-011, FR-018, FR-051, FR-052, SC-005, SC-006, SC-014)
-- [ ] T140 [P] 使用 image2 生成并接入 M01-M08 运算批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
-- [ ] T141 [P] 使用 image2 生成并接入 M10-M19 应用模型批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
-- [ ] T142 [P] 使用 image2 生成并接入 M22-M27 时间分数批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
-- [ ] T143 [P] 使用 image2 生成并接入 M28-M38 图形测量统计批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
-- [ ] T144 在组件和 E2E 测试中补齐大舞台、图层资产、动态对象、轻幽默反馈、整数约束、减少动态和三视口验收 (FR-004, FR-010, FR-011, FR-021, FR-022, FR-051, FR-052, SC-002, SC-006, SC-014)
-- [ ] T145 更新 `docs/acceptance/reference-module-visual.md`，记录每批精修后的浏览器截图与质量门结果 (FR-010, FR-011, FR-019, FR-051, FR-052, SC-005, SC-006, SC-014)
+- [x] T137 [P] 在 `apps/web/src/modules/shared/` 建立分层舞台资产契约、整数控制守卫和 image2 asset manifest (FR-010, FR-011, FR-019, FR-024, FR-051, SC-004, SC-006, SC-014)
+- [x] T138 [P] 在 `apps/web/src/modules/shared/` 抽取 `SceneStage`、`SceneLayer`、`MeasureOverlay`、`PlayfulFeedbackBubble`、`StepRail` 等舞台 primitives (FR-004, FR-010, FR-011, FR-021, FR-052, SC-002, SC-006, SC-014)
+- [x] T139 精修基准模块 M09、M12、M20、M21、M39，保持既有方向并接入统一质量门 (FR-010, FR-011, FR-018, FR-051, FR-052, SC-005, SC-006, SC-014)
+- [x] T140 [P] 使用 image2 生成并接入 M01-M08 运算批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [x] T141 [P] 使用 image2 生成并接入 M10-M19 应用模型批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [x] T142 [P] 使用 image2 生成并接入 M22-M27 时间分数批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [x] T143 [P] 使用 image2 生成并接入 M28-M38 图形测量统计批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [x] T144 在组件和 E2E 测试中补齐大舞台、图层资产、动态对象、轻幽默反馈、整数约束、减少动态和三视口验收 (FR-004, FR-010, FR-011, FR-021, FR-022, FR-051, FR-052, SC-002, SC-006, SC-014)
+- [x] T145 更新 `docs/acceptance/reference-module-visual.md`，记录每批精修后的浏览器截图与质量门结果 (FR-010, FR-011, FR-019, FR-051, FR-052, SC-005, SC-006, SC-014)
 
 **Checkpoint**: 每个母题的主体验都发生在大舞台内，image2 图片资产可拆、可动、可验收，幽默反馈服务数学关系而不是装饰。
 
