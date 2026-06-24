@@ -71,3 +71,15 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 本轮执行 `npx playwright test tests/e2e/sample-modules.spec.ts`，覆盖 chromium desktop、tablet、mobile 共 12 条样板路径，全部通过。
 
 说明：当前 Codex 会话未暴露内置 `image_gen` 工具，因此本轮完成的是 image2 分层资产契约、提示词、仓库路径、拒收记录和 DOM/CSS 可交互样板舞台。真实位图文件后续可按 manifest 路径补齐，不影响当前数学交互和验收测试。
+
+## 2026-06-24 Phase 6 运算批记录
+
+| 模块 | 精修结果 | image2 记录 | 自动验收 |
+|---|---|---|---|
+| M04 | 统一运算大舞台中的面积阵列地毯，四块部分积可拆开和合并 | `apps/web/src/modules/m04/image2-manifest.ts` 记录阵列背景、分区遮板、面积标签和 fallback | 组件测试确认 `(20+4)×(10+3)=312` 与“部分积”反馈；E2E 确认互动和复位 |
+| M05 | 统一运算大舞台中的分物托盘流水线，托盘数量和商同步变化 | `apps/web/src/modules/m05/image2-manifest.ts` 记录托盘、物品 token、换位道具和余数杯 | 组件测试确认 `96÷3=32`、3 个托盘和“换成小单位”反馈；E2E 确认互动和复位 |
+| M06 | 统一运算大舞台中的试商升降台，滑杆驱动乘积条和余数反馈 | `apps/web/src/modules/m06/image2-manifest.ts` 记录升降台、试商滑钮、比较条和校验灯 | 组件测试确认试商 6 时显示 `31×6=186` 和“太大”反馈；E2E 确认互动和复位 |
+| M07 | 统一运算大舞台中的乘除关系三角柜，盖住任一未知量触发乘除互逆提示 | `apps/web/src/modules/m07/image2-manifest.ts` 记录三角柜、数量锁、遮罩牌和验算印章 | 组件测试确认 `8×7=56` 与遮盖反馈；E2E 确认互动和复位 |
+| M08 | 统一运算大舞台中的数轴望远镜，滑动原数并吸附到最近整十 | `apps/web/src/modules/m08/image2-manifest.ts` 记录数轴背景、望远镜、磁铁和近似点 | 组件测试确认 `48≈50` 与磁铁反馈；E2E 确认互动和复位 |
+
+本轮执行 `npx playwright test tests/e2e/operations-batch.spec.ts --project=chromium-desktop`，覆盖 M04-M08 共 5 条核心路径，全部通过。运算批沿用同一个 `OperationsBatchStage`，以减少重复代码并保持舞台尺寸、整数约束和反馈风格一致。

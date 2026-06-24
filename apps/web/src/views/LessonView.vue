@@ -21,7 +21,7 @@ const variant = computed(() => archetype.value?.variants.find((item) => item.id 
 const definition = computed(() => moduleRegistry[moduleId.value]);
 const ModuleComponent = computed(() => definition.value ? defineAsyncComponent(definition.value.component) : null);
 const baselineModuleIds = ["M09", "M12", "M20", "M21", "M39"];
-const stageWrappedModuleIds = [...baselineModuleIds, "M01", "M02", "M03", "M31"];
+const stageWrappedModuleIds = [...baselineModuleIds, "M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M31"];
 const stageWrapped = computed(() => stageWrappedModuleIds.includes(moduleId.value));
 const baselineCoachNote = computed(() => baselineModuleIds.includes(moduleId.value) ? getBaselineCoachNote(moduleId.value) : null);
 const resetRevision = ref(0);
@@ -50,7 +50,14 @@ onMounted(() => blueprint.load());
         :parameters="variant.parameters"
       />
       <AnimationStageShell v-else-if="ModuleComponent" :feedback="archetype.animationSpec.childFeedback" @reset="resetSpecial">
-        <div :data-special-module="moduleId" class="special-stage"><component :is="ModuleComponent" :key="`${moduleId}-${variant.id}-${resetRevision}`" :parameters="variant.parameters" /></div>
+        <div :data-special-module="moduleId" class="special-stage">
+          <component
+            :is="ModuleComponent"
+            :key="`${moduleId}-${variant.id}-${resetRevision}`"
+            :module-id="moduleId"
+            :parameters="variant.parameters"
+          />
+        </div>
       </AnimationStageShell>
     </div>
     <CoachDrawer

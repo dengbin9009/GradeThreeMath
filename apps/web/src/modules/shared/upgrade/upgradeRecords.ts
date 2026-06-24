@@ -19,6 +19,7 @@ export interface AnimationUpgradeRecord {
 
 const baselineModules = new Set<ModuleId>(["M09", "M12", "M20", "M21", "M39"]);
 const sampleModules = new Set<ModuleId>(["M01", "M02", "M03", "M31"]);
+const operationsModules = new Set<ModuleId>(["M04", "M05", "M06", "M07", "M08"]);
 
 const modulePlan: Record<ModuleId, Pick<AnimationUpgradeRecord, "batch" | "stageTheme" | "primaryInteraction">> = {
   M01: { batch: "sample", stageTheme: "运算传送带", primaryInteraction: "调整运算顺序" },
@@ -66,17 +67,23 @@ export const upgradeRecords: AnimationUpgradeRecord[] = moduleIds.map((moduleId)
   const plan = modulePlan[moduleId];
   const accepted = baselineModules.has(moduleId);
   const planned = sampleModules.has(moduleId);
+  const inProgress = operationsModules.has(moduleId);
+  const hasManifest = accepted || planned || inProgress;
   return {
     moduleId,
-    status: accepted ? "accepted" : planned ? "planned" : "not-started",
+    status: accepted ? "accepted" : inProgress ? "in-progress" : planned ? "planned" : "not-started",
     batch: plan.batch,
-    qualityLevel: accepted ? 3 : planned ? 2 : 1,
+    qualityLevel: accepted ? 3 : inProgress || planned ? 2 : 1,
     stageTheme: plan.stageTheme,
     primaryInteraction: plan.primaryInteraction,
-    playfulFeedbackIds: accepted ? [`${moduleId}-baseline-feedback`] : [],
-    assetManifestPath: accepted || planned ? `apps/web/src/modules/${moduleId.toLowerCase()}/image2-manifest.ts` : "",
-    acceptancePath: accepted ? "docs/acceptance/reference-module-visual.md" : "",
-    notes: accepted ? ["保留现有核心交互方向，接入统一质量门。"] : []
+    playfulFeedbackIds: accepted ? [`${moduleId}-baseline-feedback`] : inProgress ? [`${moduleId}-operations-feedback`] : [],
+    assetManifestPath: hasManifest ? `apps/web/src/modules/${moduleId.toLowerCase()}/image2-manifest.ts` : "",
+    acceptancePath: accepted || inProgress ? "docs/acceptance/reference-module-visual.md" : "",
+    notes: accepted
+      ? ["保留现有核心交互方向，接入统一质量门。"]
+      : inProgress
+        ? ["运算批已接入统一大舞台与 image2 manifest；真实位图资产待 image2 工具补齐后进入 accepted。"]
+        : []
   };
 });
 
