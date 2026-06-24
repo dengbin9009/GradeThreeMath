@@ -285,6 +285,25 @@
 - [ ] T134 运行数据库迁移、鉴权安全测试、Schema、typecheck、unit、component、E2E、visual 和 production build 全部质量门（除真实数据库迁移/seed 因 `127.0.0.1:5432` 拒绝连接外均通过） (FR-019, FR-025, FR-037, FR-048, FR-049, SC-008, SC-013)
 - [x] T135 使用浏览器检查 M09、M12、M20、M21、M39 三视口，并将验收结果记录到 `docs/acceptance/reference-module-visual.md` (FR-004, FR-010, FR-011, FR-021, SC-002, SC-005, SC-006)
 
+---
+
+## Phase 12: Animation Delight Upgrade
+
+**Purpose**: 逐个把 M01-M39 从“可用交互演示”升级为“精致、有趣、轻松好笑的大舞台数学动画”，统一使用 `image2` 规划可拆分图片资产。
+
+- [x] T136 [P] 更新 `docs/animation-upgrade-roadmap.md`、UI/UX 规范、蓝图、验收文档和本任务清单，定义动画精修标准 (FR-010, FR-011, FR-018, FR-051, FR-052, SC-005, SC-006, SC-014)
+- [ ] T137 [P] 在 `apps/web/src/modules/shared/` 建立分层舞台资产契约、整数控制守卫和 image2 asset manifest (FR-010, FR-011, FR-019, FR-024, FR-051, SC-004, SC-006, SC-014)
+- [ ] T138 [P] 在 `apps/web/src/modules/shared/` 抽取 `SceneStage`、`SceneLayer`、`MeasureOverlay`、`PlayfulFeedbackBubble`、`StepRail` 等舞台 primitives (FR-004, FR-010, FR-011, FR-021, FR-052, SC-002, SC-006, SC-014)
+- [ ] T139 精修基准模块 M09、M12、M20、M21、M39，保持既有方向并接入统一质量门 (FR-010, FR-011, FR-018, FR-051, FR-052, SC-005, SC-006, SC-014)
+- [ ] T140 [P] 使用 image2 生成并接入 M01-M08 运算批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [ ] T141 [P] 使用 image2 生成并接入 M10-M19 应用模型批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [ ] T142 [P] 使用 image2 生成并接入 M22-M27 时间分数批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [ ] T143 [P] 使用 image2 生成并接入 M28-M38 图形测量统计批图层资产与互动舞台 (FR-010, FR-011, FR-018, FR-023, FR-051, FR-052, SC-004, SC-006, SC-014)
+- [ ] T144 在组件和 E2E 测试中补齐大舞台、图层资产、动态对象、轻幽默反馈、整数约束、减少动态和三视口验收 (FR-004, FR-010, FR-011, FR-021, FR-022, FR-051, FR-052, SC-002, SC-006, SC-014)
+- [ ] T145 更新 `docs/acceptance/reference-module-visual.md`，记录每批精修后的浏览器截图与质量门结果 (FR-010, FR-011, FR-019, FR-051, FR-052, SC-005, SC-006, SC-014)
+
+**Checkpoint**: 每个母题的主体验都发生在大舞台内，image2 图片资产可拆、可动、可验收，幽默反馈服务数学关系而不是装饰。
+
 ## Dependencies & Execution Order
 
 - Phase 1 → Phase 2：工程基础必须先完成。
@@ -303,6 +322,7 @@
 - US3 与 US4 主要写入不同目录，可并行推进。
 - 五个基准模块在共享组件稳定后可并行迁移。
 - 最终四个母题批次目录互不重叠，可并行迁移，但 `registry.ts` 由单一任务统一集成。
+- 动画精修批次可在共享舞台 primitives 完成后分领域并行推进，image2 资产生成与组件接入必须按模块验收。
 
 ## Implementation Strategy
 
@@ -313,3 +333,4 @@
 5. 增加陪练、响应式和无障碍。
 6. 按领域并行迁移其余模块。
 7. 全量测试通过后删除旧实现。
+8. 按动画精修路线图逐题升级舞台、image2 图层和轻幽默反馈。
