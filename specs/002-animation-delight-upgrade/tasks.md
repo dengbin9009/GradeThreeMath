@@ -31,6 +31,9 @@
 - [ ] T010 [P] [US2] 在 `apps/web/src/modules/shared/assets/` 新建 image2 manifest 类型和 schema 校验函数 (FR-011, FR-014, FR-030, FR-031, SC-004)
 - [ ] T011 [P] [US2] 为 manifest 校验写 Vitest，覆盖必需角色、路径存在、不可写可变文字和禁止本机绝对路径规则 (FR-011, FR-012, FR-030, FR-031, SC-004)
 - [ ] T012 [US4] 将 manifest 和 upgrade status 校验接入现有构建或测试脚本 (FR-021, FR-030, SC-010)
+- [ ] T012A [US2] 为每个 accepted 模块校验 fallbackStill 存在且图片失败时仍保留题干、控件、关系式和整数计算 (FR-015, SC-004, SC-010)
+- [ ] T012B [US4] 编写内容完整性审计，确认 38 个知识点、39 个母题、117 个子题及 K/M 关系未被动画精修改动破坏 (FR-026, SC-009, SC-010)
+- [ ] T012C [US4] 编写鉴权边界回归检查，确认动画精修不新增公开蓝图数据、不改变账号、管理员或受保护 API 范围 (FR-025, SC-010)
 
 ---
 
@@ -53,6 +56,7 @@
 - [ ] T022 [US3] 精修 M21，保留筹码差额舞台并补强拖动发现性和差额反馈 (FR-008, FR-016, SC-001, SC-008)
 - [ ] T023 [US2] 精修 M39，保留独立书本和单一书架舞台，补齐 image2 manifest (FR-013, FR-016, SC-001)
 - [ ] T024 [US4] 为 M09/M12/M20/M21/M39 更新验收记录和截图结果 (FR-019, SC-001)
+- [ ] T024A [US4] 为 M09/M12/M20/M21/M39 补充家长可读的一句话动画讲解和常见错因提示 (FR-027, SC-001, SC-008)
 
 ---
 
@@ -68,6 +72,7 @@
 - [ ] T032 [US1] 实现 M31 拼补图形大舞台，支持切割、平移、添补两条路径 (FR-003, FR-004, FR-017, SC-002)
 - [ ] T033 [US3] 为四个样板各补一条数学状态轻幽默反馈 (FR-008, FR-009, FR-010, SC-008)
 - [ ] T034 [US4] 为四个样板补齐组件测试、E2E 和验收记录 (FR-021, FR-022, FR-030, SC-002, SC-005)
+- [ ] T034A [US4] 为四个样板记录 image2 生成批次、最终采用资产和废弃资产原因 (FR-028, SC-002, SC-004)
 
 ---
 
@@ -89,7 +94,7 @@
 - [ ] T043 [US4] 编写全量 Playwright 审计，遍历 accepted 模块的断图、三视口、对象状态和儿童 UI 不暴露内部状态 (FR-020, FR-021, FR-022, FR-032, SC-003, SC-004, SC-005)
 - [ ] T044 [US4] 编写整数审计，确认所有 accepted 模块不显示小数 (FR-005, SC-006)
 - [ ] T045 [US4] 编写减少动态审计，确认 accepted 模块核心路径可用 (FR-007, SC-007)
-- [ ] T046 [US4] 更新 `docs/acceptance/reference-module-visual.md` 和 `docs/animation-upgrade-roadmap.md` 的最终状态 (FR-019, FR-029, SC-009)
+- [ ] T046 [US4] 更新 `docs/acceptance/reference-module-visual.md` 和 `docs/animation-upgrade-roadmap.md` 的最终状态，并覆盖 fallback、家长讲解、废弃资产和内容完整性结果 (FR-015, FR-019, FR-027, FR-028, FR-029, SC-009)
 - [ ] T047 [US4] 执行 `npm run typecheck`、`npm run test`、`npm run test:e2e`、`npm run build` 并记录结果 (FR-030, SC-010)
 
 ## Dependencies & Execution Order
