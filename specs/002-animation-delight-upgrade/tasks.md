@@ -27,24 +27,24 @@
 
 ## Phase 2: Shared Metadata And Validation
 
-- [ ] T009 [P] [US4] 在 `apps/web/src/modules/shared/upgrade/` 新建升级状态类型和 39 个模块初始状态 (FR-001, FR-016, FR-018, SC-009)
-- [ ] T010 [P] [US2] 在 `apps/web/src/modules/shared/assets/` 新建 image2 manifest 类型和 schema 校验函数 (FR-011, FR-014, FR-030, FR-031, SC-004)
-- [ ] T011 [P] [US2] 为 manifest 校验写 Vitest，覆盖必需角色、路径存在、不可写可变文字和禁止本机绝对路径规则 (FR-011, FR-012, FR-030, FR-031, SC-004)
-- [ ] T012 [US4] 将 manifest 和 upgrade status 校验接入现有构建或测试脚本 (FR-021, FR-030, SC-010)
-- [ ] T012A [US2] 为每个 accepted 模块校验 fallbackStill 存在且图片失败时仍保留题干、控件、关系式和整数计算 (FR-015, SC-004, SC-010)
-- [ ] T012B [US4] 编写内容完整性审计，确认 38 个知识点、39 个母题、117 个子题及 K/M 关系未被动画精修改动破坏 (FR-026, SC-009, SC-010)
-- [ ] T012C [US4] 编写鉴权边界回归检查，确认动画精修不新增公开蓝图数据、不改变账号、管理员或受保护 API 范围 (FR-025, SC-010)
+- [x] T009 [P] [US4] 在 `apps/web/src/modules/shared/upgrade/` 新建升级状态类型和 39 个模块初始状态 (FR-001, FR-016, FR-018, SC-009)
+- [x] T010 [P] [US2] 在 `apps/web/src/modules/shared/assets/` 新建 image2 manifest 类型和 schema 校验函数 (FR-011, FR-014, FR-030, FR-031, SC-004)
+- [x] T011 [P] [US2] 为 manifest 校验写 Vitest，覆盖必需角色、路径存在、不可写可变文字和禁止本机绝对路径规则 (FR-011, FR-012, FR-030, FR-031, SC-004)
+- [x] T012 [US4] 将 manifest 和 upgrade status 校验接入现有构建或测试脚本 (FR-021, FR-030, SC-010)
+- [x] T012A [US2] 为每个 accepted 模块校验 fallbackStill 存在且图片失败时仍保留题干、控件、关系式和整数计算 (FR-015, SC-004, SC-010)
+- [x] T012B [US4] 编写内容完整性审计，确认 38 个知识点、39 个母题、117 个子题及 K/M 关系未被动画精修改动破坏 (FR-026, SC-009, SC-010)
+- [x] T012C [US4] 编写鉴权边界回归检查，确认动画精修不新增公开蓝图数据、不改变账号、管理员或受保护 API 范围 (FR-025, SC-010)
 
 ---
 
 ## Phase 3: Shared Stage Primitives
 
-- [ ] T013 [P] [US1] 创建 `SceneStage.vue`，提供稳定 aspect ratio、图层槽位和 reduced motion class (FR-002, FR-007, FR-020, SC-003)
-- [ ] T014 [P] [US1] 创建 `SceneLayer.vue`，统一背景、actors、overlay、feedback 的 z-index 和测试 hook (FR-002, FR-013, FR-022, SC-005)
-- [ ] T015 [P] [US1] 创建 `MeasureOverlay.vue`，渲染量线、标签和关系式 (FR-004, FR-020, SC-006)
-- [ ] T016 [P] [US3] 创建 `PlayfulFeedbackBubble.vue`，支持触发、自动消失、减少动态和不阻塞输入 (FR-008, FR-009, FR-010, SC-008)
-- [ ] T017 [P] [US1] 创建整数 stepper/slider/drag normalizer，阻止小数状态进入模块 (FR-005, FR-023, SC-006)
-- [ ] T018 [US1] 为共享 primitives 写组件测试，覆盖复位、快速操作、减少动态和测试 hook (FR-006, FR-007, FR-023, SC-007)
+- [x] T013 [P] [US1] 创建 `SceneStage.vue`，提供稳定 aspect ratio、图层槽位和 reduced motion class (FR-002, FR-007, FR-020, SC-003)
+- [x] T014 [P] [US1] 创建 `SceneLayer.vue`，统一背景、actors、overlay、feedback 的 z-index 和测试 hook (FR-002, FR-013, FR-022, SC-005)
+- [x] T015 [P] [US1] 创建 `MeasureOverlay.vue`，渲染量线、标签和关系式 (FR-004, FR-020, SC-006)
+- [x] T016 [P] [US3] 创建 `PlayfulFeedbackBubble.vue`，支持触发、自动消失、减少动态和不阻塞输入 (FR-008, FR-009, FR-010, SC-008)
+- [x] T017 [P] [US1] 创建整数 stepper/slider/drag normalizer，阻止小数状态进入模块 (FR-005, FR-023, SC-006)
+- [x] T018 [US1] 为共享 primitives 写组件测试，覆盖复位、快速操作、减少动态和测试 hook (FR-006, FR-007, FR-023, SC-007)
 
 ---
 

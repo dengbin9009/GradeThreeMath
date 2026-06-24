@@ -29,4 +29,20 @@ describe("protected blueprint API", () => {
     const cached = await app.request("/api/blueprint", { headers: { "if-none-match": etag! } });
     expect(cached.status).toBe(304);
   });
+
+  it("does not expose animation upgrade internals in the protected blueprint payload", async () => {
+    const now = new Date("2026-06-22T12:00:00.000Z");
+    const app = createApiApp({
+      blueprint,
+      now: () => now,
+      resolveSession: async () => ({ user: makeUser(), session: { id: "ses_1", expiresAt: new Date("2026-06-22T20:00:00.000Z") } })
+    });
+    const response = await app.request("/api/blueprint");
+    expect(response.status).toBe(200);
+    const text = await response.text();
+    expect(text).not.toContain("upgradeRecords");
+    expect(text).not.toContain("image2-manifest");
+    expect(text).not.toContain("accepted");
+    expect(text).not.toContain("assetManifestPath");
+  });
 });
