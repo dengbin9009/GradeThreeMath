@@ -21,6 +21,7 @@
 - [x] CHK006 PlayfulFeedbackSpec 对触发、文案、位置、动效和时长有约束。
 - [x] CHK007 IntegerControlSpec 对整数控制有约束。
 - [x] CHK008 VisualAcceptanceRecord 可记录三视口、断图、整数、对象状态和减少动态结果。
+- [x] CHK008A image2 资产路径和 manifest 位置已明确，不依赖临时目录。
 
 ## Testability
 
@@ -36,6 +37,7 @@
 - [x] CHK015 四个第二阶段样板覆盖足够多的交互模式。
 - [x] CHK016 后续批次可并行推进，但依赖样板通过。
 - [x] CHK017 每批完成后有文档同步任务。
+- [x] CHK017A 第一刀实现顺序已明确为共享契约、舞台 primitives、五个基准、四个样板。
 
 ## Risk Review
 

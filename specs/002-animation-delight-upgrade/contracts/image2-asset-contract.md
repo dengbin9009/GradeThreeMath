@@ -11,12 +11,16 @@
 ```text
 apps/web/src/assets/module-frames/
   m01/
+    image2/
+      background-v1.webp
+      actor-number-box-v1.png
+      prop-conveyor-v1.png
+      feedback-queue-sign-v1.png
+      fallback-still-v1.webp
+
+apps/web/src/modules/
+  m01/
     image2-manifest.ts
-    background-v1.webp
-    actor-number-box-v1.png
-    prop-conveyor-v1.png
-    feedback-queue-sign-v1.png
-    fallback-still-v1.webp
 ```
 
 未精修模块可以继续使用现有资产，但不能标记为 `accepted`。
@@ -89,6 +93,14 @@ export interface Image2AssetManifest {
 - 不出现水印、品牌、复杂背景噪声。
 - 同一模块内保持相同镜头、光照、材质和比例。
 
+可动透明对象优先采用：
+
+- image2 生成纯色背景源图。
+- 本地去背景后提交 PNG。
+- manifest 中记录 `transparent: true` 和最终 PNG 路径。
+
+背景和 fallback 优先采用 WebP；只有需要透明、像素边缘精确或后续编辑的对象使用 PNG。
+
 ## Rejection Rules
 
 生成图片出现以下情况必须废弃或返工：
@@ -109,4 +121,5 @@ export interface Image2AssetManifest {
 3. all images load with naturalWidth > 0
 4. required roles present
 5. no accepted asset is documented as rejected
+6. no path references temporary files, home directories, or absolute local paths
 ```

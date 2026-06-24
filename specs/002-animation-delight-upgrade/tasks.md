@@ -11,7 +11,7 @@
 
 ## Phase 1: Spec And Contract Baseline
 
-- [x] T001 [P] [US4] 创建 `specs/002-animation-delight-upgrade/spec.md`，定义用户故事、FR-001 至 FR-030 和 SC-001 至 SC-010 (FR-001, FR-030, SC-010)
+- [x] T001 [P] [US4] 创建 `specs/002-animation-delight-upgrade/spec.md`，定义用户故事、FR-001 至 FR-032 和 SC-001 至 SC-010 (FR-001, FR-030, FR-031, FR-032, SC-010)
 - [x] T002 [P] [US4] 创建 `specs/002-animation-delight-upgrade/plan.md`，定义架构、批次、测试策略和风险 (FR-018, FR-024, SC-010)
 - [x] T003 [P] [US2] 创建 `specs/002-animation-delight-upgrade/data-model.md`，定义 AnimationUpgradeRecord、Image2AssetManifest 等实体 (FR-001, FR-014, FR-030, SC-009)
 - [x] T004 [P] [US2] 创建 `contracts/image2-asset-contract.md`，定义 image2 资产角色、提示词、拒收规则和验证规则 (FR-011, FR-012, FR-014, SC-004)
@@ -19,6 +19,7 @@
 - [x] T006 [P] [US3] 创建 `ui-ux-spec.md`，定义大舞台、轻幽默反馈、响应式和减少动态 UX 规则 (FR-008, FR-009, FR-020, SC-003, SC-008)
 - [x] T007 [P] [US4] 创建 `quickstart.md`，定义本地启动和六条 smoke test 路径 (FR-019, FR-030, SC-010)
 - [x] T008 [P] [US4] 创建 checklist，确认本规格清晰、可验收、可追踪 (FR-030, SC-010)
+- [x] T008A [P] [US4] 执行 clarify，补充 image2 路径、透明资产、accepted 状态和实现首刀顺序 (FR-031, FR-032, SC-010)
 
 **Checkpoint**: 002 SpecKit 文档包完整，可进入实现计划评审。
 
@@ -27,8 +28,8 @@
 ## Phase 2: Shared Metadata And Validation
 
 - [ ] T009 [P] [US4] 在 `apps/web/src/modules/shared/upgrade/` 新建升级状态类型和 39 个模块初始状态 (FR-001, FR-016, FR-018, SC-009)
-- [ ] T010 [P] [US2] 在 `apps/web/src/modules/shared/assets/` 新建 image2 manifest 类型和 schema 校验函数 (FR-011, FR-014, FR-030, SC-004)
-- [ ] T011 [P] [US2] 为 manifest 校验写 Vitest，覆盖必需角色、路径存在、不可写可变文字规则 (FR-011, FR-012, FR-030, SC-004)
+- [ ] T010 [P] [US2] 在 `apps/web/src/modules/shared/assets/` 新建 image2 manifest 类型和 schema 校验函数 (FR-011, FR-014, FR-030, FR-031, SC-004)
+- [ ] T011 [P] [US2] 为 manifest 校验写 Vitest，覆盖必需角色、路径存在、不可写可变文字和禁止本机绝对路径规则 (FR-011, FR-012, FR-030, FR-031, SC-004)
 - [ ] T012 [US4] 将 manifest 和 upgrade status 校验接入现有构建或测试脚本 (FR-021, FR-030, SC-010)
 
 ---
@@ -85,7 +86,7 @@
 
 ## Phase 7: Full Acceptance And Documentation
 
-- [ ] T043 [US4] 编写全量 Playwright 审计，遍历 accepted 模块的断图、三视口和对象状态 (FR-020, FR-021, FR-022, SC-003, SC-004, SC-005)
+- [ ] T043 [US4] 编写全量 Playwright 审计，遍历 accepted 模块的断图、三视口、对象状态和儿童 UI 不暴露内部状态 (FR-020, FR-021, FR-022, FR-032, SC-003, SC-004, SC-005)
 - [ ] T044 [US4] 编写整数审计，确认所有 accepted 模块不显示小数 (FR-005, SC-006)
 - [ ] T045 [US4] 编写减少动态审计，确认 accepted 模块核心路径可用 (FR-007, SC-007)
 - [ ] T046 [US4] 更新 `docs/acceptance/reference-module-visual.md` 和 `docs/animation-upgrade-roadmap.md` 的最终状态 (FR-019, FR-029, SC-009)

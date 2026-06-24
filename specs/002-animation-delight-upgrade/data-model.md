@@ -15,6 +15,8 @@
 | `acceptancePath` | `string` | 验收记录路径 |
 | `notes` | `string[]` | 风险、返工或特殊约束 |
 
+`status` 是开发与验收状态。儿童学习界面不得直接展示 `blocked`、失败项或内部技术状态。
+
 ## Image2AssetManifest
 
 | Field | Type | Rules |
@@ -51,6 +53,8 @@
 | `intrinsicSize` | `{ width: number; height: number }` | 正整数 |
 | `altPolicy` | `decorative \| container-labeled \| meaningful` | 重复对象通常为 `decorative` |
 | `mustNotContainText` | `boolean` | 默认 true |
+
+`path` 不允许使用临时目录、本机绝对路径或外部生成缓存。可动透明对象优先使用 PNG；背景和 fallback 优先使用 WebP。
 
 ## SceneStageSpec
 
