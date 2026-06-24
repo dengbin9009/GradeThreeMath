@@ -129,7 +129,7 @@ function activate() {
   <SceneStage :module-id="props.moduleId" aspect-ratio="18 / 9" :min-heights="{ desktop: 540, tablet: 500, mobile: 640 }">
     <div class="tf-stage" :data-time-fraction-module="props.moduleId">
       <aside class="tf-console">
-        <strong class="module-chip">{{ props.moduleId }} image2 大舞台</strong>
+        <strong class="module-chip">{{ props.moduleId }} 时间分数小剧场</strong>
         <div class="formula-card" data-time-fraction-formula>{{ formula }}</div>
         <p data-playful-feedback>{{ feedback }}</p>
         <div class="hint-meter"><span>先定单位</span><b>整数计算</b></div>

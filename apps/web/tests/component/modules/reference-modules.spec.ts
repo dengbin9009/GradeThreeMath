@@ -9,7 +9,7 @@ describe("reference animation modules", () => {
   it("M09 keeps numeral, rods and abacus place values synchronized", async () => {
     const wrapper = mount(M09PlaceValueLab, { props: { parameters: { n: 3056 } } });
     expect(wrapper.get('[data-upgrade-stage="scene"]').attributes("data-module-id")).toBe("M09");
-    expect(wrapper.get("[data-upgrade-status]").text()).toContain("基准动画");
+    expect(wrapper.get("[data-upgrade-status]").text()).toContain("数字工具实验台");
     expect(wrapper.get("[data-numeral]").text()).toBe("3056");
     expect(wrapper.findAll('[data-place="hundreds"] [data-counter]')).toHaveLength(0);
     expect(wrapper.findAll('[data-place="tens"] [data-counter]')).toHaveLength(5);

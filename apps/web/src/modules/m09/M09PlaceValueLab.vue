@@ -19,7 +19,7 @@ const places = computed(() => {
   <SceneStage module-id="M09" aspect-ratio="18 / 9" :min-heights="{ desktop: 520, tablet: 500, mobile: 620 }">
   <div class="place-lab">
     <aside>
-      <div data-upgrade-status class="upgrade-status">基准动画 · 工具联动</div>
+      <div data-upgrade-status class="upgrade-status">数字工具实验台 · 工具联动</div>
       <label for="place-number">数字</label>
       <input id="place-number" v-model.number="number" type="range" min="1000" max="9999" step="1" />
       <strong data-numeral>{{ number }}</strong>

@@ -91,11 +91,11 @@
 
 ## Phase 7: Full Acceptance And Documentation
 
-- [ ] T043 [US4] 编写全量 Playwright 审计，遍历 accepted 模块的断图、三视口、对象状态和儿童 UI 不暴露内部状态 (FR-020, FR-021, FR-022, FR-032, SC-003, SC-004, SC-005)
-- [ ] T044 [US4] 编写整数审计，确认所有 accepted 模块不显示小数 (FR-005, SC-006)
-- [ ] T045 [US4] 编写减少动态审计，确认 accepted 模块核心路径可用 (FR-007, SC-007)
-- [ ] T046 [US4] 更新 `docs/acceptance/reference-module-visual.md` 和 `docs/animation-upgrade-roadmap.md` 的最终状态，并覆盖 fallback、家长讲解、废弃资产和内容完整性结果 (FR-015, FR-019, FR-027, FR-028, FR-029, SC-009)
-- [ ] T047 [US4] 执行 `npm run typecheck`、`npm run test`、`npm run test:e2e`、`npm run build` 并记录结果 (FR-030, SC-010)
+- [x] T043 [US4] 编写全量 Playwright 审计，遍历 accepted 模块的断图、三视口、对象状态和儿童 UI 不暴露内部状态 (FR-020, FR-021, FR-022, FR-032, SC-003, SC-004, SC-005)
+- [x] T044 [US4] 编写整数审计，确认所有 accepted 模块不显示小数 (FR-005, SC-006)
+- [x] T045 [US4] 编写减少动态审计，确认 accepted 模块核心路径可用 (FR-007, SC-007)
+- [x] T046 [US4] 更新 `docs/acceptance/reference-module-visual.md` 和 `docs/animation-upgrade-roadmap.md` 的最终状态，并覆盖 fallback、家长讲解、废弃资产和内容完整性结果 (FR-015, FR-019, FR-027, FR-028, FR-029, SC-009)
+- [x] T047 [US4] 执行 `npm run typecheck`、`npm run test`、`npm run test:e2e`、`npm run build` 并记录结果 (FR-030, SC-010)
 
 ## Dependencies & Execution Order
 

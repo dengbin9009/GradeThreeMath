@@ -140,7 +140,7 @@ function activate(action: string) {
   <SceneStage :module-id="props.moduleId" aspect-ratio="18 / 9" :min-heights="{ desktop: 540, tablet: 500, mobile: 640 }">
     <div class="app-stage" :data-application-module="props.moduleId">
       <aside class="app-console">
-        <strong class="module-chip">{{ props.moduleId }} image2 大舞台</strong>
+        <strong class="module-chip">{{ props.moduleId }} 应用小剧场</strong>
         <div class="formula-card" data-application-formula>{{ formula }}</div>
         <p data-playful-feedback>{{ feedback }}</p>
         <div class="hint-meter"><span>模型先行</span><b>全程整数</b></div>

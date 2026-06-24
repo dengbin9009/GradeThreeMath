@@ -105,7 +105,7 @@ const feedback = computed(() => {
   <SceneStage :module-id="props.moduleId" aspect-ratio="18 / 9" :min-heights="{ desktop: 540, tablet: 500, mobile: 620 }">
     <div class="ops-stage" :data-operation-module="props.moduleId">
       <aside class="ops-console">
-        <strong class="module-chip">{{ props.moduleId }} image2 大舞台</strong>
+        <strong class="module-chip">{{ props.moduleId }} 运算小剧场</strong>
         <div class="formula-card" data-operation-formula>{{ formula }}</div>
         <p data-playful-feedback>{{ feedback }}</p>
         <div class="hint-meter">

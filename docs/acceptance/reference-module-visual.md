@@ -130,3 +130,36 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 | M38 | 数据柱图升降台，先定刻度再升柱读取数据 | `apps/web/src/modules/m38/image2-manifest.ts` 记录柱子、刻度梯、数据卡和刻度提醒帽 | 组件测试确认 `4格×5=20人`；E2E 确认刻度反馈和复位 |
 
 本轮执行 `npx playwright test tests/e2e/geometry-statistics-batch.spec.ts --project=chromium-desktop`，覆盖 M28-M30、M32-M38 共 10 条核心路径，全部通过。M31 保持第二阶段样板实现，但纳入 `geometryStatisticsImage2Manifests` 统一入口，方便后续全量审计。
+
+## 2026-06-24 Phase 7 全量验收记录
+
+本轮把 39 个母题统一纳入 `acceptedAuditModules` 审计入口，覆盖 M01-M39 的路由、主舞台、首个交互动作、反馈文案和整数检查范围。`allUpgradedImage2Manifests` 同步按母题顺序汇总 39 份 image2 manifest，M31 的重复批次归属已去重。
+
+| 验收项 | 结果 |
+|---|---|
+| 全量大舞台 | `npm run test:e2e -- tests/e2e/full-accepted-audit.spec.ts` 通过 117 条，覆盖桌面、平板、手机三视口 |
+| 整数约束 | `npm run test:e2e -- tests/e2e/integer-only-audit.spec.ts tests/e2e/reduced-motion-full-audit.spec.ts` 中整数审计通过 117 条 |
+| 减少动态 | 同一命令中 reduced-motion 审计通过 117 条 |
+| 断图检查 | 每个舞台内实际 `<img>` 均 `naturalWidth > 0`；无图片的 DOM 教具舞台不误判 |
+| 儿童 UI | 可见舞台不再暴露 `image2`、`accepted`、`fallback-still` 等内部状态词，统一改为“运算小剧场”“应用小剧场”等孩子可理解标签 |
+| fallback | 39 份 manifest 均保留 `fallback-still` 角色和 `fallbackStill` 仓库相对路径，图片失败时题干、控件、关系式和反馈仍由 Vue/DOM 渲染 |
+| 家长讲解 | 基准模块已接入 `baselineCoachNotes`；其余母题继续使用蓝图数据中的 parentCoach 与常见错因说明，不在动画精修中改写课程内容 |
+| 废弃资产 | 各 manifest 的 `rejectedAssets` 保留拒收原因；典型拒收包括“整张静态图替代动态对象”“图片内烘焙答案文字” |
+| 内容完整性 | 38 个知识点、39 个母题、117 个子题和 K/M 关系由既有内容审计继续覆盖；本阶段只改动画呈现，不改知识图谱 |
+
+阶段性命令结果：
+
+| 命令 | 结果 |
+|---|---|
+| `npm run test -w @math/web -- tests/unit/modules/upgraded-module-audit.spec.ts` | 1 个文件、3 条测试通过 |
+| `npm run test:e2e -- tests/e2e/full-accepted-audit.spec.ts` | 117 条通过 |
+| `npm run test:e2e -- tests/e2e/integer-only-audit.spec.ts tests/e2e/reduced-motion-full-audit.spec.ts` | 234 条通过 |
+
+最终收口命令结果：
+
+| 命令 | 结果 |
+|---|---|
+| `npm run typecheck` | web、api、shared 全部通过 |
+| `npm run test` | web 44 个文件 119 条、api 16 个文件 33 条、shared 3 个文件 11 条全部通过 |
+| `npm run test:e2e` | 507 条 Playwright 测试全部通过，覆盖 desktop、tablet、mobile |
+| `npm run build` | shared、api、web 生产构建全部通过 |

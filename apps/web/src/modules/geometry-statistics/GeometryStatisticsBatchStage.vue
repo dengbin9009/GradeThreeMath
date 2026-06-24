@@ -118,7 +118,7 @@ function activate() {
   <SceneStage :module-id="props.moduleId" aspect-ratio="18 / 9" :min-heights="{ desktop: 540, tablet: 500, mobile: 640 }">
     <div class="geo-stage" :data-geometry-module="props.moduleId">
       <aside class="geo-console">
-        <strong class="module-chip">{{ props.moduleId }} image2 大舞台</strong>
+        <strong class="module-chip">{{ props.moduleId }} 图形统计小剧场</strong>
         <div class="formula-card" data-geometry-formula>{{ formula }}</div>
         <p data-playful-feedback>{{ feedback }}</p>
         <div class="hint-meter"><span>量先看清</span><b>整数标注</b></div>
