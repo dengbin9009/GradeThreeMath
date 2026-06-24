@@ -19,4 +19,25 @@ describe("CoachDrawer", () => {
     expect(document.activeElement).toBe(opener);
     wrapper.unmount(); opener.remove();
   });
+
+  it("shows animation coach notes only when a reference module provides them", () => {
+    const wrapper = mount(CoachDrawer, { props: { open: true, archetype: archetype as never, variant: variant as never } });
+    expect(wrapper.find("[data-animation-coach-note]").exists()).toBe(false);
+
+    wrapper.unmount();
+    const withNote = mount(CoachDrawer, {
+      props: {
+        open: true,
+        archetype: archetype as never,
+        variant: variant as never,
+        animationCoachNote: {
+          moduleId: "M39",
+          childPrompt: "先撤销最后发生的事。",
+          oneSentenceCoach: "倒着看书本怎么回架。",
+          commonMistakeCue: "容易按题目顺序正着算。"
+        }
+      }
+    });
+    expect(withNote.get("[data-animation-coach-note]").text()).toContain("倒着看书本怎么回架");
+  });
 });

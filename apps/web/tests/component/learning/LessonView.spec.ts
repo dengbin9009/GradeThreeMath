@@ -28,5 +28,7 @@ describe("LessonView", () => {
     expect(wrapper.find('[data-special-module="M39"]').exists()).toBe(true);
     await wrapper.get('button[aria-label="打开家长辅导"]').trigger("click");
     expect(wrapper.get('[role="dialog"]').text()).toContain("先说清变化顺序");
+    expect(wrapper.get('[role="dialog"]').text()).toContain("先撤销最后发生的事");
+    expect(wrapper.get('[role="dialog"]').text()).toContain("孩子容易按题目顺序正着算");
   });
 });

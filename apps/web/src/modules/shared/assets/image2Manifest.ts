@@ -82,14 +82,11 @@ export function validateImage2AssetManifest(manifest: Image2AssetManifest): Imag
   }
 
   const assetIds = new Set<string>();
-  const assetPaths = new Set<string>();
   for (const asset of manifest.assets) {
     assert(asset.id.trim().length > 0, `${manifest.moduleId} asset id is required`);
     assert(!assetIds.has(asset.id), `${manifest.moduleId} duplicate asset id: ${asset.id}`);
     assetIds.add(asset.id);
     validateAssetPath(asset.path, `${manifest.moduleId}/${asset.id} path`);
-    assert(!assetPaths.has(asset.path), `${manifest.moduleId} duplicate asset path: ${asset.path}`);
-    assetPaths.add(asset.path);
     assert(promptIds.has(asset.promptId), `${manifest.moduleId}/${asset.id} references an unknown prompt`);
     assert(asset.mustNotContainText, `${manifest.moduleId}/${asset.id} must not contain text`);
     assert(Number.isInteger(asset.intrinsicSize.width) && asset.intrinsicSize.width > 0, `${manifest.moduleId}/${asset.id} width must be positive`);

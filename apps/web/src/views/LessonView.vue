@@ -9,6 +9,7 @@ import CoachDrawer from "../components/learning/CoachDrawer.vue";
 import ProblemHeader from "../components/learning/ProblemHeader.vue";
 import VariantList from "../components/learning/VariantList.vue";
 import { moduleRegistry, type ModuleId } from "../modules/registry";
+import { getBaselineCoachNote } from "../modules/shared/upgrade/baselineCoachNotes";
 
 const route = useRoute();
 const router = useRouter();
@@ -20,6 +21,7 @@ const variant = computed(() => archetype.value?.variants.find((item) => item.id 
 const definition = computed(() => moduleRegistry[moduleId.value]);
 const ModuleComponent = computed(() => definition.value ? defineAsyncComponent(definition.value.component) : null);
 const special = computed(() => ["M09", "M12", "M20", "M21", "M39"].includes(moduleId.value));
+const baselineCoachNote = computed(() => special.value ? getBaselineCoachNote(moduleId.value) : null);
 const resetRevision = ref(0);
 
 function selectVariant(variantId: string) { router.replace({ name: "lesson", params: { archetypeId: moduleId.value, variantId } }); }
@@ -48,7 +50,13 @@ onMounted(() => blueprint.load());
         <div :data-special-module="moduleId" class="special-stage"><component :is="ModuleComponent" :key="`${moduleId}-${variant.id}-${resetRevision}`" :parameters="variant.parameters" /></div>
       </AnimationStageShell>
     </div>
-    <CoachDrawer :open="learning.coachOpen" :archetype="archetype" :variant="variant" @close="learning.closeCoach()" />
+    <CoachDrawer
+      :open="learning.coachOpen"
+      :archetype="archetype"
+      :variant="variant"
+      :animation-coach-note="baselineCoachNote"
+      @close="learning.closeCoach()"
+    />
   </section>
   <div v-else-if="blueprint.loading" class="lesson-state">正在打开母题…</div>
   <div v-else class="lesson-state" role="alert"><strong>没有找到这个母题</strong><RouterLink to="/learn">返回母题库</RouterLink></div>
