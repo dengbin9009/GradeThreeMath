@@ -58,3 +58,16 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 | M39 | 保留独立书本和单一书架舞台，借出篮与还回篮数量动态更新 | 组件测试确认逆推数量；E2E 确认三视口可互动和复位 |
 
 本轮执行 `npx playwright test tests/e2e/reference-modules.spec.ts`，覆盖 chromium desktop、tablet、mobile 共 15 条基准路径，全部通过。
+
+## 2026-06-24 Phase 5 样板模块记录
+
+| 模块 | 样板结果 | image2 记录 | 自动验收 |
+|---|---|---|---|
+| M01 | 独立运算传送带大舞台，支持切换先合并前两个或后两个，并实时显示中间结果 | `apps/web/src/modules/m01/image2-manifest.ts` 记录传送带、数字箱、乘除机器、合并框和排队牌分层资产 | 组件测试确认中间结果变化；E2E 三视口确认互动、反馈和复位 |
+| M02 | 独立运算树大舞台，括号子树优先高亮，结果送回树根 | `apps/web/src/modules/m02/image2-manifest.ts` 记录运算树、括号聚光灯、数字叶子和优先级反馈资产 | 组件测试确认括号子树和根节点结果；E2E 三视口确认互动、反馈和复位 |
+| M03 | 独立位值积木工坊，拆成百十个位部分积，并提供进位小车反馈 | `apps/web/src/modules/m03/image2-manifest.ts` 记录位值积木、倍数器、进位小车和估算灯资产 | 组件测试确认部分积和总积；E2E 三视口确认互动、反馈和复位 |
+| M31 | 独立组合面积工作台，支持添补法和分割法切换，面积保持一致 | `apps/web/src/modules/m31/image2-manifest.ts` 记录组合图、切割线、补块、长宽标注和反馈资产 | 组件测试确认两种面积式；E2E 三视口确认互动、反馈和复位 |
+
+本轮执行 `npx playwright test tests/e2e/sample-modules.spec.ts`，覆盖 chromium desktop、tablet、mobile 共 12 条样板路径，全部通过。
+
+说明：当前 Codex 会话未暴露内置 `image_gen` 工具，因此本轮完成的是 image2 分层资产契约、提示词、仓库路径、拒收记录和 DOM/CSS 可交互样板舞台。真实位图文件后续可按 manifest 路径补齐，不影响当前数学交互和验收测试。

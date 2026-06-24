@@ -20,8 +20,10 @@ const archetype = computed(() => blueprint.archetypes.find((item) => item.id ===
 const variant = computed(() => archetype.value?.variants.find((item) => item.id === route.params.variantId) ?? archetype.value?.variants[0]);
 const definition = computed(() => moduleRegistry[moduleId.value]);
 const ModuleComponent = computed(() => definition.value ? defineAsyncComponent(definition.value.component) : null);
-const special = computed(() => ["M09", "M12", "M20", "M21", "M39"].includes(moduleId.value));
-const baselineCoachNote = computed(() => special.value ? getBaselineCoachNote(moduleId.value) : null);
+const baselineModuleIds = ["M09", "M12", "M20", "M21", "M39"];
+const stageWrappedModuleIds = [...baselineModuleIds, "M01", "M02", "M03", "M31"];
+const stageWrapped = computed(() => stageWrappedModuleIds.includes(moduleId.value));
+const baselineCoachNote = computed(() => baselineModuleIds.includes(moduleId.value) ? getBaselineCoachNote(moduleId.value) : null);
 const resetRevision = ref(0);
 
 function selectVariant(variantId: string) { router.replace({ name: "lesson", params: { archetypeId: moduleId.value, variantId } }); }
@@ -41,10 +43,11 @@ onMounted(() => blueprint.load());
       <VariantList :variants="archetype.variants" :active-id="variant.id" @select="selectVariant" />
       <component
         :is="ModuleComponent"
-        v-if="ModuleComponent && !special"
+        v-if="ModuleComponent && !stageWrapped"
         :module-id="moduleId"
         :archetype="archetype"
         :variant="variant"
+        :parameters="variant.parameters"
       />
       <AnimationStageShell v-else-if="ModuleComponent" :feedback="archetype.animationSpec.childFeedback" @reset="resetSpecial">
         <div :data-special-module="moduleId" class="special-stage"><component :is="ModuleComponent" :key="`${moduleId}-${variant.id}-${resetRevision}`" :parameters="variant.parameters" /></div>
