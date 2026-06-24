@@ -112,3 +112,21 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 | M27 | 分物分享桌，先平均分总数，再取对应份数 | `apps/web/src/modules/m27/image2-manifest.ts` 记录物品 token、等分托盘、取份夹和先分提示 | 组件测试确认 `24÷3=8`；E2E 确认先分再取反馈和复位 |
 
 本轮执行 `npx playwright test tests/e2e/time-fractions-batch.spec.ts --project=chromium-desktop`，覆盖 M22-M27 共 6 条核心路径，全部通过。时间分数批沿用同一个 `TimeFractionsBatchStage`，重点强化“先定整体/起点，再计算”的可视化顺序。
+
+## 2026-06-24 Phase 6 图形测量统计批记录
+
+| 模块 | 精修结果 | image2 记录 | 自动验收 |
+|---|---|---|---|
+| M28 | 伸缩尺带，米、厘米和总厘米数在同一把尺上统一 | `apps/web/src/modules/m28/image2-manifest.ts` 记录尺带、对象 token、单位刻度和提示灯 | 组件测试确认 `3米40厘米=340厘米`；E2E 确认尺带反馈和复位 |
+| M29 | 方格铺砖场，单位正方形按行列铺满区域 | `apps/web/src/modules/m29/image2-manifest.ts` 记录网格垫、小方砖、单位面积印章和吸附提示 | 组件测试确认 `4×6=24`；E2E 确认铺砖反馈和复位 |
+| M30 | 拖拉方格板，长宽和面积格同步变化 | `apps/web/src/modules/m30/image2-manifest.ts` 记录方格板、拖拽手柄、行列标签和面积计数器 | 组件测试确认 `8×5=40`；E2E 确认行列反馈和复位 |
+| M31 | 保持既有组合面积样板舞台，并纳入几何统计 manifest 入口 | `apps/web/src/modules/m31/image2-manifest.ts` 已在样板批记录 | 样板 E2E 继续覆盖互动和复位 |
+| M32 | 透明网格观察窗，整格、半格和估算面积分开显示 | `apps/web/src/modules/m32/image2-manifest.ts` 记录透明网格、不规则图、半格卡和估算徽章 | 组件测试确认 `20+6÷2=23`；E2E 确认半格反馈和复位 |
+| M33 | 边界巡线车，沿外边界一周表达周长概念 | `apps/web/src/modules/m33/image2-manifest.ts` 记录巡线车、边界路径、内部误走挡板和终点标记 | 组件测试确认 `边界一周=周长`；E2E 确认边界反馈和复位 |
+| M34 | 围栏绳卷，四条边依次围上后合成周长 | `apps/web/src/modules/m34/image2-manifest.ts` 记录绳卷、边长尺、角柱和检查标记 | 组件测试确认 `(12+7)×2=38`；E2E 确认四条边反馈和复位 |
+| M35 | 同绳变形场，固定周长比较不同长方形面积 | `apps/web/src/modules/m35/image2-manifest.ts` 记录绳框、面积格、形状候选和面积榜 | 组件测试确认 `24÷2=12`；E2E 确认面积榜反馈和复位 |
+| M36 | 镜面瓷砖台，镜面对折验证轴对称和拼嵌 | `apps/web/src/modules/m36/image2-manifest.ts` 记录镜面线、形状瓷砖、补全状态和网格吸附 | 组件测试确认 `长方形=2条对称轴`；E2E 确认镜面反馈和复位 |
+| M37 | 弯杆三角架，按角和按边贴分类牌 | `apps/web/src/modules/m37/image2-manifest.ts` 记录可调杆、角标、边长尺和分类牌 | 组件测试确认 `90°=直角三角形`；E2E 确认分类牌反馈和复位 |
+| M38 | 数据柱图升降台，先定刻度再升柱读取数据 | `apps/web/src/modules/m38/image2-manifest.ts` 记录柱子、刻度梯、数据卡和刻度提醒帽 | 组件测试确认 `4格×5=20人`；E2E 确认刻度反馈和复位 |
+
+本轮执行 `npx playwright test tests/e2e/geometry-statistics-batch.spec.ts --project=chromium-desktop`，覆盖 M28-M30、M32-M38 共 10 条核心路径，全部通过。M31 保持第二阶段样板实现，但纳入 `geometryStatisticsImage2Manifests` 统一入口，方便后续全量审计。
