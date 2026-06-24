@@ -83,3 +83,19 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 | M08 | 统一运算大舞台中的数轴望远镜，滑动原数并吸附到最近整十 | `apps/web/src/modules/m08/image2-manifest.ts` 记录数轴背景、望远镜、磁铁和近似点 | 组件测试确认 `48≈50` 与磁铁反馈；E2E 确认互动和复位 |
 
 本轮执行 `npx playwright test tests/e2e/operations-batch.spec.ts --project=chromium-desktop`，覆盖 M04-M08 共 5 条核心路径，全部通过。运算批沿用同一个 `OperationsBatchStage`，以减少重复代码并保持舞台尺寸、整数约束和反馈风格一致。
+
+## 2026-06-24 Phase 6 应用模型批记录
+
+| 模块 | 精修结果 | image2 记录 | 自动验收 |
+|---|---|---|---|
+| M10 | 小商店收银台，商品 token、篮子和收银条同步表达单价、数量、总价 | `apps/web/src/modules/m10/image2-manifest.ts` 记录货架、商品、收银条和反馈道具 | 组件测试确认 `12×5=60`；E2E 确认收银条反馈和复位 |
+| M11 | 运动时间轴，车辆、时间格和路程条同步表达速度、时间、路程 | `apps/web/src/modules/m11/image2-manifest.ts` 记录跑道、车辆、距离条和终点旗 | 组件测试确认 `60×3=180`；E2E 确认路程条反馈和复位 |
+| M13 | 弹力线段工坊，等份块和倍数线段表达和倍/差倍模型 | `apps/web/src/modules/m13/image2-manifest.ts` 记录线段、等份块、差额括号和验算印章 | 组件测试确认 `72÷4=18`；E2E 确认同样一份反馈和复位 |
+| M14 | 批量生产线，先求一份再复制新份数 | `apps/web/src/modules/m14/image2-manifest.ts` 记录一份盒、复制机、批量托盘和复制灯 | 组件测试确认 `48÷6=8`；E2E 确认复制机反馈和复位 |
+| M15 | 点段栅栏，间隔、端点和点数同屏可见 | `apps/web/src/modules/m15/image2-manifest.ts` 记录栅栏、端点旗、间隔线和端点提示 | 组件测试确认 `40÷5+1=9`；E2E 确认点段反馈和复位 |
+| M16 | 循环彩带，周期组、完整组和余数落点分离显示 | `apps/web/src/modules/m16/image2-manifest.ts` 记录循环彩带、周期框、余数块和落点台 | 组件测试确认 `20÷3=6……2`；E2E 确认余数块反馈和复位 |
+| M17 | 路径机器，支持正向过门和逆向推回 | `apps/web/src/modules/m17/image2-manifest.ts` 记录输入 token、运算门、箭头路径和反向拉杆 | 组件测试确认 `(8+5)×3=39`；E2E 确认倒车反馈和复位 |
+| M18 | 组合试衣台，矩阵卡片表达不重不漏搭配 | `apps/web/src/modules/m18/image2-manifest.ts` 记录选择卡、矩阵托盘、组合卡和重复捕手 | 组件测试确认 `3×2=6`；E2E 确认不重不漏反馈和复位 |
+| M19 | 苹果盒子分配桌，列表卡表达有区别盒子的放法 | `apps/web/src/modules/m19/image2-manifest.ts` 记录苹果、盒子表、放法卡和剩余托盘 | 组件测试确认 `8-1=7`；E2E 确认列表反馈和复位 |
+
+本轮执行 `npx playwright test tests/e2e/applications-batch.spec.ts --project=chromium-desktop`，覆盖 M10-M19 共 9 条核心路径，全部通过。应用模型批沿用同一个 `ApplicationsBatchStage`，保证不同应用题都能以“模型先行、关系式同步、轻幽默反馈”的方式呈现。
