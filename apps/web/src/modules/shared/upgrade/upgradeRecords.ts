@@ -21,6 +21,7 @@ const baselineModules = new Set<ModuleId>(["M09", "M12", "M20", "M21", "M39"]);
 const sampleModules = new Set<ModuleId>(["M01", "M02", "M03", "M31"]);
 const operationsModules = new Set<ModuleId>(["M04", "M05", "M06", "M07", "M08"]);
 const applicationsModules = new Set<ModuleId>(["M10", "M11", "M13", "M14", "M15", "M16", "M17", "M18", "M19"]);
+const timeFractionsModules = new Set<ModuleId>(["M22", "M23", "M24", "M25", "M26", "M27"]);
 
 const modulePlan: Record<ModuleId, Pick<AnimationUpgradeRecord, "batch" | "stageTheme" | "primaryInteraction">> = {
   M01: { batch: "sample", stageTheme: "运算传送带", primaryInteraction: "调整运算顺序" },
@@ -70,7 +71,8 @@ export const upgradeRecords: AnimationUpgradeRecord[] = moduleIds.map((moduleId)
   const planned = sampleModules.has(moduleId);
   const operationsInProgress = operationsModules.has(moduleId);
   const applicationsInProgress = applicationsModules.has(moduleId);
-  const inProgress = operationsInProgress || applicationsInProgress;
+  const timeFractionsInProgress = timeFractionsModules.has(moduleId);
+  const inProgress = operationsInProgress || applicationsInProgress || timeFractionsInProgress;
   const hasManifest = accepted || planned || inProgress;
   return {
     moduleId,
@@ -82,14 +84,14 @@ export const upgradeRecords: AnimationUpgradeRecord[] = moduleIds.map((moduleId)
     playfulFeedbackIds: accepted
       ? [`${moduleId}-baseline-feedback`]
       : inProgress
-        ? [`${moduleId}-${operationsInProgress ? "operations" : "applications"}-feedback`]
+        ? [`${moduleId}-${operationsInProgress ? "operations" : applicationsInProgress ? "applications" : "time-fractions"}-feedback`]
         : [],
     assetManifestPath: hasManifest ? `apps/web/src/modules/${moduleId.toLowerCase()}/image2-manifest.ts` : "",
     acceptancePath: accepted || inProgress ? "docs/acceptance/reference-module-visual.md" : "",
     notes: accepted
       ? ["保留现有核心交互方向，接入统一质量门。"]
       : inProgress
-        ? [`${operationsInProgress ? "运算批" : "应用模型批"}已接入统一大舞台与 image2 manifest；真实位图资产待 image2 工具补齐后进入 accepted。`]
+        ? [`${operationsInProgress ? "运算批" : applicationsInProgress ? "应用模型批" : "时间分数批"}已接入统一大舞台与 image2 manifest；真实位图资产待 image2 工具补齐后进入 accepted。`]
         : []
   };
 });

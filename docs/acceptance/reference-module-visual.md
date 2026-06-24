@@ -99,3 +99,16 @@ M09、M12、M20、M21、M39 继续作为第一批基准。M01、M02、M03、M31 
 | M19 | 苹果盒子分配桌，列表卡表达有区别盒子的放法 | `apps/web/src/modules/m19/image2-manifest.ts` 记录苹果、盒子表、放法卡和剩余托盘 | 组件测试确认 `8-1=7`；E2E 确认列表反馈和复位 |
 
 本轮执行 `npx playwright test tests/e2e/applications-batch.spec.ts --project=chromium-desktop`，覆盖 M10-M19 共 9 条核心路径，全部通过。应用模型批沿用同一个 `ApplicationsBatchStage`，保证不同应用题都能以“模型先行、关系式同步、轻幽默反馈”的方式呈现。
+
+## 2026-06-24 Phase 6 时间分数批记录
+
+| 模块 | 精修结果 | image2 记录 | 自动验收 |
+|---|---|---|---|
+| M22 | 翻页日历台，月份牌、月份天数和平闰年二月规则同屏可见 | `apps/web/src/modules/m22/image2-manifest.ts` 记录月份牌、二月伸缩卡、日期路径和日历印章 | 组件测试确认 `9月=30天`；E2E 确认月份牌反馈和复位 |
+| M23 | 双层时间轨，起点、终点和经过时间条同步表达分钟/小时 | `apps/web/src/modules/m23/image2-manifest.ts` 记录时钟 token、时间条、起终点旗和跨时段提示 | 组件测试确认 `8:15→8:50=35分钟`；E2E 确认时间条反馈和复位 |
+| M24 | 单位 1 工作垫，先圈整体再平均分份 | `apps/web/src/modules/m24/image2-manifest.ts` 记录整体卡、等分导线、单位 1 括号和提示徽章 | 组件测试确认 `一块蛋糕÷4=1份`；E2E 确认单位 1 反馈和复位 |
+| M25 | 等分切割台，等分格和涂色份数动态同步 | `apps/web/src/modules/m25/image2-manifest.ts` 记录切割线、分片、涂色状态和等分检查器 | 组件测试确认 `涂色=3/8`；E2E 确认涂色反馈和复位 |
+| M26 | 同整体叠片台，分数阴影叠在同一个整体上比较 | `apps/web/src/modules/m26/image2-manifest.ts` 记录透明分数条、同整体框、比较指针和分母托盘 | 组件测试确认 `5/7>3/7`；E2E 确认同整体反馈和复位 |
+| M27 | 分物分享桌，先平均分总数，再取对应份数 | `apps/web/src/modules/m27/image2-manifest.ts` 记录物品 token、等分托盘、取份夹和先分提示 | 组件测试确认 `24÷3=8`；E2E 确认先分再取反馈和复位 |
+
+本轮执行 `npx playwright test tests/e2e/time-fractions-batch.spec.ts --project=chromium-desktop`，覆盖 M22-M27 共 6 条核心路径，全部通过。时间分数批沿用同一个 `TimeFractionsBatchStage`，重点强化“先定整体/起点，再计算”的可视化顺序。
