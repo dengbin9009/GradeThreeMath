@@ -1,0 +1,27 @@
+{
+  "moduleId": "M01",
+  "slug": "m01-operation-conveyor",
+  "source": "m01-operation-conveyor-source-sprite.png",
+  "frames": {
+    "start": {
+      "label": "起点",
+      "note": "把起始数量送上运算传送带。",
+      "file": "assets/module-frames/m01-operation-conveyor/m01-operation-conveyor-00-start.png"
+    },
+    "first-operation": {
+      "label": "第一步",
+      "note": "先通过第一个运算门，得到中间结果。",
+      "file": "assets/module-frames/m01-operation-conveyor/m01-operation-conveyor-01-first-operation.png"
+    },
+    "second-operation": {
+      "label": "第二步",
+      "note": "中间结果继续通过第二个运算门。",
+      "file": "assets/module-frames/m01-operation-conveyor/m01-operation-conveyor-02-second-operation.png"
+    },
+    "answer-check": {
+      "label": "验算终点",
+      "note": "终点检查每一步是否按顺序完成。",
+      "file": "assets/module-frames/m01-operation-conveyor/m01-operation-conveyor-03-answer-check.png"
+    }
+  }
+}

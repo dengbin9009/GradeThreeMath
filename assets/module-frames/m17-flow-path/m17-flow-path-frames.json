@@ -1,0 +1,27 @@
+{
+  "moduleId": "M17",
+  "slug": "m17-flow-path",
+  "source": "m17-flow-path-source-sprite.png",
+  "frames": {
+    "input": {
+      "label": "输入",
+      "note": "把输入数放到流程起点。",
+      "file": "assets/module-frames/m17-flow-path/m17-flow-path-00-input.png"
+    },
+    "first-gate": {
+      "label": "第一道门",
+      "note": "按箭头经过第一步运算。",
+      "file": "assets/module-frames/m17-flow-path/m17-flow-path-01-first-gate.png"
+    },
+    "second-gate": {
+      "label": "第二道门",
+      "note": "继续经过第二步运算。",
+      "file": "assets/module-frames/m17-flow-path/m17-flow-path-02-second-gate.png"
+    },
+    "reverse": {
+      "label": "逆向推回",
+      "note": "从结果倒着走，用相反运算回到输入。",
+      "file": "assets/module-frames/m17-flow-path/m17-flow-path-03-reverse.png"
+    }
+  }
+}

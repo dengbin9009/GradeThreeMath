@@ -1,0 +1,30 @@
+{
+  "source": "m32-area-estimate-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m32-area-estimate/m32-area-estimate-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "irregular-shape",
+      "file": "assets/module-frames/m32-area-estimate/m32-area-estimate-00-irregular-shape.png"
+    },
+    {
+      "index": 1,
+      "state": "overlay-grid",
+      "file": "assets/module-frames/m32-area-estimate/m32-area-estimate-01-overlay-grid.png"
+    },
+    {
+      "index": 2,
+      "state": "full-cells",
+      "file": "assets/module-frames/m32-area-estimate/m32-area-estimate-02-full-cells.png"
+    },
+    {
+      "index": 3,
+      "state": "half-cells",
+      "file": "assets/module-frames/m32-area-estimate/m32-area-estimate-03-half-cells.png"
+    }
+  ]
+}

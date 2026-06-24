@@ -1,0 +1,30 @@
+{
+  "source": "m25-fraction-parts-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m25-fraction-parts/m25-fraction-parts-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "whole",
+      "file": "assets/module-frames/m25-fraction-parts/m25-fraction-parts-00-whole.png"
+    },
+    {
+      "index": 1,
+      "state": "divide-evenly",
+      "file": "assets/module-frames/m25-fraction-parts/m25-fraction-parts-01-divide-evenly.png"
+    },
+    {
+      "index": 2,
+      "state": "one-part",
+      "file": "assets/module-frames/m25-fraction-parts/m25-fraction-parts-02-one-part.png"
+    },
+    {
+      "index": 3,
+      "state": "several-parts",
+      "file": "assets/module-frames/m25-fraction-parts/m25-fraction-parts-03-several-parts.png"
+    }
+  ]
+}

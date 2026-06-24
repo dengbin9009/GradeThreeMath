@@ -1,0 +1,27 @@
+{
+  "moduleId": "M04",
+  "slug": "m04-area-array-multiply",
+  "source": "m04-area-array-multiply-source-sprite.png",
+  "frames": {
+    "whole-array": {
+      "label": "整块阵列",
+      "note": "先看到完整长方形阵列。",
+      "file": "assets/module-frames/m04-area-array-multiply/m04-area-array-multiply-00-whole-array.png"
+    },
+    "split-tens-ones": {
+      "label": "拆成四块",
+      "note": "按几十和几切成四个部分。",
+      "file": "assets/module-frames/m04-area-array-multiply/m04-area-array-multiply-01-split-tens-ones.png"
+    },
+    "partial-areas": {
+      "label": "部分面积",
+      "note": "分别计算四块部分面积。",
+      "file": "assets/module-frames/m04-area-array-multiply/m04-area-array-multiply-02-partial-areas.png"
+    },
+    "join-area": {
+      "label": "合并面积",
+      "note": "四块面积相加回到总面积。",
+      "file": "assets/module-frames/m04-area-array-multiply/m04-area-array-multiply-03-join-area.png"
+    }
+  }
+}

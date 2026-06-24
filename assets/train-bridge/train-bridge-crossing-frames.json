@@ -1,0 +1,82 @@
+{
+  "source": "train-bridge-crossing-source-sprite.png derived from imagegen output",
+  "method": "fixed bridge plus independently positioned train frames for train-over-bridge math states",
+  "frameSize": [
+    1180,
+    420
+  ],
+  "layers": {
+    "trainCrop": [
+      7,
+      245,
+      330,
+      392
+    ],
+    "bridgeCrop": [
+      7,
+      384,
+      523,
+      489
+    ],
+    "bridgePosition": [
+      330,
+      238
+    ],
+    "trainY": 98
+  },
+  "frames": [
+    {
+      "index": 0,
+      "state": "before-bridge",
+      "file": "assets/train-bridge/train-bridge-00-before-bridge.png",
+      "trainPosition": [
+        1,
+        98
+      ],
+      "bridgePosition": [
+        330,
+        238
+      ]
+    },
+    {
+      "index": 1,
+      "state": "head-on-bridge",
+      "file": "assets/train-bridge/train-bridge-01-head-on-bridge.png",
+      "trainPosition": [
+        77,
+        98
+      ],
+      "bridgePosition": [
+        330,
+        238
+      ]
+    },
+    {
+      "index": 2,
+      "state": "whole-train-on-bridge",
+      "file": "assets/train-bridge/train-bridge-02-whole-train-on-bridge.png",
+      "trainPosition": [
+        426,
+        98
+      ],
+      "bridgePosition": [
+        330,
+        238
+      ]
+    },
+    {
+      "index": 3,
+      "state": "tail-off-bridge",
+      "file": "assets/train-bridge/train-bridge-03-tail-off-bridge.png",
+      "trainPosition": [
+        854,
+        98
+      ],
+      "bridgePosition": [
+        330,
+        238
+      ]
+    }
+  ],
+  "previewSprite": "assets/train-bridge/train-bridge-crossing-sprite.png"
+}

@@ -1,0 +1,30 @@
+{
+  "source": "m31-composite-area-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m31-composite-area/m31-composite-area-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "original-shape",
+      "file": "assets/module-frames/m31-composite-area/m31-composite-area-00-original-shape.png"
+    },
+    {
+      "index": 1,
+      "state": "cut-lines",
+      "file": "assets/module-frames/m31-composite-area/m31-composite-area-01-cut-lines.png"
+    },
+    {
+      "index": 2,
+      "state": "missing-corner",
+      "file": "assets/module-frames/m31-composite-area/m31-composite-area-02-missing-corner.png"
+    },
+    {
+      "index": 3,
+      "state": "subtract-area",
+      "file": "assets/module-frames/m31-composite-area/m31-composite-area-03-subtract-area.png"
+    }
+  ]
+}

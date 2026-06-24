@@ -1,0 +1,27 @@
+{
+  "moduleId": "M37",
+  "slug": "m37-triangle-classify",
+  "source": "m37-triangle-classify-source-sprite.png",
+  "frames": {
+    "build": {
+      "label": "搭三角形",
+      "note": "三根可调杆搭出三角形。",
+      "file": "assets/module-frames/m37-triangle-classify/m37-triangle-classify-00-build.png"
+    },
+    "side-match": {
+      "label": "看边",
+      "note": "相等的边会一起亮起。",
+      "file": "assets/module-frames/m37-triangle-classify/m37-triangle-classify-01-side-match.png"
+    },
+    "angle-open": {
+      "label": "看角",
+      "note": "角度张开或收拢改变角分类。",
+      "file": "assets/module-frames/m37-triangle-classify/m37-triangle-classify-02-angle-open.png"
+    },
+    "classify": {
+      "label": "分类",
+      "note": "边和角两个角度同时给三角形分类。",
+      "file": "assets/module-frames/m37-triangle-classify/m37-triangle-classify-03-classify.png"
+    }
+  }
+}

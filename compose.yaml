@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: math
+      POSTGRES_USER: math
+      POSTGRES_PASSWORD: math
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U math -d math"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - math-postgres:/var/lib/postgresql/data
+
+volumes:
+  math-postgres:

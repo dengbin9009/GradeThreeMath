@@ -1,0 +1,30 @@
+{
+  "source": "m33-perimeter-trace-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m33-perimeter-trace/m33-perimeter-trace-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "area-grid",
+      "file": "assets/module-frames/m33-perimeter-trace/m33-perimeter-trace-00-area-grid.png"
+    },
+    {
+      "index": 1,
+      "state": "trace-start",
+      "file": "assets/module-frames/m33-perimeter-trace/m33-perimeter-trace-01-trace-start.png"
+    },
+    {
+      "index": 2,
+      "state": "trace-around",
+      "file": "assets/module-frames/m33-perimeter-trace/m33-perimeter-trace-02-trace-around.png"
+    },
+    {
+      "index": 3,
+      "state": "perimeter-only",
+      "file": "assets/module-frames/m33-perimeter-trace/m33-perimeter-trace-03-perimeter-only.png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "moduleId": "M02",
+  "slug": "m02-operation-tree",
+  "source": "m02-operation-tree-source-sprite.png",
+  "frames": {
+    "loose-terms": {
+      "label": "看条件",
+      "note": "把题目条件放到运算树的叶子上。",
+      "file": "assets/module-frames/m02-operation-tree/m02-operation-tree-00-loose-terms.png"
+    },
+    "parentheses-first": {
+      "label": "括号优先",
+      "note": "括号托盘里的数量先合并。",
+      "file": "assets/module-frames/m02-operation-tree/m02-operation-tree-01-parentheses-first.png"
+    },
+    "climb-tree": {
+      "label": "向上计算",
+      "note": "括号结果再送到外层运算。",
+      "file": "assets/module-frames/m02-operation-tree/m02-operation-tree-02-climb-tree.png"
+    },
+    "root-answer": {
+      "label": "根节点答案",
+      "note": "树根亮起，表示整个式子完成。",
+      "file": "assets/module-frames/m02-operation-tree/m02-operation-tree-03-root-answer.png"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "moduleId": "M08",
+  "slug": "m08-estimation-zoom",
+  "source": "m08-estimation-zoom-source-sprite.png",
+  "frames": {
+    "number-line": {
+      "label": "定位",
+      "note": "把原数放到数轴区间里。",
+      "file": "assets/module-frames/m08-estimation-zoom/m08-estimation-zoom-00-number-line.png"
+    },
+    "zoom": {
+      "label": "放大",
+      "note": "放大观察它靠近哪个整十整百。",
+      "file": "assets/module-frames/m08-estimation-zoom/m08-estimation-zoom-01-zoom.png"
+    },
+    "compare-distance": {
+      "label": "比距离",
+      "note": "比较到左右端点的距离。",
+      "file": "assets/module-frames/m08-estimation-zoom/m08-estimation-zoom-02-compare-distance.png"
+    },
+    "snap": {
+      "label": "吸附近似数",
+      "note": "靠近哪边就估到哪边。",
+      "file": "assets/module-frames/m08-estimation-zoom/m08-estimation-zoom-03-snap.png"
+    }
+  }
+}

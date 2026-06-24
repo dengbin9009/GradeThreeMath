@@ -1,0 +1,30 @@
+{
+  "source": "m35-max-area-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m35-max-area/m35-max-area-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "long-rectangle",
+      "file": "assets/module-frames/m35-max-area/m35-max-area-00-long-rectangle.png"
+    },
+    {
+      "index": 1,
+      "state": "medium-rectangle",
+      "file": "assets/module-frames/m35-max-area/m35-max-area-01-medium-rectangle.png"
+    },
+    {
+      "index": 2,
+      "state": "near-square",
+      "file": "assets/module-frames/m35-max-area/m35-max-area-02-near-square.png"
+    },
+    {
+      "index": 3,
+      "state": "compare-areas",
+      "file": "assets/module-frames/m35-max-area/m35-max-area-03-compare-areas.png"
+    }
+  ]
+}

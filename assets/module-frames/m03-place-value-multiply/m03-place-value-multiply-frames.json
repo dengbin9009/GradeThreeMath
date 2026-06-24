@@ -1,0 +1,27 @@
+{
+  "moduleId": "M03",
+  "slug": "m03-place-value-multiply",
+  "source": "m03-place-value-multiply-source-sprite.png",
+  "frames": {
+    "place-groups": {
+      "label": "按位摆放",
+      "note": "百十个位先分开放。",
+      "file": "assets/module-frames/m03-place-value-multiply/m03-place-value-multiply-00-place-groups.png"
+    },
+    "copy-groups": {
+      "label": "逐位复制",
+      "note": "一位数乘每个数位的数量。",
+      "file": "assets/module-frames/m03-place-value-multiply/m03-place-value-multiply-01-copy-groups.png"
+    },
+    "partial-products": {
+      "label": "部分积",
+      "note": "每个数位得到自己的部分积。",
+      "file": "assets/module-frames/m03-place-value-multiply/m03-place-value-multiply-02-partial-products.png"
+    },
+    "merge-product": {
+      "label": "合并",
+      "note": "把部分积合并成最终积。",
+      "file": "assets/module-frames/m03-place-value-multiply/m03-place-value-multiply-03-merge-product.png"
+    }
+  }
+}

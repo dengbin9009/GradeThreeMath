@@ -1,0 +1,8 @@
+{
+  "loginSubmitP95Ms": 1000,
+  "blueprintResponseP95Ms": 1000,
+  "adminWriteP95Ms": 1000,
+  "firstInteractiveMs": 2000,
+  "moduleStructureMs": 300,
+  "referenceAnimationFps": 55
+}

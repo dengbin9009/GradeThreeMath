@@ -1,0 +1,30 @@
+{
+  "source": "m36-symmetry-tiling-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m36-symmetry-tiling/m36-symmetry-tiling-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "mirror-line",
+      "file": "assets/module-frames/m36-symmetry-tiling/m36-symmetry-tiling-00-mirror-line.png"
+    },
+    {
+      "index": 1,
+      "state": "reflected-shape",
+      "file": "assets/module-frames/m36-symmetry-tiling/m36-symmetry-tiling-01-reflected-shape.png"
+    },
+    {
+      "index": 2,
+      "state": "rotate-flip",
+      "file": "assets/module-frames/m36-symmetry-tiling/m36-symmetry-tiling-02-rotate-flip.png"
+    },
+    {
+      "index": 3,
+      "state": "tile-board",
+      "file": "assets/module-frames/m36-symmetry-tiling/m36-symmetry-tiling-03-tile-board.png"
+    }
+  ]
+}

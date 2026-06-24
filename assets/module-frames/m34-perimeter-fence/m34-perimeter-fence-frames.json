@@ -1,0 +1,27 @@
+{
+  "moduleId": "M34",
+  "slug": "m34-perimeter-fence",
+  "source": "m34-perimeter-fence-source-sprite.png",
+  "frames": {
+    "plot": {
+      "label": "地块",
+      "note": "先看到长方形或正方形地块。",
+      "file": "assets/module-frames/m34-perimeter-fence/m34-perimeter-fence-00-plot.png"
+    },
+    "place-fence": {
+      "label": "铺围栏",
+      "note": "沿边界一段一段放围栏。",
+      "file": "assets/module-frames/m34-perimeter-fence/m34-perimeter-fence-01-place-fence.png"
+    },
+    "equal-sides": {
+      "label": "对边相等",
+      "note": "长方形对边成对相等。",
+      "file": "assets/module-frames/m34-perimeter-fence/m34-perimeter-fence-02-equal-sides.png"
+    },
+    "full-boundary": {
+      "label": "完整一周",
+      "note": "围栏围满一周就是周长。",
+      "file": "assets/module-frames/m34-perimeter-fence/m34-perimeter-fence-03-full-boundary.png"
+    }
+  }
+}

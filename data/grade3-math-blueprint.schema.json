@@ -1,0 +1,314 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.math/grade3-math-blueprint.schema.json",
+  "title": "Shanghai Grade 3 Math Improvement Blueprint",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "metadata",
+    "knowledgeNodes",
+    "archetypes",
+    "knowledgeToArchetypes"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "title",
+        "audience",
+        "scope",
+        "navigationModel",
+        "sources",
+        "assumptions"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "navigationModel": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "url",
+              "use"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "use": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "knowledgeNodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/KnowledgeNode"
+      }
+    },
+    "archetypes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/Archetype"
+      }
+    },
+    "knowledgeToArchetypes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "KnowledgeNode": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "term",
+        "source",
+        "prerequisites",
+        "masteryGoals",
+        "mistakes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^K[0-9]{2}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "term": {
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "课内必会",
+            "课标校准",
+            "提升拓展"
+          ]
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "masteryGoals": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "mistakes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Archetype": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "layer",
+        "knowledgeIds",
+        "model",
+        "variants",
+        "animationSpec",
+        "parentCoach",
+        "difficulty"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^M[0-9]{2}$"
+        },
+        "title": {
+          "type": "string"
+        },
+        "layer": {
+          "enum": [
+            "课内",
+            "拔高"
+          ]
+        },
+        "knowledgeIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^K[0-9]{2}$"
+          }
+        },
+        "model": {
+          "type": "string"
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/Variant"
+          }
+        },
+        "animationSpec": {
+          "$ref": "#/$defs/AnimationSpec"
+        },
+        "parentCoach": {
+          "type": "object",
+          "required": [
+            "talkTrack",
+            "commonMistake",
+            "extensionPrompt"
+          ],
+          "properties": {
+            "talkTrack": {
+              "type": "string"
+            },
+            "commonMistake": {
+              "type": "string"
+            },
+            "extensionPrompt": {
+              "type": "string"
+            }
+          }
+        },
+        "difficulty": {
+          "enum": [
+            "基础",
+            "提高",
+            "拔高"
+          ]
+        }
+      }
+    },
+    "Variant": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "parameters",
+        "promptTemplate",
+        "solutionSteps",
+        "answerRule"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "promptTemplate": {
+          "type": "string"
+        },
+        "solutionSteps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "answerRule": {
+          "type": "string"
+        }
+      }
+    },
+    "AnimationSpec": {
+      "type": "object",
+      "required": [
+        "scene",
+        "manipulatives",
+        "controls",
+        "computedValues",
+        "revealSteps",
+        "childFeedback"
+      ],
+      "properties": {
+        "scene": {
+          "type": "string"
+        },
+        "manipulatives": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "controls": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "computedValues": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "revealSteps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "childFeedback": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

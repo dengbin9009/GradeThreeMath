@@ -1,0 +1,30 @@
+{
+  "source": "m16-cycle-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m16-cycle/m16-cycle-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "pattern-start",
+      "file": "assets/module-frames/m16-cycle/m16-cycle-00-pattern-start.png"
+    },
+    {
+      "index": 1,
+      "state": "cycle-block",
+      "file": "assets/module-frames/m16-cycle/m16-cycle-01-cycle-block.png"
+    },
+    {
+      "index": 2,
+      "state": "full-groups",
+      "file": "assets/module-frames/m16-cycle/m16-cycle-02-full-groups.png"
+    },
+    {
+      "index": 3,
+      "state": "remainder",
+      "file": "assets/module-frames/m16-cycle/m16-cycle-03-remainder.png"
+    }
+  ]
+}

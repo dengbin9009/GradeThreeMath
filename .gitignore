@@ -1,0 +1,41 @@
+.DS_Store
+
+# Dependencies
+node_modules/
+apps/*/node_modules/
+packages/*/node_modules/
+
+# Build outputs
+dist/
+apps/*/dist/
+packages/*/dist/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+!.env.development.example
+apps/*/.env
+apps/*/.env.*
+!apps/*/.env.example
+!apps/*/.env.development.example
+
+# Test and coverage artifacts
+coverage/
+test-results/
+playwright-report/
+blob-report/
+*.lcov
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+
+# Local editor state
+.idea/
+.vscode/

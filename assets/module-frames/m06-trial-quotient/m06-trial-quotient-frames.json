@@ -1,0 +1,27 @@
+{
+  "moduleId": "M06",
+  "slug": "m06-trial-quotient",
+  "source": "m06-trial-quotient-source-sprite.png",
+  "frames": {
+    "estimate": {
+      "label": "估商",
+      "note": "用接近的整十数先估一个商。",
+      "file": "assets/module-frames/m06-trial-quotient/m06-trial-quotient-00-estimate.png"
+    },
+    "try-slider": {
+      "label": "试商",
+      "note": "滑杆选出一个试商。",
+      "file": "assets/module-frames/m06-trial-quotient/m06-trial-quotient-01-try-slider.png"
+    },
+    "compare-product": {
+      "label": "比较乘积",
+      "note": "试商乘除数后与被除数比较。",
+      "file": "assets/module-frames/m06-trial-quotient/m06-trial-quotient-02-compare-product.png"
+    },
+    "adjust": {
+      "label": "调整",
+      "note": "偏大或偏小就移动滑杆。",
+      "file": "assets/module-frames/m06-trial-quotient/m06-trial-quotient-03-adjust.png"
+    }
+  }
+}

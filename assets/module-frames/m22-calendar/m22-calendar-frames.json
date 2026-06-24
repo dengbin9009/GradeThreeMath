@@ -1,0 +1,30 @@
+{
+  "source": "m22-calendar-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m22-calendar/m22-calendar-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "calendar-page",
+      "file": "assets/module-frames/m22-calendar/m22-calendar-00-calendar-page.png"
+    },
+    {
+      "index": 1,
+      "state": "flip-months",
+      "file": "assets/module-frames/m22-calendar/m22-calendar-01-flip-months.png"
+    },
+    {
+      "index": 2,
+      "state": "february-short",
+      "file": "assets/module-frames/m22-calendar/m22-calendar-02-february-short.png"
+    },
+    {
+      "index": 3,
+      "state": "leap-extra",
+      "file": "assets/module-frames/m22-calendar/m22-calendar-03-leap-extra.png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "moduleId": "M05",
+  "slug": "m05-sharing-trays",
+  "source": "m05-sharing-trays-source-sprite.png",
+  "frames": {
+    "pile": {
+      "label": "总量",
+      "note": "先看到要平均分的总量。",
+      "file": "assets/module-frames/m05-sharing-trays/m05-sharing-trays-00-pile.png"
+    },
+    "share": {
+      "label": "平均分",
+      "note": "把物品平均放进托盘。",
+      "file": "assets/module-frames/m05-sharing-trays/m05-sharing-trays-01-share.png"
+    },
+    "exchange": {
+      "label": "换低位",
+      "note": "分不完的高位换成低一位继续分。",
+      "file": "assets/module-frames/m05-sharing-trays/m05-sharing-trays-02-exchange.png"
+    },
+    "remainder": {
+      "label": "商和余数",
+      "note": "每份一样多，剩下的进入余数杯。",
+      "file": "assets/module-frames/m05-sharing-trays/m05-sharing-trays-03-remainder.png"
+    }
+  }
+}

@@ -1,0 +1,4500 @@
+{
+  "schemaVersion": "1.0.0",
+  "metadata": {
+    "title": "上海小学三年级数学提升蓝图",
+    "audience": [
+      "三年级学生",
+      "家庭陪练家长",
+      "后续交互网站开发者"
+    ],
+    "scope": [
+      "上海三年级沪教版课内必会",
+      "三年级可理解的数学思维拔高",
+      "母题、子题、动画规格、家长陪练话术"
+    ],
+    "navigationModel": [
+      "知识点",
+      "母题",
+      "子题",
+      "动画",
+      "练习"
+    ],
+    "sources": [
+      {
+        "title": "2026年春季上海市编写教学用书目录",
+        "url": "https://www.shpt.gov.cn/zhengwu/yywzgz-jyjzdgz/2026/79/202556.html",
+        "use": "确认上海三年级第二学期数学教材线索"
+      },
+      {
+        "title": "2025年秋季上海市编写教学用书目录",
+        "url": "https://www.pudong.gov.cn/zwgk/zdgkgw_jyj/2025/251/345431/084b6a50bb8145f881aa547dbba68f1d.pdf",
+        "use": "补充上海三年级第一学期教材线索"
+      },
+      {
+        "title": "义务教育数学课程标准（2022年版）",
+        "url": "https://www.ictr.edu.cn/Uploads/File/2022/04/28/5.%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E6%95%B0%E5%AD%A6%E8%AF%BE%E7%A8%8B%E6%A0%87%E5%87%86%EF%BC%882022%E5%B9%B4%E7%89%88%EF%BC%89.20220428160938.pdf",
+        "use": "校准第二学段核心素养与内容范围"
+      },
+      {
+        "title": "沪教版三年级上册数学目录",
+        "url": "https://www.haoduoyun.cc/book/hjb/shuxue/3s.shtml",
+        "use": "细化三年级上册知识点"
+      },
+      {
+        "title": "沪教版三年级下册数学目录",
+        "url": "https://www.haoduoyun.cc/book/hjb/shuxue/3x.shtml",
+        "use": "细化三年级下册知识点"
+      }
+    ],
+    "assumptions": [
+      "项目第一版只交付蓝图和数据源，不实现账号、学习记录、AI批改或完整考试系统。",
+      "用户原始描述中的“字体”按“子题/变式题”处理。",
+      "拔高题单独标注为提升拓展，不作为校内必考要求。"
+    ]
+  },
+  "knowledgeNodes": [
+    {
+      "id": "K01",
+      "name": "连乘连除",
+      "term": "三上复习与提高",
+      "source": "课内必会",
+      "prerequisites": [
+        "乘法口诀",
+        "表内除法",
+        "整数四则含义"
+      ],
+      "masteryGoals": [
+        "能按从左到右或合理结合完成连乘连除",
+        "能解释每一步对应的数量含义"
+      ],
+      "mistakes": [
+        "只按数字大小乱合并",
+        "忘记连除的顺序会改变中间含义"
+      ]
+    },
+    {
+      "id": "K02",
+      "name": "小括号与四则混合运算",
+      "term": "三下第一单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "加减乘除",
+        "连加连减",
+        "连乘连除"
+      ],
+      "masteryGoals": [
+        "能说出先算括号里的部分",
+        "能用运算树表示计算顺序"
+      ],
+      "mistakes": [
+        "忽略括号",
+        "把应用题中的先后关系和算式顺序混淆"
+      ]
+    },
+    {
+      "id": "K03",
+      "name": "一位数乘两位数、三位数",
+      "term": "三上第二单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "乘法口诀",
+        "位值",
+        "整十整百乘一位数"
+      ],
+      "masteryGoals": [
+        "能用位值分解解释竖式乘法",
+        "能处理进位并验算数量级"
+      ],
+      "mistakes": [
+        "漏写进位",
+        "把十位和百位的部分积当成个位"
+      ]
+    },
+    {
+      "id": "K04",
+      "name": "两位数乘两位数、三位数",
+      "term": "三下第四单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "一位数乘多位数",
+        "位值分解",
+        "面积阵列"
+      ],
+      "masteryGoals": [
+        "能把两位数乘法拆成几十和几的部分积",
+        "能用面积阵列理解竖式"
+      ],
+      "mistakes": [
+        "第二行部分积错位",
+        "只背竖式不理解每一行含义"
+      ]
+    },
+    {
+      "id": "K05",
+      "name": "一位数除两位数、三位数",
+      "term": "三上第三单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "表内除法",
+        "位值",
+        "余数"
+      ],
+      "masteryGoals": [
+        "能按高位到低位平均分",
+        "能解释商的每一位和余数"
+      ],
+      "mistakes": [
+        "商的位置写错",
+        "余数大于或等于除数"
+      ]
+    },
+    {
+      "id": "K06",
+      "name": "两位数除多位数与试商",
+      "term": "三下第五单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "一位数除法",
+        "乘法估算",
+        "余数意义"
+      ],
+      "masteryGoals": [
+        "能用接近的整十数试商",
+        "能根据乘积大小调整商"
+      ],
+      "mistakes": [
+        "试商过大不回调",
+        "把估算结果当成准确答案"
+      ]
+    },
+    {
+      "id": "K07",
+      "name": "乘除互逆与验算",
+      "term": "跨三上三下",
+      "source": "课内必会",
+      "prerequisites": [
+        "乘法含义",
+        "除法含义"
+      ],
+      "masteryGoals": [
+        "能用乘法验算除法",
+        "能根据三量关系求未知量"
+      ],
+      "mistakes": [
+        "只验算数字不验算单位",
+        "把被除数、除数、商的位置混淆"
+      ]
+    },
+    {
+      "id": "K08",
+      "name": "估算与近似",
+      "term": "跨三上三下",
+      "source": "课标校准",
+      "prerequisites": [
+        "整十整百",
+        "数轴",
+        "四舍五入的直觉"
+      ],
+      "masteryGoals": [
+        "能把数看成接近的整十整百进行估算",
+        "能判断答案是否合理"
+      ],
+      "mistakes": [
+        "精算前不判断数量级",
+        "估算后忘记回到题目要求"
+      ]
+    },
+    {
+      "id": "K09",
+      "name": "算筹、算盘与计算器",
+      "term": "三下第八单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "位值",
+        "整数读写",
+        "四则运算"
+      ],
+      "masteryGoals": [
+        "能用不同工具表示同一个数",
+        "能用计算器检查复杂计算"
+      ],
+      "mistakes": [
+        "把工具操作当成数学关系本身",
+        "输入错误后不做数量级检查"
+      ]
+    },
+    {
+      "id": "K10",
+      "name": "单价、数量、总价",
+      "term": "三上复习与提高",
+      "source": "课内必会",
+      "prerequisites": [
+        "乘除互逆",
+        "人民币单位",
+        "表格阅读"
+      ],
+      "masteryGoals": [
+        "能在三量中已知两个求第三个",
+        "能把题目中的商品关系转化为乘除式"
+      ],
+      "mistakes": [
+        "把单价和总价混淆",
+        "单位没有对应到每件、几件、共多少"
+      ]
+    },
+    {
+      "id": "K11",
+      "name": "速度、时间、路程",
+      "term": "三下第三单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "乘除互逆",
+        "时间单位",
+        "长度单位"
+      ],
+      "masteryGoals": [
+        "能用路程等于速度乘时间建模",
+        "能在三量中灵活求未知量"
+      ],
+      "mistakes": [
+        "速度单位和时间单位不匹配",
+        "把已经走的路程和剩余路程混淆"
+      ]
+    },
+    {
+      "id": "K12",
+      "name": "火车过桥与隧道",
+      "term": "拔高应用",
+      "source": "提升拓展",
+      "prerequisites": [
+        "速度时间路程",
+        "长度加法",
+        "线段图"
+      ],
+      "masteryGoals": [
+        "能区分车头到达和整车通过",
+        "能用车长加桥长或隧道长表示总路程"
+      ],
+      "mistakes": [
+        "只算桥长不加车长",
+        "不清楚题目问车头还是车尾"
+      ]
+    },
+    {
+      "id": "K13",
+      "name": "和差倍线段图",
+      "term": "拔高应用",
+      "source": "提升拓展",
+      "prerequisites": [
+        "加减关系",
+        "倍数关系",
+        "线段图"
+      ],
+      "masteryGoals": [
+        "能用线段表示多、少、倍",
+        "能先求一份量再求各量"
+      ],
+      "mistakes": [
+        "把差当成一份量",
+        "线段图没有对齐同一起点"
+      ]
+    },
+    {
+      "id": "K14",
+      "name": "归一归总",
+      "term": "拔高应用",
+      "source": "提升拓展",
+      "prerequisites": [
+        "乘除互逆",
+        "单价数量总价",
+        "份数思想"
+      ],
+      "masteryGoals": [
+        "能先求一份量或总量",
+        "能识别同效率、同单价、同速度情境"
+      ],
+      "mistakes": [
+        "没有判断先求一份还是总份",
+        "不同单位的份数直接相乘"
+      ]
+    },
+    {
+      "id": "K15",
+      "name": "植树与排队点段关系",
+      "term": "三上数学广场",
+      "source": "提升拓展",
+      "prerequisites": [
+        "间隔",
+        "线段图",
+        "加减一"
+      ],
+      "masteryGoals": [
+        "能区分两端都种、只一端、两端不种、环形",
+        "能把点和间隔对应起来"
+      ],
+      "mistakes": [
+        "树的棵数和间隔数混淆",
+        "直线和环形用同一个公式"
+      ]
+    },
+    {
+      "id": "K16",
+      "name": "周期问题",
+      "term": "三上数学广场",
+      "source": "提升拓展",
+      "prerequisites": [
+        "除法余数",
+        "规律观察",
+        "序号"
+      ],
+      "masteryGoals": [
+        "能找出重复组",
+        "能用余数判断落在哪一项"
+      ],
+      "mistakes": [
+        "从0开始和从1开始的序号混乱",
+        "余数为0时选错周期末项"
+      ]
+    },
+    {
+      "id": "K17",
+      "name": "流程图推理",
+      "term": "三上数学广场",
+      "source": "提升拓展",
+      "prerequisites": [
+        "四则运算",
+        "逆运算",
+        "条件判断"
+      ],
+      "masteryGoals": [
+        "能按箭头顺推结果",
+        "能用逆运算反推输入"
+      ],
+      "mistakes": [
+        "漏走分支条件",
+        "逆推时运算符号没有反过来"
+      ]
+    },
+    {
+      "id": "K18",
+      "name": "搭配问题",
+      "term": "三下数学广场",
+      "source": "课内必会",
+      "prerequisites": [
+        "分类",
+        "有序枚举",
+        "乘法意义"
+      ],
+      "masteryGoals": [
+        "能用表格或连线不重不漏枚举",
+        "能用乘法表示几类选择的组合数"
+      ],
+      "mistakes": [
+        "重复计数",
+        "漏掉某一类选择"
+      ]
+    },
+    {
+      "id": "K19",
+      "name": "数苹果与放苹果",
+      "term": "三下数学广场",
+      "source": "课内必会",
+      "prerequisites": [
+        "有序枚举",
+        "加法分解",
+        "分类讨论"
+      ],
+      "masteryGoals": [
+        "能按顺序列出分配方案",
+        "能区分盒子是否有区别、是否允许空盒"
+      ],
+      "mistakes": [
+        "把相同分法重复计算",
+        "没有读清是否每盒至少一个"
+      ]
+    },
+    {
+      "id": "K20",
+      "name": "鸡兔同笼",
+      "term": "拔高应用",
+      "source": "提升拓展",
+      "prerequisites": [
+        "乘除互逆",
+        "假设法",
+        "差额思想"
+      ],
+      "masteryGoals": [
+        "能用全鸡或全兔假设建立腿数差",
+        "能解释每换一只动物腿数改变2条"
+      ],
+      "mistakes": [
+        "腿数差除以4",
+        "算出兔后忘记用总只数求鸡"
+      ]
+    },
+    {
+      "id": "K21",
+      "name": "盈亏调整",
+      "term": "拔高应用",
+      "source": "提升拓展",
+      "prerequisites": [
+        "差额思想",
+        "份数",
+        "除法"
+      ],
+      "masteryGoals": [
+        "能把两种分配方案的差合并",
+        "能用总差除以每份差求份数"
+      ],
+      "mistakes": [
+        "只看盈或亏的一边",
+        "每份差和总差混淆"
+      ]
+    },
+    {
+      "id": "K22",
+      "name": "年月日与平闰年",
+      "term": "三上第四单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "时间单位",
+        "除法",
+        "日历阅读"
+      ],
+      "masteryGoals": [
+        "能判断大月、小月、二月天数",
+        "能按规则判断平年和闰年"
+      ],
+      "mistakes": [
+        "所有双数月都当小月",
+        "闰年规则只记4年一闰而忽略整百年"
+      ]
+    },
+    {
+      "id": "K23",
+      "name": "经过时间",
+      "term": "三上第四单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "时分秒",
+        "24时计时法",
+        "加减法"
+      ],
+      "masteryGoals": [
+        "能用时间轴计算同日经过时间",
+        "能处理跨上午下午和跨日情境"
+      ],
+      "mistakes": [
+        "12时制和24时制混用",
+        "跨小时借位错误"
+      ]
+    },
+    {
+      "id": "K24",
+      "name": "整体与部分",
+      "term": "三下第七单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "平均分",
+        "整体对象",
+        "份数"
+      ],
+      "masteryGoals": [
+        "能指出单位1是什么",
+        "能把整体平均分成若干份"
+      ],
+      "mistakes": [
+        "没有确定整体就比较分数",
+        "把不同整体的部分直接比较"
+      ]
+    },
+    {
+      "id": "K25",
+      "name": "几分之一与几分之几",
+      "term": "三下第七单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "整体与部分",
+        "平均分",
+        "份数"
+      ],
+      "masteryGoals": [
+        "能用分母表示平均分的份数",
+        "能用分子表示取了几份"
+      ],
+      "mistakes": [
+        "没有平均分就写分数",
+        "分子分母含义颠倒"
+      ]
+    },
+    {
+      "id": "K26",
+      "name": "分数比较",
+      "term": "三下第七单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "同一整体",
+        "几分之一",
+        "几分之几"
+      ],
+      "masteryGoals": [
+        "能在同一整体下比较分数大小",
+        "能用图形面积解释比较结果"
+      ],
+      "mistakes": [
+        "看到分母大就直接认为分数大",
+        "不同整体直接比较"
+      ]
+    },
+    {
+      "id": "K27",
+      "name": "分数应用",
+      "term": "三下第七单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "分数含义",
+        "乘除法",
+        "平均分"
+      ],
+      "masteryGoals": [
+        "能先等分整体再取若干份",
+        "能用图和式子表示部分数量"
+      ],
+      "mistakes": [
+        "先取数量再等分导致顺序错",
+        "把分母当要取的份数"
+      ]
+    },
+    {
+      "id": "K28",
+      "name": "长度单位换算",
+      "term": "三上第五单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "厘米",
+        "米",
+        "十进制"
+      ],
+      "masteryGoals": [
+        "能在米、分米、厘米之间换算",
+        "能根据实际物体选择合适单位"
+      ],
+      "mistakes": [
+        "进率混淆",
+        "只机械换算不判断生活合理性"
+      ]
+    },
+    {
+      "id": "K29",
+      "name": "面积单位",
+      "term": "三下第二单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "长度单位",
+        "方格",
+        "铺满"
+      ],
+      "masteryGoals": [
+        "能理解平方厘米、平方分米、平方米",
+        "能用单位正方形测量面积"
+      ],
+      "mistakes": [
+        "把长度单位和面积单位混用",
+        "只数边长不数铺满的格子"
+      ]
+    },
+    {
+      "id": "K30",
+      "name": "长方形和正方形面积",
+      "term": "三上第五单元与三下第二单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "面积单位",
+        "乘法阵列",
+        "长和宽"
+      ],
+      "masteryGoals": [
+        "能用长乘宽计算长方形面积",
+        "能解释公式来自行列方格数"
+      ],
+      "mistakes": [
+        "把周长公式当面积公式",
+        "单位忘记写平方单位"
+      ]
+    },
+    {
+      "id": "K31",
+      "name": "组合图形面积",
+      "term": "三上第五单元与三下第二单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "长方形面积",
+        "图形切割",
+        "加减法"
+      ],
+      "masteryGoals": [
+        "能把组合图形切成基本长方形",
+        "能用添补法或分割法求面积"
+      ],
+      "mistakes": [
+        "切割后边长对应错",
+        "添补法忘记减去补上的部分"
+      ]
+    },
+    {
+      "id": "K32",
+      "name": "面积估测",
+      "term": "三下第二单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "面积单位",
+        "方格统计",
+        "近似"
+      ],
+      "masteryGoals": [
+        "能用完整格和半格估计面积",
+        "能说明估测结果为什么合理"
+      ],
+      "mistakes": [
+        "半格处理随意",
+        "估测结果没有单位"
+      ]
+    },
+    {
+      "id": "K33",
+      "name": "周长概念",
+      "term": "三下第九单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "长度单位",
+        "边线",
+        "封闭图形"
+      ],
+      "masteryGoals": [
+        "能指出封闭图形一周的长度",
+        "能区分周长和面积"
+      ],
+      "mistakes": [
+        "把内部格子数当周长",
+        "漏算凹进去的边"
+      ]
+    },
+    {
+      "id": "K34",
+      "name": "长方形和正方形周长",
+      "term": "三下第九单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "周长概念",
+        "长方形边的特征",
+        "乘法"
+      ],
+      "masteryGoals": [
+        "能用两长两宽求周长",
+        "能根据周长反推边长"
+      ],
+      "mistakes": [
+        "只算长加宽",
+        "面积和周长公式混用"
+      ]
+    },
+    {
+      "id": "K35",
+      "name": "周长面积辨析与最大面积",
+      "term": "拔高应用",
+      "source": "提升拓展",
+      "prerequisites": [
+        "长方形周长",
+        "长方形面积",
+        "列表比较"
+      ],
+      "masteryGoals": [
+        "能比较同周长下不同长宽的面积",
+        "能发现越接近正方形面积越大"
+      ],
+      "mistakes": [
+        "认为周长相同面积也相同",
+        "没有系统列举长宽组合"
+      ]
+    },
+    {
+      "id": "K36",
+      "name": "轴对称、拼嵌与多连块",
+      "term": "三上第五单元与三下数学广场",
+      "source": "课内必会",
+      "prerequisites": [
+        "图形观察",
+        "平移",
+        "旋转直觉"
+      ],
+      "masteryGoals": [
+        "能判断轴对称图形和对称轴",
+        "能用基本图形拼嵌不留空不重叠"
+      ],
+      "mistakes": [
+        "把左右相似当成对称",
+        "拼嵌时出现重叠或空隙却未发现"
+      ]
+    },
+    {
+      "id": "K37",
+      "name": "三角形分类",
+      "term": "三上第五单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "角的直觉",
+        "边长比较",
+        "图形观察"
+      ],
+      "masteryGoals": [
+        "能按角分锐角、直角、钝角三角形",
+        "能按边分等腰、等边、一般三角形"
+      ],
+      "mistakes": [
+        "只看图形外观不比较角或边",
+        "把等边三角形排除在等腰三角形之外"
+      ]
+    },
+    {
+      "id": "K38",
+      "name": "条形统计图（二）",
+      "term": "三下第六单元",
+      "source": "课内必会",
+      "prerequisites": [
+        "数据分类",
+        "表格",
+        "刻度"
+      ],
+      "masteryGoals": [
+        "能根据统计表画条形统计图",
+        "能读懂一格代表多个单位的刻度"
+      ],
+      "mistakes": [
+        "默认一格代表1",
+        "柱高和数据不对应"
+      ]
+    }
+  ],
+  "archetypes": [
+    {
+      "id": "M01",
+      "title": "连乘连除（运算传送带）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K01",
+        "K07"
+      ],
+      "model": "按题意和运算顺序连续处理乘除，能用合理结合降低口算负担。",
+      "variants": [
+        {
+          "id": "M01-V1",
+          "title": "识别先后",
+          "parameters": {
+            "a": 3,
+            "b": 4,
+            "c": 5
+          },
+          "promptTemplate": "把 {a}×{b}×{c} 放到传送带上，哪两个数先合并更容易算？",
+          "solutionSteps": [
+            "读出算式中的三个因数",
+            "找到容易口算的一组",
+            "合并后再和剩下的因数相乘"
+          ],
+          "answerRule": "合理结合不改变连乘结果。"
+        },
+        {
+          "id": "M01-V2",
+          "title": "标准连除",
+          "parameters": {
+            "total": 96,
+            "group": 4,
+            "box": 3
+          },
+          "promptTemplate": "{total} 个物品先平均分成 {group} 组，每组再平均分成 {box} 份，每份几个？",
+          "solutionSteps": [
+            "先用总数除以第一层组数",
+            "再除以第二层份数",
+            "用乘法验算总份数"
+          ],
+          "answerRule": "total÷group÷box，或 total÷(group×box)。"
+        },
+        {
+          "id": "M01-V3",
+          "title": "数量含义变式",
+          "parameters": {
+            "rows": 4,
+            "perRow": 6,
+            "boxes": 5
+          },
+          "promptTemplate": "每盒有 {rows} 行，每行 {perRow} 个，有 {boxes} 盒，一共有多少个？",
+          "solutionSteps": [
+            "先求一盒的数量",
+            "再乘盒数",
+            "说清每一步的单位"
+          ],
+          "answerRule": "rows×perRow×boxes。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "三段式运算传送带，数字卡片进入合并机器。",
+        "manipulatives": [
+          "数字卡片",
+          "乘除符号卡",
+          "合并框"
+        ],
+        "controls": [
+          "拖动先合并的两个数",
+          "切换从左到右/合理结合",
+          "重置"
+        ],
+        "computedValues": [
+          "中间结果",
+          "最终结果",
+          "每一步单位"
+        ],
+        "revealSteps": [
+          "观察算式",
+          "选择先算部分",
+          "显示中间量",
+          "完成验算"
+        ],
+        "childFeedback": "先把容易算的一组拖进合并框，再看结果有没有和题意匹配。"
+      },
+      "parentCoach": {
+        "talkTrack": "不要只问答案，先问孩子每一步算出来的是什么单位。",
+        "commonMistake": "连除时把两个除数随便相减或相加。",
+        "extensionPrompt": "如果先把两层份数合起来，一共有多少份？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M02",
+      "title": "括号四则（运算树）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K02",
+        "K01"
+      ],
+      "model": "用括号表达先发生的数量关系，再按运算树从叶子到根计算。",
+      "variants": [
+        {
+          "id": "M02-V1",
+          "title": "括号识别",
+          "parameters": {
+            "a": 56,
+            "b": 18,
+            "c": 3
+          },
+          "promptTemplate": "算式 ({a}-{b})÷{c} 中，为什么要先算括号？",
+          "solutionSteps": [
+            "找到括号包住的部分",
+            "先求括号里的差",
+            "再把差平均分"
+          ],
+          "answerRule": "先算 {a}-{b}，再除以 {c}。"
+        },
+        {
+          "id": "M02-V2",
+          "title": "应用题列式",
+          "parameters": {
+            "total": 120,
+            "used": 36,
+            "days": 7
+          },
+          "promptTemplate": "有 {total} 页书，已经读了 {used} 页，剩下 {days} 天读完，平均每天读多少页？",
+          "solutionSteps": [
+            "先求剩下页数",
+            "再平均分到每天",
+            "用括号表示先求剩下"
+          ],
+          "answerRule": "({total}-{used})÷{days}。"
+        },
+        {
+          "id": "M02-V3",
+          "title": "括号位置变式",
+          "parameters": {
+            "a": 8,
+            "b": 5,
+            "c": 6
+          },
+          "promptTemplate": "比较 {a}+{b}×{c} 和 ({a}+{b})×{c}，两个结果为什么不同？",
+          "solutionSteps": [
+            "分别画出两个运算树",
+            "先算无括号中的乘法",
+            "再算有括号中的加法"
+          ],
+          "answerRule": "括号改变先算部分，结果通常不同。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "算式长成一棵运算树，括号部分高亮成一个子树。",
+        "manipulatives": [
+          "数字节点",
+          "运算符节点",
+          "括号框"
+        ],
+        "controls": [
+          "拖动括号框",
+          "逐步计算",
+          "比较两个算式"
+        ],
+        "computedValues": [
+          "子树结果",
+          "根节点结果",
+          "计算顺序"
+        ],
+        "revealSteps": [
+          "高亮括号",
+          "计算子树",
+          "把结果送回主算式",
+          "完成计算"
+        ],
+        "childFeedback": "括号像一个先加工的小盒子，盒子里的结果出来后才能继续算。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子用自己的话解释括号里先解决了什么问题。",
+        "commonMistake": "看到乘法就先算，忽略括号。",
+        "extensionPrompt": "换一个括号位置，题意会变成什么？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M03",
+      "title": "一位数乘两/三位数（位值积木）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K03",
+        "K08"
+      ],
+      "model": "把多位数拆成百、十、个，分别乘一位数后合并部分积。",
+      "variants": [
+        {
+          "id": "M03-V1",
+          "title": "位值拆分",
+          "parameters": {
+            "n": 236,
+            "m": 3
+          },
+          "promptTemplate": "{n}×{m} 可以拆成哪几个部分积？",
+          "solutionSteps": [
+            "把236拆成200、30、6",
+            "分别乘3",
+            "把三个部分积相加"
+          ],
+          "answerRule": "236×3=(200×3)+(30×3)+(6×3)。"
+        },
+        {
+          "id": "M03-V2",
+          "title": "竖式进位",
+          "parameters": {
+            "n": 148,
+            "m": 6
+          },
+          "promptTemplate": "用竖式计算 {n}×{m}，每次进位表示什么？",
+          "solutionSteps": [
+            "从个位乘起",
+            "满十向前一位进",
+            "用估算检查数量级"
+          ],
+          "answerRule": "按个位、十位、百位依次乘并处理进位。"
+        },
+        {
+          "id": "M03-V3",
+          "title": "应用变式",
+          "parameters": {
+            "price": 128,
+            "count": 4
+          },
+          "promptTemplate": "每套书 {price} 元，买 {count} 套一共多少钱？",
+          "solutionSteps": [
+            "确认单价和数量",
+            "用单价乘数量",
+            "用整百估算检查"
+          ],
+          "answerRule": "price×count。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "百十个位积木被一位数复制成多组，再合并。",
+        "manipulatives": [
+          "百块",
+          "十条",
+          "个块",
+          "一位数倍数器"
+        ],
+        "controls": [
+          "拖动位值积木",
+          "显示/隐藏竖式",
+          "进位动画",
+          "估算检查"
+        ],
+        "computedValues": [
+          "部分积",
+          "进位数",
+          "总积"
+        ],
+        "revealSteps": [
+          "位值拆分",
+          "分别相乘",
+          "处理进位",
+          "合并答案"
+        ],
+        "childFeedback": "每一位都要乘，但十位乘出来的是几十，百位乘出来的是几百。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子说出部分积的单位，别只背竖式动作。",
+        "commonMistake": "进位写了但下一位相乘时忘记加上。",
+        "extensionPrompt": "如果把236看成240来估，答案大约是多少？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M04",
+      "title": "两位数乘两/三位数（面积阵列）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K04",
+        "K30"
+      ],
+      "model": "用面积阵列把两位数拆成几十和几，部分面积相加得到乘积。",
+      "variants": [
+        {
+          "id": "M04-V1",
+          "title": "阵列拆分",
+          "parameters": {
+            "a": 24,
+            "b": 13
+          },
+          "promptTemplate": "{a}×{b} 的面积阵列可以切成哪几块？",
+          "solutionSteps": [
+            "把24拆成20和4",
+            "把13拆成10和3",
+            "求四块面积并相加"
+          ],
+          "answerRule": "(20+4)×(10+3) 的四个部分积相加。"
+        },
+        {
+          "id": "M04-V2",
+          "title": "竖式错位",
+          "parameters": {
+            "a": 36,
+            "b": 28
+          },
+          "promptTemplate": "用竖式计算 {a}×{b}，第二行部分积为什么要错一位？",
+          "solutionSteps": [
+            "先用个位8乘36",
+            "再用十位2表示20乘36",
+            "把两个部分积相加"
+          ],
+          "answerRule": "十位上的2表示20，部分积从十位开始写。"
+        },
+        {
+          "id": "M04-V3",
+          "title": "三位数变式",
+          "parameters": {
+            "a": 125,
+            "b": 24
+          },
+          "promptTemplate": "{a}×{b} 可以先乘20再乘4吗？怎样合并？",
+          "solutionSteps": [
+            "把24拆成20和4",
+            "分别计算125×20和125×4",
+            "相加得到总积"
+          ],
+          "answerRule": "a×b=a×20+a×4。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "可拖动长宽的矩形阵列被切成部分面积。",
+        "manipulatives": [
+          "长边滑块",
+          "宽边滑块",
+          "切割线",
+          "部分面积标签"
+        ],
+        "controls": [
+          "切分长宽",
+          "显示竖式对应行",
+          "合并部分积"
+        ],
+        "computedValues": [
+          "各块面积",
+          "部分积",
+          "总积"
+        ],
+        "revealSteps": [
+          "拆数",
+          "切阵列",
+          "算部分积",
+          "合并总积"
+        ],
+        "childFeedback": "第二行不是普通的2倍，而是20倍，所以位置要向左移动。"
+      },
+      "parentCoach": {
+        "talkTrack": "用面积阵列解释竖式错位，能防止机械记忆。",
+        "commonMistake": "第二行部分积没有乘十。",
+        "extensionPrompt": "如果把28拆成30-2，能不能更快算？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M05",
+      "title": "一位数除两/三位数（分物托盘）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K05",
+        "K07"
+      ],
+      "model": "从高位开始平均分，分不完的量换成低一位继续分。",
+      "variants": [
+        {
+          "id": "M05-V1",
+          "title": "高位平均分",
+          "parameters": {
+            "total": 96,
+            "groups": 3
+          },
+          "promptTemplate": "{total} 个方块平均放到 {groups} 个托盘，每盘多少个？",
+          "solutionSteps": [
+            "先分十位",
+            "再分个位",
+            "合并每盘数量"
+          ],
+          "answerRule": "total÷groups。"
+        },
+        {
+          "id": "M05-V2",
+          "title": "三位数退位",
+          "parameters": {
+            "total": 248,
+            "groups": 4
+          },
+          "promptTemplate": "{total} 平均分成 {groups} 份，百位不够分时怎么办？",
+          "solutionSteps": [
+            "先看百位能分多少",
+            "剩下的百换成十",
+            "继续分十位和个位"
+          ],
+          "answerRule": "按位平均分，余下高位换成低位继续分。"
+        },
+        {
+          "id": "M05-V3",
+          "title": "有余数变式",
+          "parameters": {
+            "total": 125,
+            "groups": 6
+          },
+          "promptTemplate": "{total} 个贴纸平均分给 {groups} 人，每人最多几个，还剩几个？",
+          "solutionSteps": [
+            "用除法求商",
+            "检查余数小于除数",
+            "用乘加验算"
+          ],
+          "answerRule": "total=groups×商+余数，且余数小于groups。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "百十个方块被拖到多个托盘中平均分。",
+        "manipulatives": [
+          "百块",
+          "十条",
+          "个块",
+          "托盘"
+        ],
+        "controls": [
+          "自动平均分",
+          "手动拖放",
+          "换位拆分",
+          "验算"
+        ],
+        "computedValues": [
+          "商的每一位",
+          "当前余数",
+          "乘加验算式"
+        ],
+        "revealSteps": [
+          "从高位开始",
+          "不够分就换位",
+          "继续分低位",
+          "检查余数"
+        ],
+        "childFeedback": "平均分要从大单位开始，剩下的大单位可以换成小单位继续分。"
+      },
+      "parentCoach": {
+        "talkTrack": "重点问孩子商的这一位为什么写在这里。",
+        "commonMistake": "商的位置错，导致数量级错。",
+        "extensionPrompt": "用商乘除数再加余数，能回到原来的总数吗？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M06",
+      "title": "两位数除法试商（试商滑杆）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K06",
+        "K08"
+      ],
+      "model": "把除数看成接近的整十数估商，再用乘积与被除数比较调整。",
+      "variants": [
+        {
+          "id": "M06-V1",
+          "title": "估商识别",
+          "parameters": {
+            "dividend": 156,
+            "divisor": 31
+          },
+          "promptTemplate": "{dividend}÷{divisor}，可以把 {divisor} 看成多少来试商？",
+          "solutionSteps": [
+            "把31看成30",
+            "估计156里面有几个30",
+            "用31乘试商检查"
+          ],
+          "answerRule": "先估商，再用准确除数乘试商验证。"
+        },
+        {
+          "id": "M06-V2",
+          "title": "试商过大",
+          "parameters": {
+            "dividend": 238,
+            "divisor": 48
+          },
+          "promptTemplate": "{dividend}÷{divisor} 试商5时，乘积超过了吗？要怎样调整？",
+          "solutionSteps": [
+            "计算48×5",
+            "和238比较",
+            "如果乘积太大就把商调小"
+          ],
+          "answerRule": "除数×商不能超过当前被除数。"
+        },
+        {
+          "id": "M06-V3",
+          "title": "余数检查",
+          "parameters": {
+            "dividend": 365,
+            "divisor": 42
+          },
+          "promptTemplate": "{dividend}÷{divisor} 得到商和余数后，怎样判断商还能不能再大？",
+          "solutionSteps": [
+            "用除数乘商",
+            "求剩余的余数",
+            "检查余数是否小于除数"
+          ],
+          "answerRule": "余数小于除数，说明商不能再增加。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "试商滑杆控制商的大小，乘积条和被除数条实时比较。",
+        "manipulatives": [
+          "商滑杆",
+          "乘积条",
+          "被除数刻度条"
+        ],
+        "controls": [
+          "拖动试商",
+          "整十估算开关",
+          "显示余数",
+          "重试"
+        ],
+        "computedValues": [
+          "估商",
+          "除数乘试商",
+          "余数"
+        ],
+        "revealSteps": [
+          "估除数",
+          "试一个商",
+          "比较乘积",
+          "调整并确认余数"
+        ],
+        "childFeedback": "商像旋钮，乘积不能超过当前要分的数，余数还要比除数小。"
+      },
+      "parentCoach": {
+        "talkTrack": "试商不是猜答案，而是估计后检查并调整。",
+        "commonMistake": "乘积超过被除数还不把商调小。",
+        "extensionPrompt": "如果把除数估大了，试出来的商通常会偏大还是偏小？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M07",
+      "title": "乘除互逆/验算（关系三角）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K07",
+        "K10",
+        "K11"
+      ],
+      "model": "三个相关量中已知两个求第三个，用乘除互逆验算。",
+      "variants": [
+        {
+          "id": "M07-V1",
+          "title": "关系三角识别",
+          "parameters": {
+            "a": 8,
+            "b": 7
+          },
+          "promptTemplate": "如果 {a}×{b}=56，那么56÷{a} 和56÷{b} 分别表示什么？",
+          "solutionSteps": [
+            "把两个因数和积放进关系三角",
+            "遮住一个因数",
+            "用积除以另一个因数"
+          ],
+          "answerRule": "积÷一个因数=另一个因数。"
+        },
+        {
+          "id": "M07-V2",
+          "title": "除法验算",
+          "parameters": {
+            "dividend": 93,
+            "divisor": 4
+          },
+          "promptTemplate": "{dividend}÷{divisor} 的商和余数怎样验算？",
+          "solutionSteps": [
+            "求商和余数",
+            "计算除数×商+余数",
+            "检查是否等于被除数"
+          ],
+          "answerRule": "divisor×商+余数=dividend。"
+        },
+        {
+          "id": "M07-V3",
+          "title": "应用未知量",
+          "parameters": {
+            "total": 144,
+            "count": 9
+          },
+          "promptTemplate": "{count} 个相同盒子共装 {total} 个球，每盒几个？",
+          "solutionSteps": [
+            "确认总数和份数",
+            "遮住每份量",
+            "用总数除以份数"
+          ],
+          "answerRule": "total÷count。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "乘除关系三角，遮住任意一个角求未知量。",
+        "manipulatives": [
+          "积卡片",
+          "因数卡片",
+          "遮挡片",
+          "验算按钮"
+        ],
+        "controls": [
+          "拖动遮挡片",
+          "切换乘法/除法",
+          "显示验算式"
+        ],
+        "computedValues": [
+          "未知量",
+          "验算结果",
+          "余数条件"
+        ],
+        "revealSteps": [
+          "放入三量",
+          "遮住未知量",
+          "选择乘或除",
+          "验算"
+        ],
+        "childFeedback": "遮住谁，就想怎样用另外两个量找回它。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子先说三个量分别是什么，再决定乘还是除。",
+        "commonMistake": "看见大数就除，小数就乘，没有理解关系。",
+        "extensionPrompt": "把这个关系换成单价数量总价，还能放进三角吗？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M08",
+      "title": "估算与近似（数轴缩放）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K08",
+        "K03",
+        "K06"
+      ],
+      "model": "在数轴上找到接近的整十整百，先判断数量级再精算。",
+      "variants": [
+        {
+          "id": "M08-V1",
+          "title": "接近整十",
+          "parameters": {
+            "n": 48
+          },
+          "promptTemplate": "{n} 更接近40还是50？为什么？",
+          "solutionSteps": [
+            "把数放到40和50之间的数轴上",
+            "比较左右距离",
+            "选择更近的整十数"
+          ],
+          "answerRule": "距离哪个整十数近，就近似成哪个。"
+        },
+        {
+          "id": "M08-V2",
+          "title": "乘法估算",
+          "parameters": {
+            "a": 198,
+            "b": 4
+          },
+          "promptTemplate": "估一估 {a}×{b} 大约是多少，再精算检查。",
+          "solutionSteps": [
+            "把198看成200",
+            "计算200×4",
+            "精算后比较是否接近"
+          ],
+          "answerRule": "先估约800，再用精算确认。"
+        },
+        {
+          "id": "M08-V3",
+          "title": "答案合理性",
+          "parameters": {
+            "price": 29,
+            "count": 8
+          },
+          "promptTemplate": "每件约 {price} 元，买 {count} 件，答案写成80元合理吗？",
+          "solutionSteps": [
+            "把29看成30",
+            "估算30×8",
+            "和80比较判断是否太小"
+          ],
+          "answerRule": "估算约240元，所以80元不合理。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "可缩放数轴显示原数到整十整百的距离。",
+        "manipulatives": [
+          "数字点",
+          "整十刻度",
+          "距离线段"
+        ],
+        "controls": [
+          "拖动数字点",
+          "切换整十/整百",
+          "显示估算乘除"
+        ],
+        "computedValues": [
+          "左右距离",
+          "近似数",
+          "估算结果"
+        ],
+        "revealSteps": [
+          "定位原数",
+          "比较距离",
+          "选近似数",
+          "估算并检查"
+        ],
+        "childFeedback": "估算不是乱猜，是先把数放到附近的好算位置。"
+      },
+      "parentCoach": {
+        "talkTrack": "先让孩子估，再精算；估算能帮助发现离谱答案。",
+        "commonMistake": "估算后不回到题目要精确还是大约。",
+        "extensionPrompt": "什么时候应该估大一点，什么时候估小一点？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M09",
+      "title": "算筹/算盘/计算器（工具切换）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K09",
+        "K08"
+      ],
+      "model": "同一个数可以用位值工具、计算工具和符号表达，工具结果需要用数量级检查。",
+      "variants": [
+        {
+          "id": "M09-V1",
+          "title": "同数多表示",
+          "parameters": {
+            "n": 3056
+          },
+          "promptTemplate": "把 {n} 同时摆成算筹、算盘和数字，哪些位置是0？",
+          "solutionSteps": [
+            "按千百十个位拆数",
+            "在不同工具上放到对应位",
+            "特别标出空位0"
+          ],
+          "answerRule": "每一位的值相同，工具表示可以不同。"
+        },
+        {
+          "id": "M09-V2",
+          "title": "计算器检查",
+          "parameters": {
+            "a": 248,
+            "b": 36
+          },
+          "promptTemplate": "用计算器检查 {a}+{b}×2，输入顺序怎样避免漏乘2？",
+          "solutionSteps": [
+            "先明确算式结构",
+            "按计算器顺序输入",
+            "用估算检查结果"
+          ],
+          "answerRule": "工具输入必须和算式结构一致。"
+        },
+        {
+          "id": "M09-V3",
+          "title": "工具纠错",
+          "parameters": {
+            "a": 125,
+            "b": 8
+          },
+          "promptTemplate": "计算器显示 {a}×{b}=100，怎样判断可能输错了？",
+          "solutionSteps": [
+            "先估算125×8约1000",
+            "发现100数量级太小",
+            "重新检查输入"
+          ],
+          "answerRule": "估算和工具结果差很多时，要检查输入。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "同一个数字在算筹、算盘、计算器三种工具间切换。",
+        "manipulatives": [
+          "位值盘",
+          "算盘珠",
+          "计算器按键",
+          "数字显示屏"
+        ],
+        "controls": [
+          "切换工具",
+          "输入数字",
+          "估算检查",
+          "纠错提示"
+        ],
+        "computedValues": [
+          "位值分解",
+          "工具显示值",
+          "估算范围"
+        ],
+        "revealSteps": [
+          "拆位值",
+          "选择工具表达",
+          "执行计算",
+          "用估算检查"
+        ],
+        "childFeedback": "工具能帮你算，但你要负责判断它显示的结果像不像。"
+      },
+      "parentCoach": {
+        "talkTrack": "把工具当成检查伙伴，不要让孩子跳过估算和理解。",
+        "commonMistake": "计算器输入错了还完全相信显示结果。",
+        "extensionPrompt": "如果屏幕少了一个0，估算能不能发现？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M10",
+      "title": "单价数量总价（商店场景）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K10",
+        "K07"
+      ],
+      "model": "总价=单价×数量，单价=总价÷数量，数量=总价÷单价。",
+      "variants": [
+        {
+          "id": "M10-V1",
+          "title": "三量识别",
+          "parameters": {
+            "price": 12,
+            "count": 5
+          },
+          "promptTemplate": "每支笔 {price} 元，买 {count} 支，题目里的单价和数量分别是什么？",
+          "solutionSteps": [
+            "圈出每支对应单价",
+            "圈出几支对应数量",
+            "用单价乘数量"
+          ],
+          "answerRule": "总价=price×count。"
+        },
+        {
+          "id": "M10-V2",
+          "title": "求单价",
+          "parameters": {
+            "total": 84,
+            "count": 7
+          },
+          "promptTemplate": "{count} 个本子共 {total} 元，每个本子多少元？",
+          "solutionSteps": [
+            "确认总价和数量",
+            "把总价平均分给每个本子",
+            "用总价除以数量"
+          ],
+          "answerRule": "单价=total÷count。"
+        },
+        {
+          "id": "M10-V3",
+          "title": "购物变式",
+          "parameters": {
+            "budget": 100,
+            "price": 18
+          },
+          "promptTemplate": "有 {budget} 元，每件玩具 {price} 元，最多能买几件，还剩多少钱？",
+          "solutionSteps": [
+            "用预算除以单价",
+            "商表示最多件数",
+            "余数表示剩下的钱"
+          ],
+          "answerRule": "budget=price×件数+余钱。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "商店货架展示商品，拖动商品数量到购物篮。",
+        "manipulatives": [
+          "商品卡",
+          "购物篮",
+          "价格标签",
+          "钱包"
+        ],
+        "controls": [
+          "增减数量",
+          "遮住未知量",
+          "切换求总价/单价/数量"
+        ],
+        "computedValues": [
+          "单价",
+          "数量",
+          "总价",
+          "剩余金额"
+        ],
+        "revealSteps": [
+          "识别三量",
+          "选择未知量",
+          "套入关系",
+          "检查单位"
+        ],
+        "childFeedback": "每件多少钱是单价，买几件是数量，一共付多少钱是总价。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子先把每件、几件、一共三个词圈出来。",
+        "commonMistake": "把总价当单价，导致数量越多反而越便宜。",
+        "extensionPrompt": "如果打折或买二送一，三量关系哪里会改变？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M11",
+      "title": "速度时间路程（运动时间轴）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K11",
+        "K23",
+        "K28"
+      ],
+      "model": "路程=速度×时间，速度=路程÷时间，时间=路程÷速度。",
+      "variants": [
+        {
+          "id": "M11-V1",
+          "title": "三量识别",
+          "parameters": {
+            "speed": 60,
+            "time": 3
+          },
+          "promptTemplate": "汽车每小时行 {speed} 千米，行 {time} 小时，一共行多少千米？",
+          "solutionSteps": [
+            "找到每小时行多少是速度",
+            "找到行几小时是时间",
+            "速度乘时间求路程"
+          ],
+          "answerRule": "路程=speed×time。"
+        },
+        {
+          "id": "M11-V2",
+          "title": "求速度",
+          "parameters": {
+            "distance": 240,
+            "time": 4
+          },
+          "promptTemplate": "{time} 小时行了 {distance} 千米，平均每小时行多少千米？",
+          "solutionSteps": [
+            "确认总路程",
+            "平均分到每小时",
+            "路程除以时间"
+          ],
+          "answerRule": "速度=distance÷time。"
+        },
+        {
+          "id": "M11-V3",
+          "title": "单位匹配",
+          "parameters": {
+            "speed": 80,
+            "minutes": 30
+          },
+          "promptTemplate": "速度是每小时 {speed} 千米，行 {minutes} 分钟，能不能直接乘？",
+          "solutionSteps": [
+            "发现速度单位是每小时",
+            "把30分钟转化为半小时",
+            "再求路程"
+          ],
+          "answerRule": "时间单位要和速度单位匹配。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "小车沿时间轴运动，速度滑块改变单位时间走过的格数。",
+        "manipulatives": [
+          "小车",
+          "时间轴",
+          "速度滑块",
+          "路程线段"
+        ],
+        "controls": [
+          "拖动车速",
+          "拖动时间终点",
+          "遮住未知量",
+          "单位切换"
+        ],
+        "computedValues": [
+          "速度",
+          "时间",
+          "路程",
+          "单位匹配状态"
+        ],
+        "revealSteps": [
+          "识别三量",
+          "匹配单位",
+          "建立乘除关系",
+          "代入计算"
+        ],
+        "childFeedback": "速度说的是每一份时间走多少，时间有几份，就走几个这样的路程。"
+      },
+      "parentCoach": {
+        "talkTrack": "先问孩子速度单位里藏着哪两个单位。",
+        "commonMistake": "小时和分钟没换算就直接乘。",
+        "extensionPrompt": "如果两辆车同时出发，路程线段要怎样画？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M12",
+      "title": "火车过桥/隧道（火车桥梁拖动）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K12",
+        "K11",
+        "K28"
+      ],
+      "model": "整列火车完全通过时，车头走过的总路程=车长+桥长或隧道长。",
+      "variants": [
+        {
+          "id": "M12-V1",
+          "title": "过桥总路程识别",
+          "parameters": {
+            "trainLength": 120,
+            "bridgeLength": 300
+          },
+          "promptTemplate": "火车长 {trainLength} 米，桥长 {bridgeLength} 米，整列车完全过桥，车头走了多少米？",
+          "solutionSteps": [
+            "标出车头刚到桥头的位置",
+            "标出车尾刚离开桥尾的位置",
+            "合并车长和桥长"
+          ],
+          "answerRule": "总路程=trainLength+bridgeLength。"
+        },
+        {
+          "id": "M12-V2",
+          "title": "求时间",
+          "parameters": {
+            "trainLength": 150,
+            "bridgeLength": 450,
+            "speed": 20
+          },
+          "promptTemplate": "火车长 {trainLength} 米，桥长 {bridgeLength} 米，每秒行 {speed} 米，完全过桥要几秒？",
+          "solutionSteps": [
+            "先求完全过桥总路程",
+            "再用路程除以速度",
+            "检查单位是秒"
+          ],
+          "answerRule": "(trainLength+bridgeLength)÷speed。"
+        },
+        {
+          "id": "M12-V3",
+          "title": "隧道变式",
+          "parameters": {
+            "tunnelLength": 500,
+            "time": 40,
+            "speed": 18
+          },
+          "promptTemplate": "火车每秒 {speed} 米，{time} 秒完全通过长 {tunnelLength} 米的隧道，火车长多少米？",
+          "solutionSteps": [
+            "用速度乘时间求车头总路程",
+            "总路程包含隧道长和车长",
+            "减去隧道长得到车长"
+          ],
+          "answerRule": "车长=speed×time-tunnelLength。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "火车、桥梁和隧道在同一水平轨道上，车头和车尾关键位置可拖动。",
+        "manipulatives": [
+          "火车车身",
+          "车头标记",
+          "车尾标记",
+          "桥梁",
+          "隧道",
+          "路程尺"
+        ],
+        "controls": [
+          "拖动车长",
+          "拖动桥长/隧道长",
+          "播放通过动画",
+          "暂停在关键时刻",
+          "重置"
+        ],
+        "computedValues": [
+          "车长",
+          "桥长或隧道长",
+          "完全通过总路程",
+          "速度",
+          "时间"
+        ],
+        "revealSteps": [
+          "车头到达桥头",
+          "车尾离开桥尾",
+          "显示车头实际走过的线段",
+          "把线段拆成车长+桥长",
+          "套入速度时间路程"
+        ],
+        "childFeedback": "完全通过不是车头到桥尾就结束，要等车尾也离开，所以要多走一个车长。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子用手指跟着车头走，从开始位置滑到车尾离桥的位置。",
+        "commonMistake": "只用桥长除以速度，漏掉火车自己的长度。",
+        "extensionPrompt": "如果题目只问车头通过桥，需要加车长吗？为什么？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M13",
+      "title": "和差倍（线段图）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K13",
+        "K07"
+      ],
+      "model": "用线段图把两个量的和、差、倍关系转化成一份量。",
+      "variants": [
+        {
+          "id": "M13-V1",
+          "title": "和倍识别",
+          "parameters": {
+            "sum": 72,
+            "times": 3
+          },
+          "promptTemplate": "甲乙共有 {sum} 个，甲是乙的 {times} 倍，乙有几个？",
+          "solutionSteps": [
+            "把乙画成1份",
+            "甲画成3份",
+            "总共4份，用和除以4"
+          ],
+          "answerRule": "乙=sum÷(times+1)。"
+        },
+        {
+          "id": "M13-V2",
+          "title": "差倍识别",
+          "parameters": {
+            "difference": 48,
+            "times": 4
+          },
+          "promptTemplate": "甲比乙多 {difference} 个，甲是乙的 {times} 倍，乙有几个？",
+          "solutionSteps": [
+            "把乙画成1份",
+            "甲画成4份",
+            "多出的3份对应差"
+          ],
+          "answerRule": "乙=difference÷(times-1)。"
+        },
+        {
+          "id": "M13-V3",
+          "title": "变式求大数",
+          "parameters": {
+            "sum": 96,
+            "times": 5
+          },
+          "promptTemplate": "两数和是 {sum}，大数是小数的 {times} 倍，大数是多少？",
+          "solutionSteps": [
+            "先求总份数",
+            "求一份小数",
+            "再乘倍数求大数"
+          ],
+          "answerRule": "大数=sum÷(times+1)×times。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "两条可拉伸线段对齐起点，显示份数、和与差。",
+        "manipulatives": [
+          "甲线段",
+          "乙线段",
+          "份数刻度",
+          "差额括号"
+        ],
+        "controls": [
+          "拖动倍数",
+          "切换和倍/差倍",
+          "锁定总和或差",
+          "显示一份量"
+        ],
+        "computedValues": [
+          "总份数",
+          "差份数",
+          "一份量",
+          "大数和小数"
+        ],
+        "revealSteps": [
+          "画一份",
+          "画倍数线段",
+          "标出和或差",
+          "求一份",
+          "求各量"
+        ],
+        "childFeedback": "倍数题先别急着算，先画出谁是一份，其他量才不会乱。"
+      },
+      "parentCoach": {
+        "talkTrack": "问孩子：谁是1份？总共有几份？多出来的是几份？",
+        "commonMistake": "把差直接除以倍数，而不是除以倍数差。",
+        "extensionPrompt": "如果题目说少多少，线段图上的差在哪里？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M14",
+      "title": "归一归总（批量生产）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K14",
+        "K10",
+        "K11"
+      ],
+      "model": "同类效率或单价问题中，先求一份量或总量，再迁移到新份数。",
+      "variants": [
+        {
+          "id": "M14-V1",
+          "title": "先归一",
+          "parameters": {
+            "total": 48,
+            "count": 6,
+            "newCount": 9
+          },
+          "promptTemplate": "{count} 盒有 {total} 个，照这样 {newCount} 盒有多少个？",
+          "solutionSteps": [
+            "先求1盒有多少个",
+            "再乘新的盒数",
+            "检查单位"
+          ],
+          "answerRule": "total÷count×newCount。"
+        },
+        {
+          "id": "M14-V2",
+          "title": "先归总",
+          "parameters": {
+            "people": 4,
+            "days": 6,
+            "newPeople": 8
+          },
+          "promptTemplate": "{people} 人 {days} 天完成同一件事，若人数变为 {newPeople} 人，先固定的总量是什么？",
+          "solutionSteps": [
+            "找到同一件事这个总量",
+            "人数变多时每天总效率变大",
+            "用总量除以新效率"
+          ],
+          "answerRule": "先保持总工作量不变，再比较效率。"
+        },
+        {
+          "id": "M14-V3",
+          "title": "单价迁移",
+          "parameters": {
+            "total": 75,
+            "count": 5,
+            "budget": 120
+          },
+          "promptTemplate": "{count} 支笔共 {total} 元，有 {budget} 元可以买几支？",
+          "solutionSteps": [
+            "先求每支笔的单价",
+            "再用预算除以单价",
+            "处理是否有余钱"
+          ],
+          "answerRule": "budget÷(total÷count)。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "生产线显示多份产品，切换先求一份或先看总量。",
+        "manipulatives": [
+          "产品盒",
+          "单份标签",
+          "总量仓库",
+          "新份数滑块"
+        ],
+        "controls": [
+          "求一份",
+          "求总量",
+          "切换新份数",
+          "单位提示"
+        ],
+        "computedValues": [
+          "一份量",
+          "总量",
+          "新数量",
+          "余量"
+        ],
+        "revealSteps": [
+          "判断同类关系",
+          "选择归一或归总",
+          "求中间量",
+          "迁移到新问题"
+        ],
+        "childFeedback": "照这样说明每一份一样，先找到一份就能换到很多份。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子说出哪个量保持不变，哪个量变了。",
+        "commonMistake": "没有求一份量就直接把两个份数相乘。",
+        "extensionPrompt": "这题能不能先求总量？为什么有些题不能？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M15",
+      "title": "植树/排队（点段模型）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K15",
+        "K28"
+      ],
+      "model": "在线段上区分点和间隔，两端情况决定点数与间隔数的加减关系。",
+      "variants": [
+        {
+          "id": "M15-V1",
+          "title": "两端都种",
+          "parameters": {
+            "length": 40,
+            "gap": 5
+          },
+          "promptTemplate": "一条路长 {length} 米，每隔 {gap} 米种一棵，两端都种，要种几棵？",
+          "solutionSteps": [
+            "先求间隔数",
+            "两端都种时棵数=间隔数+1",
+            "画点段图检查"
+          ],
+          "answerRule": "length÷gap+1。"
+        },
+        {
+          "id": "M15-V2",
+          "title": "两端不种",
+          "parameters": {
+            "length": 36,
+            "gap": 6
+          },
+          "promptTemplate": "路长 {length} 米，每隔 {gap} 米放一个标志，两端都不放，中间放几个？",
+          "solutionSteps": [
+            "求全线间隔数",
+            "两端不放时点数=间隔数-1",
+            "用小图验证"
+          ],
+          "answerRule": "length÷gap-1。"
+        },
+        {
+          "id": "M15-V3",
+          "title": "环形变式",
+          "parameters": {
+            "length": 60,
+            "gap": 5
+          },
+          "promptTemplate": "圆形跑道一圈 {length} 米，每隔 {gap} 米插一面旗，一共几面？",
+          "solutionSteps": [
+            "求一圈有几个间隔",
+            "环形中点数=间隔数",
+            "注意起点不重复算"
+          ],
+          "answerRule": "length÷gap。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "线段或圆环上放点，点和间隔分别计数。",
+        "manipulatives": [
+          "线段",
+          "圆环",
+          "树点",
+          "间隔尺"
+        ],
+        "controls": [
+          "切换两端都种/一端种/两端不种/环形",
+          "拖动间隔长度",
+          "逐个放点"
+        ],
+        "computedValues": [
+          "间隔数",
+          "点数",
+          "端点状态"
+        ],
+        "revealSteps": [
+          "先数段",
+          "再看端点",
+          "建立点段关系",
+          "计算点数"
+        ],
+        "childFeedback": "间隔是段，树是点，先数段再决定点要加一、减一还是不变。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子用手指从一个端点数段，不要一开始就背公式。",
+        "commonMistake": "直线和环形都用加一。",
+        "extensionPrompt": "排队问题里人是点还是间隔？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M16",
+      "title": "周期问题（循环串）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K16",
+        "K05"
+      ],
+      "model": "找到重复组，用序号除以周期长度，余数决定落点。",
+      "variants": [
+        {
+          "id": "M16-V1",
+          "title": "找周期",
+          "parameters": {
+            "pattern": "红黄蓝",
+            "position": 20
+          },
+          "promptTemplate": "按 {pattern} 重复排列，第 {position} 个是什么颜色？",
+          "solutionSteps": [
+            "确定一组有3个",
+            "用20除以3看余数",
+            "余数对应组内位置"
+          ],
+          "answerRule": "position÷周期长度，看余数；余数0取周期最后一项。"
+        },
+        {
+          "id": "M16-V2",
+          "title": "余数为0",
+          "parameters": {
+            "pattern": "ABCD",
+            "position": 28
+          },
+          "promptTemplate": "ABCD循环，第 {position} 个字母是哪个？余数为0时怎么办？",
+          "solutionSteps": [
+            "求28÷4",
+            "发现余数为0",
+            "选择周期最后一项D"
+          ],
+          "answerRule": "余数0表示刚好到一组末尾。"
+        },
+        {
+          "id": "M16-V3",
+          "title": "日期变式",
+          "parameters": {
+            "cycle": 7,
+            "daysLater": 45
+          },
+          "promptTemplate": "今天是星期一，{daysLater} 天后是星期几？",
+          "solutionSteps": [
+            "星期按7天循环",
+            "用45除以7",
+            "从星期一往后数余数天"
+          ],
+          "answerRule": "daysLater÷7 的余数决定星期偏移。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "彩色循环串按组折叠，完整组和余数被不同颜色高亮。",
+        "manipulatives": [
+          "周期块",
+          "序号指针",
+          "余数标签"
+        ],
+        "controls": [
+          "拖动目标序号",
+          "编辑周期串",
+          "高亮完整组",
+          "显示余数"
+        ],
+        "computedValues": [
+          "周期长度",
+          "完整组数",
+          "余数",
+          "目标元素"
+        ],
+        "revealSteps": [
+          "圈出一组",
+          "除以周期长度",
+          "处理余数",
+          "定位答案"
+        ],
+        "childFeedback": "余数告诉你在下一组里走到第几个；余数0就是上一组的最后一个。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子先圈一组，别把看到的所有内容都当周期。",
+        "commonMistake": "余数0时选第一项。",
+        "extensionPrompt": "如果从第0天开始数，答案会不会变？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M17",
+      "title": "流程图推理（路径选择）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K17",
+        "K02",
+        "K07"
+      ],
+      "model": "顺推按箭头执行每步，逆推用相反运算从结果回到输入。",
+      "variants": [
+        {
+          "id": "M17-V1",
+          "title": "顺推流程",
+          "parameters": {
+            "start": 8,
+            "add": 5,
+            "times": 3
+          },
+          "promptTemplate": "输入 {start}，先加 {add}，再乘 {times}，输出是多少？",
+          "solutionSteps": [
+            "按箭头先做加法",
+            "把中间结果送到下一步",
+            "再做乘法"
+          ],
+          "answerRule": "(start+add)×times。"
+        },
+        {
+          "id": "M17-V2",
+          "title": "逆推输入",
+          "parameters": {
+            "output": 42,
+            "times": 3,
+            "add": 4
+          },
+          "promptTemplate": "一个数先加 {add} 再乘 {times} 得到 {output}，原来的数是多少？",
+          "solutionSteps": [
+            "从输出倒着走",
+            "乘3的逆运算是除以3",
+            "加4的逆运算是减4"
+          ],
+          "answerRule": "output÷times-add。"
+        },
+        {
+          "id": "M17-V3",
+          "title": "分支判断",
+          "parameters": {
+            "start": 15,
+            "threshold": 20
+          },
+          "promptTemplate": "流程图规定大于 {threshold} 走A路，否则走B路。输入 {start} 会走哪一路？",
+          "solutionSteps": [
+            "先计算到判断框前的值",
+            "和条件阈值比较",
+            "选择对应路径"
+          ],
+          "answerRule": "满足条件走A，否则走B。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "输入数字沿流程图节点移动，顺推和逆推路径用不同颜色显示。",
+        "manipulatives": [
+          "输入球",
+          "运算节点",
+          "判断节点",
+          "箭头路径"
+        ],
+        "controls": [
+          "播放顺推",
+          "切换逆推",
+          "选择分支",
+          "显示中间值"
+        ],
+        "computedValues": [
+          "每个节点输入",
+          "每个节点输出",
+          "最终结果",
+          "逆推输入"
+        ],
+        "revealSteps": [
+          "读起点",
+          "按箭头执行",
+          "遇到分支先判断",
+          "逆推时反向走并反运算"
+        ],
+        "childFeedback": "流程图像路线图，顺着走做原运算，倒着走要做相反运算。"
+      },
+      "parentCoach": {
+        "talkTrack": "提醒孩子每过一个框就写下中间值。",
+        "commonMistake": "逆推时仍然做原来的加法和乘法。",
+        "extensionPrompt": "如果交换两个流程框，输出一定一样吗？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M18",
+      "title": "搭配问题（组合矩阵）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K18",
+        "K04"
+      ],
+      "model": "分类列举每一类选择，使用表格、连线或乘法保证不重不漏。",
+      "variants": [
+        {
+          "id": "M18-V1",
+          "title": "两类搭配",
+          "parameters": {
+            "tops": 3,
+            "pants": 2
+          },
+          "promptTemplate": "{tops} 件上衣和 {pants} 条裤子，一共有几种穿法？",
+          "solutionSteps": [
+            "固定一件上衣",
+            "和每条裤子搭配",
+            "再换下一件上衣"
+          ],
+          "answerRule": "tops×pants。"
+        },
+        {
+          "id": "M18-V2",
+          "title": "三类搭配",
+          "parameters": {
+            "main": 2,
+            "drink": 3,
+            "dessert": 2
+          },
+          "promptTemplate": "主食 {main} 种，饮料 {drink} 种，点心 {dessert} 种，套餐有几种？",
+          "solutionSteps": [
+            "先算主食和饮料搭配",
+            "每种搭配再配点心",
+            "用连乘表示"
+          ],
+          "answerRule": "main×drink×dessert。"
+        },
+        {
+          "id": "M18-V3",
+          "title": "有序变式",
+          "parameters": {
+            "cities": 4
+          },
+          "promptTemplate": "{cities} 个城市中任选出发地和目的地，不能相同，有几条单程路线？",
+          "solutionSteps": [
+            "先选出发地",
+            "目的地不能和出发地相同",
+            "注意AB和BA是不同单程路线"
+          ],
+          "answerRule": "cities×(cities-1)。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "二维或三维组合矩阵，选择项连线后生成搭配卡。",
+        "manipulatives": [
+          "分类卡片",
+          "连线",
+          "矩阵格",
+          "搭配卡"
+        ],
+        "controls": [
+          "固定一类",
+          "逐项连线",
+          "切换有序/无序",
+          "去重检查"
+        ],
+        "computedValues": [
+          "每类数量",
+          "组合总数",
+          "重复项数量"
+        ],
+        "revealSteps": [
+          "分类",
+          "固定一项",
+          "系统枚举",
+          "用乘法合并"
+        ],
+        "childFeedback": "一类一类地选，按顺序填满表格，就不容易漏也不容易重复。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子先说清每次要从几类东西里各选一个。",
+        "commonMistake": "没有固定顺序，导致漏搭或重复。",
+        "extensionPrompt": "如果AB和BA算同一种，计数会怎样变？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M19",
+      "title": "数苹果/放苹果（盒子分配）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K19",
+        "K18"
+      ],
+      "model": "把总数按条件分到盒子中，用有序枚举和条件筛选保证不重不漏。",
+      "variants": [
+        {
+          "id": "M19-V1",
+          "title": "两盒分配",
+          "parameters": {
+            "apples": 8,
+            "boxes": 2
+          },
+          "promptTemplate": "{apples} 个苹果放进 {boxes} 个有区别的盒子，每盒至少1个，有几种放法？",
+          "solutionSteps": [
+            "先固定第一盒数量",
+            "第二盒由总数决定",
+            "按顺序列出所有可能"
+          ],
+          "answerRule": "第一盒可取1到apples-1，共apples-1种。"
+        },
+        {
+          "id": "M19-V2",
+          "title": "三盒枚举",
+          "parameters": {
+            "apples": 6,
+            "boxes": 3
+          },
+          "promptTemplate": "{apples} 个苹果放进 {boxes} 个有区别盒子，每盒至少1个，怎样列表？",
+          "solutionSteps": [
+            "固定第一盒从1开始",
+            "再枚举第二盒",
+            "第三盒用总数减前两盒"
+          ],
+          "answerRule": "按第一盒、第二盒递增枚举，第三盒必须大于0。"
+        },
+        {
+          "id": "M19-V3",
+          "title": "允许空盒变式",
+          "parameters": {
+            "apples": 5,
+            "boxes": 2
+          },
+          "promptTemplate": "{apples} 个苹果放进两个有区别盒子，允许空盒，有几种？",
+          "solutionSteps": [
+            "第一盒可以从0开始",
+            "一直列到5",
+            "第二盒由剩余决定"
+          ],
+          "answerRule": "第一盒可取0到apples，共apples+1种。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "苹果被拖进多个盒子，列表同步记录分配方案。",
+        "manipulatives": [
+          "苹果",
+          "盒子",
+          "方案表",
+          "条件开关"
+        ],
+        "controls": [
+          "拖动苹果",
+          "切换盒子是否有区别",
+          "切换是否允许空盒",
+          "自动枚举"
+        ],
+        "computedValues": [
+          "当前分配",
+          "剩余苹果",
+          "合法方案数",
+          "重复方案"
+        ],
+        "revealSteps": [
+          "读清条件",
+          "固定第一个盒子",
+          "按序枚举",
+          "筛掉不合法或重复"
+        ],
+        "childFeedback": "先固定一个盒子慢慢变，其他盒子跟着变，这样最不容易乱。"
+      },
+      "parentCoach": {
+        "talkTrack": "问孩子盒子有没有名字、能不能空着，这两个条件会改变答案。",
+        "commonMistake": "把同一种分法换顺序后重复计算。",
+        "extensionPrompt": "如果盒子没有区别，哪些方案其实是同一种？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M20",
+      "title": "鸡兔同笼（抬腿/剁腿动画）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K20",
+        "K21"
+      ],
+      "model": "先假设全是鸡或全是兔，用腿数差除以每只差额2来求另一种动物数量。",
+      "variants": [
+        {
+          "id": "M20-V1",
+          "title": "全鸡假设",
+          "parameters": {
+            "heads": 10,
+            "legs": 28
+          },
+          "promptTemplate": "鸡兔共 {heads} 只，共 {legs} 条腿。先假设全是鸡，会少几条腿？",
+          "solutionSteps": [
+            "全是鸡时腿数是heads×2",
+            "和实际腿数比较差额",
+            "每只兔比鸡多2条腿"
+          ],
+          "answerRule": "兔=(legs-heads×2)÷2，鸡=heads-兔。"
+        },
+        {
+          "id": "M20-V2",
+          "title": "全兔假设",
+          "parameters": {
+            "heads": 12,
+            "legs": 38
+          },
+          "promptTemplate": "鸡兔共 {heads} 只，共 {legs} 条腿。先假设全是兔，会多几条腿？",
+          "solutionSteps": [
+            "全是兔时腿数是heads×4",
+            "和实际腿数比较差额",
+            "每换成一只鸡少2条腿"
+          ],
+          "answerRule": "鸡=(heads×4-legs)÷2，兔=heads-鸡。"
+        },
+        {
+          "id": "M20-V3",
+          "title": "抬腿变式",
+          "parameters": {
+            "heads": 15,
+            "legs": 44
+          },
+          "promptTemplate": "让每只动物先抬起2条腿，地上还剩多少条腿？能看出兔有几只吗？",
+          "solutionSteps": [
+            "每只先拿掉2条腿",
+            "剩下的腿只来自兔",
+            "剩余腿数除以2得兔数"
+          ],
+          "answerRule": "兔=(legs-heads×2)÷2。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "鸡和兔排成一排，可切换全鸡假设、全兔假设和抬腿/剁腿过程。",
+        "manipulatives": [
+          "动物卡",
+          "头数计数器",
+          "腿数计数器",
+          "抬腿按钮",
+          "差额条"
+        ],
+        "controls": [
+          "切换全鸡/全兔假设",
+          "播放抬腿动画",
+          "逐只替换鸡兔",
+          "显示腿数差",
+          "重置"
+        ],
+        "computedValues": [
+          "假设腿数",
+          "实际腿数",
+          "腿数差",
+          "兔数",
+          "鸡数"
+        ],
+        "revealSteps": [
+          "先固定头数",
+          "做全鸡或全兔假设",
+          "比较腿数差",
+          "每只差2条腿",
+          "求出动物数量"
+        ],
+        "childFeedback": "每只兔比鸡多2条腿，多出来的腿每2条就对应一只兔。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子先说头数不变，变的是每只动物的腿数。",
+        "commonMistake": "把腿数差除以4，而不是除以鸡兔每只相差的2。",
+        "extensionPrompt": "如果换成自行车和三轮车，每辆差几只轮子？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M21",
+      "title": "盈亏调整（筹码差额）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K21",
+        "K14"
+      ],
+      "model": "两种分配方案的总差额，除以每份分配差额，得到份数或人数。",
+      "variants": [
+        {
+          "id": "M21-V1",
+          "title": "一盈一亏",
+          "parameters": {
+            "moreEach": 3,
+            "short": 12,
+            "lessEach": 2,
+            "left": 8
+          },
+          "promptTemplate": "每人多分 {moreEach} 个少 {short} 个，每人少分 {lessEach} 个多 {left} 个，有几人？",
+          "solutionSteps": [
+            "两种方案总差是少的12加多的8",
+            "每人分配差是3加2",
+            "总差除以每人差"
+          ],
+          "answerRule": "人数=(short+left)÷(moreEach+lessEach)。"
+        },
+        {
+          "id": "M21-V2",
+          "title": "双盈变式",
+          "parameters": {
+            "lessEach": 2,
+            "leftMore": 18,
+            "moreEach": 5,
+            "leftLess": 6
+          },
+          "promptTemplate": "每人分 {lessEach} 个多 {leftMore} 个，每人分 {moreEach} 个多 {leftLess} 个，有几人？",
+          "solutionSteps": [
+            "两个方案都多，比较剩余差",
+            "每人多分的差是5-2",
+            "剩余减少的差除以每人差"
+          ],
+          "answerRule": "人数=(leftMore-leftLess)÷(moreEach-lessEach)。"
+        },
+        {
+          "id": "M21-V3",
+          "title": "双亏变式",
+          "parameters": {
+            "lessEach": 4,
+            "shortLess": 5,
+            "moreEach": 6,
+            "shortMore": 17
+          },
+          "promptTemplate": "每人分 {lessEach} 个少 {shortLess} 个，每人分 {moreEach} 个少 {shortMore} 个，有几人？",
+          "solutionSteps": [
+            "两个方案都少，比较缺少差",
+            "每人多分的差是6-4",
+            "缺口增加的差除以每人差"
+          ],
+          "answerRule": "人数=(shortMore-shortLess)÷(moreEach-lessEach)。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "筹码分给一排人物，两种方案的剩余或缺口用差额条表示。",
+        "manipulatives": [
+          "人物卡",
+          "筹码",
+          "盈余盒",
+          "亏空盒",
+          "差额条"
+        ],
+        "controls": [
+          "切换一盈一亏/双盈/双亏",
+          "拖动每人分配数",
+          "显示总差",
+          "显示每份差"
+        ],
+        "computedValues": [
+          "总差额",
+          "每份差额",
+          "人数",
+          "物品总数"
+        ],
+        "revealSteps": [
+          "比较两种方案",
+          "求总差",
+          "求每人差",
+          "总差除以每人差"
+        ],
+        "childFeedback": "盈亏题的关键是比较两次分法的差，不是只看其中一次多或少。"
+      },
+      "parentCoach": {
+        "talkTrack": "画两条分配条，让孩子看到总差来自两种方案的变化。",
+        "commonMistake": "只拿一个缺口除以每人差。",
+        "extensionPrompt": "如果两次都多，为什么要用剩余的差相减？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M22",
+      "title": "年月日/平闰年（日历翻页）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K22"
+      ],
+      "model": "用日历结构识别大月、小月、二月，并按年份规则判断平闰年。",
+      "variants": [
+        {
+          "id": "M22-V1",
+          "title": "大小月识别",
+          "parameters": {
+            "month": 9
+          },
+          "promptTemplate": "{month} 月有多少天？你用什么方法判断？",
+          "solutionSteps": [
+            "回忆大月小月规律",
+            "9月是小月",
+            "写出30天"
+          ],
+          "answerRule": "一三五七八十腊是大月，其余普通小月30天，二月特殊。"
+        },
+        {
+          "id": "M22-V2",
+          "title": "平闰年判断",
+          "parameters": {
+            "year": 2028
+          },
+          "promptTemplate": "{year} 年是平年还是闰年？二月有多少天？",
+          "solutionSteps": [
+            "判断是否能被4整除",
+            "普通年份能被4整除是闰年",
+            "闰年二月29天"
+          ],
+          "answerRule": "普通年份四年一闰，整百年份需能被400整除。"
+        },
+        {
+          "id": "M22-V3",
+          "title": "跨月天数",
+          "parameters": {
+            "startMonth": 3,
+            "startDay": 28,
+            "endMonth": 4,
+            "endDay": 3
+          },
+          "promptTemplate": "从 {startMonth}月{startDay}日 到 {endMonth}月{endDay}日，经过几天？",
+          "solutionSteps": [
+            "先算3月剩下几天",
+            "再加4月已经过的天数",
+            "注意是否包含起止当天"
+          ],
+          "answerRule": "按题目是否包含当天决定计数口径。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "可翻页日历，二月会根据年份自动切换28或29天。",
+        "manipulatives": [
+          "年份拨轮",
+          "月份页",
+          "日期格",
+          "跨月箭头"
+        ],
+        "controls": [
+          "翻月份",
+          "调整年份",
+          "选择起止日期",
+          "显示平闰判断"
+        ],
+        "computedValues": [
+          "月份天数",
+          "平年或闰年",
+          "经过天数",
+          "包含口径"
+        ],
+        "revealSteps": [
+          "识别月份",
+          "判断二月是否特殊",
+          "定位起止日期",
+          "分段计数"
+        ],
+        "childFeedback": "二月最特别，其他月份可以先用规律或拳头记忆检查。"
+      },
+      "parentCoach": {
+        "talkTrack": "问孩子二月为什么不能和普通小月混在一起记。",
+        "commonMistake": "把所有双数月都当小月。",
+        "extensionPrompt": "2100年能被4整除，为什么仍然不是闰年？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M23",
+      "title": "经过时间（双层时间轴）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K23",
+        "K22"
+      ],
+      "model": "把起止时刻放到时间轴上，分段计算经过时间并处理跨小时、跨上午下午。",
+      "variants": [
+        {
+          "id": "M23-V1",
+          "title": "同小时经过",
+          "parameters": {
+            "start": "8:15",
+            "end": "8:50"
+          },
+          "promptTemplate": "从 {start} 到 {end} 经过多少分钟？",
+          "solutionSteps": [
+            "把两个时刻放在同一小时内",
+            "用分钟数相减",
+            "检查小于60分钟"
+          ],
+          "answerRule": "同小时直接用分钟差。"
+        },
+        {
+          "id": "M23-V2",
+          "title": "跨小时分段",
+          "parameters": {
+            "start": "9:45",
+            "end": "11:10"
+          },
+          "promptTemplate": "从 {start} 到 {end} 经过多长时间？",
+          "solutionSteps": [
+            "先从9:45到10:00",
+            "再从10:00到11:00",
+            "最后从11:00到11:10"
+          ],
+          "answerRule": "分段相加得到1小时25分钟。"
+        },
+        {
+          "id": "M23-V3",
+          "title": "跨上午下午",
+          "parameters": {
+            "start": "上午10:30",
+            "end": "下午2:15"
+          },
+          "promptTemplate": "从 {start} 到 {end} 经过多长时间？",
+          "solutionSteps": [
+            "把下午2:15转成14:15",
+            "在24时计时法时间轴上定位",
+            "分段计算"
+          ],
+          "answerRule": "先统一计时法，再求差。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "上层显示12时计时法，下层显示24时计时法，起止滑块联动。",
+        "manipulatives": [
+          "起点滑块",
+          "终点滑块",
+          "小时段",
+          "分钟段"
+        ],
+        "controls": [
+          "拖动起止时刻",
+          "切换12时/24时",
+          "自动分段",
+          "跨日开关"
+        ],
+        "computedValues": [
+          "小时差",
+          "分钟差",
+          "分段结果",
+          "总经过时间"
+        ],
+        "revealSteps": [
+          "统一计时法",
+          "定位起止",
+          "按整点分段",
+          "合并时间"
+        ],
+        "childFeedback": "跨小时别硬减，先走到下一个整点，再一段一段加。"
+      },
+      "parentCoach": {
+        "talkTrack": "鼓励孩子画时间轴，尤其是跨上午下午时先转成24时。",
+        "commonMistake": "下午2点当成2点而不是14点。",
+        "extensionPrompt": "如果活动跨过午夜，时间轴要怎样延长？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M24",
+      "title": "整体与部分（可切分整体）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K24",
+        "K25"
+      ],
+      "model": "分数先确定单位1，再把这个整体平均分成若干份。",
+      "variants": [
+        {
+          "id": "M24-V1",
+          "title": "找整体",
+          "parameters": {
+            "whole": "一块蛋糕",
+            "parts": 4
+          },
+          "promptTemplate": "把{whole}平均分成 {parts} 份，这里的整体是谁？",
+          "solutionSteps": [
+            "指出被平均分的对象",
+            "确认它是单位1",
+            "再看分成几份"
+          ],
+          "answerRule": "被平均分的完整对象就是整体。"
+        },
+        {
+          "id": "M24-V2",
+          "title": "不同整体比较",
+          "parameters": {
+            "parts": 2
+          },
+          "promptTemplate": "大蛋糕的一半和小蛋糕的一半一定一样大吗？",
+          "solutionSteps": [
+            "分别指出两个整体",
+            "发现整体大小不同",
+            "不能只看分数符号判断实际大小"
+          ],
+          "answerRule": "不同整体的同一分数，实际大小可能不同。"
+        },
+        {
+          "id": "M24-V3",
+          "title": "部分回整体",
+          "parameters": {
+            "part": 6,
+            "parts": 3
+          },
+          "promptTemplate": "一个整体的 1/{parts} 是 {part} 个，整体是多少个？",
+          "solutionSteps": [
+            "1份是6个",
+            "整体有3份",
+            "用每份数量乘份数"
+          ],
+          "answerRule": "整体=part×parts。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "不同大小的整体对象被切分，单位1标签始终跟随整体。",
+        "manipulatives": [
+          "整体对象",
+          "切分线",
+          "单位1标签",
+          "部分阴影"
+        ],
+        "controls": [
+          "切换整体大小",
+          "调整等分份数",
+          "选择部分",
+          "显示单位1"
+        ],
+        "computedValues": [
+          "整体",
+          "总份数",
+          "每份大小",
+          "选中部分"
+        ],
+        "revealSteps": [
+          "先找整体",
+          "确认平均分",
+          "数总份数",
+          "标出部分"
+        ],
+        "childFeedback": "分数的第一步不是写几分之几，而是先问整体是谁。"
+      },
+      "parentCoach": {
+        "talkTrack": "每道分数题先问一句：单位1是谁？",
+        "commonMistake": "不同整体的一半直接说一样大。",
+        "extensionPrompt": "如果整体变大，同样的1/3会发生什么变化？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M25",
+      "title": "几分之一/几分之几（分割滑块）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K25",
+        "K24"
+      ],
+      "model": "分母表示平均分成几份，分子表示取了其中几份。",
+      "variants": [
+        {
+          "id": "M25-V1",
+          "title": "几分之一",
+          "parameters": {
+            "parts": 5
+          },
+          "promptTemplate": "把一个长方形平均分成 {parts} 份，每份是几分之一？",
+          "solutionSteps": [
+            "确认平均分",
+            "总份数是5",
+            "每一份是1/5"
+          ],
+          "answerRule": "每份是1/parts。"
+        },
+        {
+          "id": "M25-V2",
+          "title": "几分之几",
+          "parameters": {
+            "parts": 8,
+            "take": 3
+          },
+          "promptTemplate": "平均分成 {parts} 份，涂了 {take} 份，涂色部分是几分之几？",
+          "solutionSteps": [
+            "分母写总份数",
+            "分子写涂色份数",
+            "读作八分之三"
+          ],
+          "answerRule": "take/parts。"
+        },
+        {
+          "id": "M25-V3",
+          "title": "非平均分辨析",
+          "parameters": {
+            "parts": 4
+          },
+          "promptTemplate": "一个图形被切成 {parts} 块，但每块大小不同，能说每块是1/{parts}吗？",
+          "solutionSteps": [
+            "观察每块大小",
+            "判断是否平均分",
+            "不是平均分就不能用分数表示每份"
+          ],
+          "answerRule": "只有平均分才能用几分之一表示每份。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "分割滑块把整体平均切分，涂色滑块选择取几份。",
+        "manipulatives": [
+          "整体图形",
+          "等分滑块",
+          "涂色滑块",
+          "分数卡"
+        ],
+        "controls": [
+          "调整分母",
+          "调整分子",
+          "切换平均/不平均",
+          "读分数"
+        ],
+        "computedValues": [
+          "分母",
+          "分子",
+          "涂色比例",
+          "是否平均分"
+        ],
+        "revealSteps": [
+          "检查平均分",
+          "数总份数",
+          "数取了几份",
+          "写出分数"
+        ],
+        "childFeedback": "下面的数管一共分几份，上面的数管取了几份。"
+      },
+      "parentCoach": {
+        "talkTrack": "反复强调平均分，分数不是随便切几块。",
+        "commonMistake": "分子分母含义颠倒。",
+        "extensionPrompt": "如果多涂一份，分子还是分母会变？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M26",
+      "title": "分数比较（同整体叠图）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K26",
+        "K24",
+        "K25"
+      ],
+      "model": "在同一整体下，通过图形叠合、等分份数或涂色面积比较分数大小。",
+      "variants": [
+        {
+          "id": "M26-V1",
+          "title": "同分母比较",
+          "parameters": {
+            "denominator": 7,
+            "a": 3,
+            "b": 5
+          },
+          "promptTemplate": "{a}/{denominator} 和 {b}/{denominator} 哪个大？",
+          "solutionSteps": [
+            "确认分母相同",
+            "每份大小一样",
+            "比较取了几份"
+          ],
+          "answerRule": "同分母时分子大，分数大。"
+        },
+        {
+          "id": "M26-V2",
+          "title": "几分之一比较",
+          "parameters": {
+            "a": 3,
+            "b": 6
+          },
+          "promptTemplate": "1/{a} 和 1/{b} 哪个大？用同一个圆分一分。",
+          "solutionSteps": [
+            "用同一个整体",
+            "分别平均分成3份和6份",
+            "比较每一份大小"
+          ],
+          "answerRule": "同整体下，分成的份数越多，每份越小。"
+        },
+        {
+          "id": "M26-V3",
+          "title": "同整体叠图",
+          "parameters": {
+            "fractionA": "2/4",
+            "fractionB": "3/6"
+          },
+          "promptTemplate": "把 {fractionA} 和 {fractionB} 叠在同一个整体上，它们一样大吗？",
+          "solutionSteps": [
+            "用相同大小的整体",
+            "分别涂色",
+            "叠合比较面积"
+          ],
+          "answerRule": "图形涂色面积相同则分数大小相等。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "两个同样大小的整体上下叠合，涂色区域半透明比较。",
+        "manipulatives": [
+          "整体A",
+          "整体B",
+          "分割线",
+          "半透明涂色"
+        ],
+        "controls": [
+          "调整两个分数",
+          "叠合/分开展示",
+          "锁定同一整体",
+          "比较按钮"
+        ],
+        "computedValues": [
+          "分子",
+          "分母",
+          "涂色面积",
+          "比较结果"
+        ],
+        "revealSteps": [
+          "确认同整体",
+          "分别涂色",
+          "叠合比较",
+          "总结规则"
+        ],
+        "childFeedback": "比较分数时，先确认它们是不是在比同一个大小的整体。"
+      },
+      "parentCoach": {
+        "talkTrack": "不要让孩子只盯着分母大小，必须回到图形。",
+        "commonMistake": "分母越大就认为分数越大。",
+        "extensionPrompt": "2/4 和1/2为什么看起来一样大？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M27",
+      "title": "分数应用（分物场景）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K27",
+        "K25"
+      ],
+      "model": "先把整体平均分成分母份，再取分子份，求对应数量。",
+      "variants": [
+        {
+          "id": "M27-V1",
+          "title": "求几分之一数量",
+          "parameters": {
+            "total": 24,
+            "parts": 3
+          },
+          "promptTemplate": "{total} 个苹果的 1/{parts} 是多少个？",
+          "solutionSteps": [
+            "把24平均分成3份",
+            "求每份数量",
+            "取其中1份"
+          ],
+          "answerRule": "total÷parts。"
+        },
+        {
+          "id": "M27-V2",
+          "title": "求几分之几数量",
+          "parameters": {
+            "total": 30,
+            "parts": 5,
+            "take": 2
+          },
+          "promptTemplate": "{total} 个贴纸的 {take}/{parts} 是多少个？",
+          "solutionSteps": [
+            "先平均分成5份",
+            "求每份数量",
+            "再取2份"
+          ],
+          "answerRule": "total÷parts×take。"
+        },
+        {
+          "id": "M27-V3",
+          "title": "已知部分求整体",
+          "parameters": {
+            "partValue": 12,
+            "take": 3,
+            "parts": 4
+          },
+          "promptTemplate": "一个数的 {take}/{parts} 是 {partValue}，这个数是多少？",
+          "solutionSteps": [
+            "先求1份是多少",
+            "用12除以3",
+            "再乘总份数4"
+          ],
+          "answerRule": "整体=partValue÷take×parts。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "一组物品被分成等份，孩子拖动选择若干份。",
+        "manipulatives": [
+          "物品",
+          "等分篮",
+          "选中份数",
+          "数量标签"
+        ],
+        "controls": [
+          "调整总数",
+          "调整分母",
+          "调整分子",
+          "切换求部分/求整体"
+        ],
+        "computedValues": [
+          "每份数量",
+          "取的份数",
+          "部分数量",
+          "整体数量"
+        ],
+        "revealSteps": [
+          "确定整体",
+          "按分母等分",
+          "按分子取份",
+          "计算数量"
+        ],
+        "childFeedback": "先除再乘：先除成几份，再乘取几份。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子用篮子先分，再取，不要一看到分数就乱乘。",
+        "commonMistake": "把总数直接乘分母或直接除以分子。",
+        "extensionPrompt": "如果知道2份是12个，1份是多少？整体有几份？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M28",
+      "title": "长度单位换算（尺带缩放）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K28",
+        "K08"
+      ],
+      "model": "用尺带缩放理解米、分米、厘米之间的进率，并结合实际物体选单位。",
+      "variants": [
+        {
+          "id": "M28-V1",
+          "title": "单位识别",
+          "parameters": {
+            "object": "课桌高"
+          },
+          "promptTemplate": "{object} 用厘米、分米还是米描述更合适？",
+          "solutionSteps": [
+            "想象物体实际长度",
+            "比较常用单位大小",
+            "选择便于表达的单位"
+          ],
+          "answerRule": "按实际大小选择合适长度单位。"
+        },
+        {
+          "id": "M28-V2",
+          "title": "米厘米换算",
+          "parameters": {
+            "meters": 3,
+            "centimeters": 40
+          },
+          "promptTemplate": "{meters} 米 {centimeters} 厘米等于多少厘米？",
+          "solutionSteps": [
+            "1米=100厘米",
+            "先把米换成厘米",
+            "再加上零散厘米"
+          ],
+          "answerRule": "meters×100+centimeters。"
+        },
+        {
+          "id": "M28-V3",
+          "title": "比较长短",
+          "parameters": {
+            "a": "2米5厘米",
+            "b": "250厘米"
+          },
+          "promptTemplate": "{a} 和 {b} 哪个长？",
+          "solutionSteps": [
+            "统一成同一种单位",
+            "比较数值",
+            "写回原单位"
+          ],
+          "answerRule": "先统一单位再比较。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "可缩放尺带在米、分米、厘米刻度间切换。",
+        "manipulatives": [
+          "尺带",
+          "单位刻度",
+          "物体轮廓",
+          "换算标签"
+        ],
+        "controls": [
+          "切换单位",
+          "拖动长度",
+          "单位换算",
+          "生活物体匹配"
+        ],
+        "computedValues": [
+          "米数",
+          "分米数",
+          "厘米数",
+          "单位合理性"
+        ],
+        "revealSteps": [
+          "观察实际长度",
+          "选择单位",
+          "按进率换算",
+          "比较或表达"
+        ],
+        "childFeedback": "换单位前先想一想，这个物体到底有多长。"
+      },
+      "parentCoach": {
+        "talkTrack": "多拿真实物体比划，单位感比纯背进率更重要。",
+        "commonMistake": "米到厘米忘记乘100。",
+        "extensionPrompt": "为什么教室长度不适合用厘米做主要单位？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M29",
+      "title": "面积单位（方格铺砖）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K29",
+        "K30"
+      ],
+      "model": "面积表示平面大小，需要用单位正方形铺满来测量。",
+      "variants": [
+        {
+          "id": "M29-V1",
+          "title": "单位正方形",
+          "parameters": {
+            "unit": "平方厘米"
+          },
+          "promptTemplate": "1{unit} 是边长多少的正方形面积？",
+          "solutionSteps": [
+            "找到长度单位厘米",
+            "画边长1厘米的正方形",
+            "它的面积就是1平方厘米"
+          ],
+          "answerRule": "面积单位来自边长为1个长度单位的正方形。"
+        },
+        {
+          "id": "M29-V2",
+          "title": "铺满计数",
+          "parameters": {
+            "rows": 4,
+            "cols": 6
+          },
+          "promptTemplate": "一个长方形铺了 {rows} 行、每行 {cols} 个小正方形，面积是多少平方单位？",
+          "solutionSteps": [
+            "确认每个小正方形是1平方单位",
+            "数行数和列数",
+            "用乘法求总格数"
+          ],
+          "answerRule": "rows×cols 平方单位。"
+        },
+        {
+          "id": "M29-V3",
+          "title": "单位大小比较",
+          "parameters": {
+            "small": "平方厘米",
+            "large": "平方分米"
+          },
+          "promptTemplate": "1{large} 和1{small} 哪个面积大？为什么？",
+          "solutionSteps": [
+            "比较边长1分米和1厘米",
+            "边长更大的单位正方形面积更大",
+            "用实际方格感受差异"
+          ],
+          "answerRule": "平方分米比平方厘米大。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "单位正方形像瓷砖一样铺满不同图形。",
+        "manipulatives": [
+          "单位方格",
+          "待测图形",
+          "铺砖网格",
+          "单位标签"
+        ],
+        "controls": [
+          "拖动铺砖",
+          "切换面积单位",
+          "自动铺满",
+          "计数"
+        ],
+        "computedValues": [
+          "完整方格数",
+          "单位面积",
+          "总面积"
+        ],
+        "revealSteps": [
+          "选择单位正方形",
+          "无空隙铺满",
+          "计数方格",
+          "写平方单位"
+        ],
+        "childFeedback": "面积不是边有多长，而是里面能铺下多少个单位方格。"
+      },
+      "parentCoach": {
+        "talkTrack": "把长度单位和面积单位分开问：边长是什么，铺满多少格？",
+        "commonMistake": "写成厘米而不是平方厘米。",
+        "extensionPrompt": "如果单位方格变大，数出来的格子数会怎样？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M30",
+      "title": "长正方形面积（拖长宽）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K30",
+        "K29",
+        "K04"
+      ],
+      "model": "长方形面积=长×宽，正方形面积=边长×边长，公式来自行列方格。",
+      "variants": [
+        {
+          "id": "M30-V1",
+          "title": "长方形面积",
+          "parameters": {
+            "length": 8,
+            "width": 5
+          },
+          "promptTemplate": "长方形长 {length} 厘米，宽 {width} 厘米，面积是多少平方厘米？",
+          "solutionSteps": [
+            "把长看成每行格数",
+            "把宽看成行数",
+            "用长乘宽"
+          ],
+          "answerRule": "length×width。"
+        },
+        {
+          "id": "M30-V2",
+          "title": "正方形面积",
+          "parameters": {
+            "side": 9
+          },
+          "promptTemplate": "正方形边长 {side} 分米，面积是多少平方分米？",
+          "solutionSteps": [
+            "正方形四边相等",
+            "长和宽都等于边长",
+            "边长乘边长"
+          ],
+          "answerRule": "side×side。"
+        },
+        {
+          "id": "M30-V3",
+          "title": "已知面积求边",
+          "parameters": {
+            "area": 48,
+            "width": 6
+          },
+          "promptTemplate": "长方形面积 {area} 平方厘米，宽 {width} 厘米，长是多少？",
+          "solutionSteps": [
+            "面积=长×宽",
+            "遮住长",
+            "用面积除以宽"
+          ],
+          "answerRule": "长=area÷width。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "长方形网格随长宽滑块变化，方格实时增加或减少。",
+        "manipulatives": [
+          "长滑块",
+          "宽滑块",
+          "方格网",
+          "面积公式卡"
+        ],
+        "controls": [
+          "拖动长",
+          "拖动宽",
+          "切换长方形/正方形",
+          "遮住未知量"
+        ],
+        "computedValues": [
+          "长",
+          "宽",
+          "行列格数",
+          "面积"
+        ],
+        "revealSteps": [
+          "数每行几个",
+          "数有几行",
+          "用乘法合并",
+          "写平方单位"
+        ],
+        "childFeedback": "面积公式不是背出来的，是把每行的格子数乘行数。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子指出长对应哪一排，宽对应几排。",
+        "commonMistake": "面积和周长公式混用。",
+        "extensionPrompt": "面积不变时，长变大，宽会怎样？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M31",
+      "title": "组合图形面积（切割添补）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K31",
+        "K30"
+      ],
+      "model": "把组合图形切成几个长方形相加，或补成大长方形再减去补上的部分。",
+      "variants": [
+        {
+          "id": "M31-V1",
+          "title": "分割法",
+          "parameters": {
+            "shape": "L形"
+          },
+          "promptTemplate": "一个{shape}图形可以切成两个长方形，怎样求总面积？",
+          "solutionSteps": [
+            "选择一条切割线",
+            "分别求两个长方形面积",
+            "把面积相加"
+          ],
+          "answerRule": "总面积=部分面积1+部分面积2。"
+        },
+        {
+          "id": "M31-V2",
+          "title": "添补法",
+          "parameters": {
+            "outerLength": 10,
+            "outerWidth": 8,
+            "missingLength": 3,
+            "missingWidth": 2
+          },
+          "promptTemplate": "把缺角图形补成长 {outerLength}、宽 {outerWidth} 的大长方形，再减去长 {missingLength}、宽 {missingWidth} 的缺角。",
+          "solutionSteps": [
+            "先求大长方形面积",
+            "再求补上缺角面积",
+            "用大面积减缺角"
+          ],
+          "answerRule": "outerLength×outerWidth-missingLength×missingWidth。"
+        },
+        {
+          "id": "M31-V3",
+          "title": "多切法比较",
+          "parameters": {
+            "methods": 2
+          },
+          "promptTemplate": "同一个组合图形有 {methods} 种切法，为什么答案应该一样？",
+          "solutionSteps": [
+            "分别按两种方法列式",
+            "计算总面积",
+            "比较结果是否一致"
+          ],
+          "answerRule": "不同切法不改变原图形面积。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "组合图形可拖动切割线，部分块可平移添补成长方形。",
+        "manipulatives": [
+          "组合图形",
+          "切割线",
+          "可移动补块",
+          "长宽标注"
+        ],
+        "controls": [
+          "拖动切割线",
+          "平移补块",
+          "切换分割/添补",
+          "显示面积式"
+        ],
+        "computedValues": [
+          "各部分长宽",
+          "各部分面积",
+          "补块面积",
+          "总面积"
+        ],
+        "revealSteps": [
+          "观察能否切成长方形",
+          "标出每块长宽",
+          "分别求面积",
+          "相加或相减"
+        ],
+        "childFeedback": "复杂图形先变成你认识的长方形，再用面积公式解决。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子说这条线切开后每块是不是标准长方形。",
+        "commonMistake": "切开后边长找错，或添补后忘记减。",
+        "extensionPrompt": "同一个图形能不能找到更少步骤的切法？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M32",
+      "title": "面积估测（透明网格）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K32",
+        "K29",
+        "K08"
+      ],
+      "model": "用方格覆盖不规则图形，完整格加半格近似估计面积。",
+      "variants": [
+        {
+          "id": "M32-V1",
+          "title": "完整格计数",
+          "parameters": {
+            "fullCells": 18
+          },
+          "promptTemplate": "图形里有 {fullCells} 个完整方格，至少有多少平方单位？",
+          "solutionSteps": [
+            "先数完整在图形内的格子",
+            "完整格都算入面积",
+            "得到面积下限"
+          ],
+          "answerRule": "至少为完整格数平方单位。"
+        },
+        {
+          "id": "M32-V2",
+          "title": "半格合并",
+          "parameters": {
+            "fullCells": 20,
+            "halfCells": 6
+          },
+          "promptTemplate": "约有 {fullCells} 个整格和 {halfCells} 个半格，面积约是多少？",
+          "solutionSteps": [
+            "两个半格约合一个整格",
+            "半格数除以2",
+            "加上完整格"
+          ],
+          "answerRule": "fullCells+halfCells÷2。"
+        },
+        {
+          "id": "M32-V3",
+          "title": "单位改变",
+          "parameters": {
+            "unitArea": 4
+          },
+          "promptTemplate": "如果每个方格代表 {unitArea} 平方厘米，估出的格数还要怎样处理？",
+          "solutionSteps": [
+            "先估计方格数量",
+            "再乘每格代表的面积",
+            "写平方厘米"
+          ],
+          "answerRule": "估计格数×unitArea。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "透明网格覆盖叶子、湖泊等不规则图形，完整格和半格自动标色。",
+        "manipulatives": [
+          "透明网格",
+          "不规则图形",
+          "完整格标记",
+          "半格标记"
+        ],
+        "controls": [
+          "拖动网格",
+          "调整网格大小",
+          "标记整格/半格",
+          "估算"
+        ],
+        "computedValues": [
+          "完整格数",
+          "半格数",
+          "估计格数",
+          "估计面积"
+        ],
+        "revealSteps": [
+          "覆盖网格",
+          "数完整格",
+          "合并半格",
+          "乘单位面积"
+        ],
+        "childFeedback": "估测允许接近，不要求每条弯边都精确，但方法要有依据。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子说明哪些算整格，哪些算半格，标准要前后一致。",
+        "commonMistake": "半格随意忽略或全部当整格。",
+        "extensionPrompt": "网格越小，估测结果会更精确还是更粗略？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M33",
+      "title": "周长概念（边界描线）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K33",
+        "K34"
+      ],
+      "model": "周长是封闭图形一周边线的长度，与内部面积不同。",
+      "variants": [
+        {
+          "id": "M33-V1",
+          "title": "描一周",
+          "parameters": {
+            "shape": "长方形"
+          },
+          "promptTemplate": "沿着{shape}的边描一周，描到哪里才算结束？",
+          "solutionSteps": [
+            "从任一点出发",
+            "沿边线走一圈",
+            "回到起点才完成周长"
+          ],
+          "answerRule": "封闭图形一周边线长度是周长。"
+        },
+        {
+          "id": "M33-V2",
+          "title": "凹形边线",
+          "parameters": {
+            "shape": "凹形"
+          },
+          "promptTemplate": "{shape}图形凹进去的边要不要算周长？",
+          "solutionSteps": [
+            "沿外边界和凹进去边界连续走",
+            "所有边界线都属于一周",
+            "逐段相加"
+          ],
+          "answerRule": "只要是一周边线的一部分就要算。"
+        },
+        {
+          "id": "M33-V3",
+          "title": "周长面积辨析",
+          "parameters": {
+            "grid": "方格图"
+          },
+          "promptTemplate": "在{grid}中，数边线求周长，数格子求什么？",
+          "solutionSteps": [
+            "用颜色描边线",
+            "用阴影涂内部格子",
+            "区分长度和面积"
+          ],
+          "answerRule": "边线长度是周长，内部大小是面积。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "一支笔沿图形边界描线，内部方格与边界用不同颜色显示。",
+        "manipulatives": [
+          "描线笔",
+          "图形边界",
+          "内部方格",
+          "边长标签"
+        ],
+        "controls": [
+          "播放描线",
+          "暂停逐边计数",
+          "切换周长/面积颜色",
+          "凹形模式"
+        ],
+        "computedValues": [
+          "已描边长",
+          "总周长",
+          "内部格数"
+        ],
+        "revealSteps": [
+          "选起点",
+          "沿边走一圈",
+          "逐段相加",
+          "和面积对比"
+        ],
+        "childFeedback": "周长是走边线，面积是看里面，两个问题不能混。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子用手指在图形边上走一圈。",
+        "commonMistake": "漏掉凹进去的边。",
+        "extensionPrompt": "两个图形面积一样，周长一定一样吗？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M34",
+      "title": "长正方形周长（围栏模型）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K34",
+        "K33"
+      ],
+      "model": "长方形周长=（长+宽）×2，正方形周长=边长×4。",
+      "variants": [
+        {
+          "id": "M34-V1",
+          "title": "长方形围栏",
+          "parameters": {
+            "length": 12,
+            "width": 7
+          },
+          "promptTemplate": "长方形花坛长 {length} 米，宽 {width} 米，围一圈栏杆要多少米？",
+          "solutionSteps": [
+            "周长是一圈边线",
+            "有两条长和两条宽",
+            "把长宽相加后乘2"
+          ],
+          "answerRule": "(length+width)×2。"
+        },
+        {
+          "id": "M34-V2",
+          "title": "正方形围栏",
+          "parameters": {
+            "side": 9
+          },
+          "promptTemplate": "正方形菜地边长 {side} 米，围一圈要多少米？",
+          "solutionSteps": [
+            "正方形四条边相等",
+            "一条边长是9米",
+            "乘4求一圈"
+          ],
+          "answerRule": "side×4。"
+        },
+        {
+          "id": "M34-V3",
+          "title": "已知周长求宽",
+          "parameters": {
+            "perimeter": 46,
+            "length": 15
+          },
+          "promptTemplate": "长方形周长 {perimeter} 米，长 {length} 米，宽是多少？",
+          "solutionSteps": [
+            "先求长加宽",
+            "用周长除以2",
+            "再减去长"
+          ],
+          "answerRule": "宽=perimeter÷2-length。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "围栏沿长方形或正方形四边铺设，两长两宽成对高亮。",
+        "manipulatives": [
+          "围栏段",
+          "长边滑块",
+          "宽边滑块",
+          "周长公式卡"
+        ],
+        "controls": [
+          "拖动长宽",
+          "铺设围栏",
+          "成对高亮",
+          "遮住未知量"
+        ],
+        "computedValues": [
+          "长",
+          "宽",
+          "长加宽",
+          "周长"
+        ],
+        "revealSteps": [
+          "描一圈",
+          "找到两条长和两条宽",
+          "合并成两组长加宽",
+          "求周长或反求边"
+        ],
+        "childFeedback": "长方形一圈不是长乘宽，而是两条长加两条宽。"
+      },
+      "parentCoach": {
+        "talkTrack": "把周长想成围栏长度，避免和面积公式混用。",
+        "commonMistake": "只算长加宽，忘记还有另一组。",
+        "extensionPrompt": "周长不变时，长变长，宽会怎样？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M35",
+      "title": "周长面积辨析/最大面积（同周长变形）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K35",
+        "K34",
+        "K30"
+      ],
+      "model": "同周长下，不同长宽组合面积不同；长宽越接近，面积通常越大。",
+      "variants": [
+        {
+          "id": "M35-V1",
+          "title": "同周长列举",
+          "parameters": {
+            "perimeter": 24
+          },
+          "promptTemplate": "周长都是 {perimeter} 厘米，能列出哪些整厘米长方形？",
+          "solutionSteps": [
+            "先求长加宽是12",
+            "列出整数组合",
+            "分别求面积"
+          ],
+          "answerRule": "长+宽=perimeter÷2。"
+        },
+        {
+          "id": "M35-V2",
+          "title": "最大面积",
+          "parameters": {
+            "perimeter": 32
+          },
+          "promptTemplate": "周长 {perimeter} 厘米的长方形，长宽都是整厘米，什么时候面积最大？",
+          "solutionSteps": [
+            "求长加宽是16",
+            "列表比较面积",
+            "找到最接近的长宽"
+          ],
+          "answerRule": "长宽越接近面积越大，能成正方形时正方形最大。"
+        },
+        {
+          "id": "M35-V3",
+          "title": "同面积不同周长",
+          "parameters": {
+            "area": 24
+          },
+          "promptTemplate": "面积都是 {area} 平方厘米的长方形，周长一定一样吗？",
+          "solutionSteps": [
+            "列出乘积为24的长宽",
+            "分别求周长",
+            "比较周长是否相同"
+          ],
+          "answerRule": "面积相同，周长不一定相同。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "固定一根围栏绳，拖动成不同长方形，面积网格实时变化。",
+        "manipulatives": [
+          "固定长度围栏",
+          "可变长方形",
+          "面积方格",
+          "长宽表"
+        ],
+        "controls": [
+          "锁定周长",
+          "拖动长宽",
+          "列表比较",
+          "高亮最大面积"
+        ],
+        "computedValues": [
+          "周长",
+          "长",
+          "宽",
+          "面积",
+          "最大面积标记"
+        ],
+        "revealSteps": [
+          "固定周长",
+          "列长宽组合",
+          "逐个求面积",
+          "比较并发现规律"
+        ],
+        "childFeedback": "同样长的围栏围出来的里面大小不一定一样，越接近正方形通常越大。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子列表，不要只凭眼睛猜最大。",
+        "commonMistake": "认为周长相同面积必相同。",
+        "extensionPrompt": "如果长宽可以不是整数，最大形状会接近什么？"
+      },
+      "difficulty": "拔高"
+    },
+    {
+      "id": "M36",
+      "title": "轴对称/拼嵌/多连块（镜面与瓷砖）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K36"
+      ],
+      "model": "通过折叠重合判断轴对称，通过平移、旋转和翻转观察拼嵌是否无空隙无重叠。",
+      "variants": [
+        {
+          "id": "M36-V1",
+          "title": "找对称轴",
+          "parameters": {
+            "shape": "长方形"
+          },
+          "promptTemplate": "{shape}有几条对称轴？折一折怎样验证？",
+          "solutionSteps": [
+            "尝试沿不同方向折叠",
+            "看两边能否完全重合",
+            "能重合的折痕是对称轴"
+          ],
+          "answerRule": "对称轴是折后两边完全重合的直线。"
+        },
+        {
+          "id": "M36-V2",
+          "title": "补全对称图",
+          "parameters": {
+            "axis": "竖直"
+          },
+          "promptTemplate": "给出{axis}对称轴左边的半个图形，怎样补右边？",
+          "solutionSteps": [
+            "找每个关键点到对称轴的距离",
+            "在另一边取相同距离",
+            "连成对应图形"
+          ],
+          "answerRule": "对应点到对称轴距离相等。"
+        },
+        {
+          "id": "M36-V3",
+          "title": "拼嵌判断",
+          "parameters": {
+            "tile": "多连块"
+          },
+          "promptTemplate": "用{tile}铺地面，怎样判断有没有拼嵌成功？",
+          "solutionSteps": [
+            "尝试平移、旋转或翻转",
+            "观察是否有空隙",
+            "观察是否有重叠"
+          ],
+          "answerRule": "拼嵌成功需要无空隙且无重叠。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "镜面线和瓷砖板同时呈现，对称图形可折叠，多连块可拖拽铺排。",
+        "manipulatives": [
+          "镜面轴",
+          "半边图形",
+          "对应点",
+          "多连块瓷砖"
+        ],
+        "controls": [
+          "拖动对称轴",
+          "折叠验证",
+          "补全对应点",
+          "旋转/翻转瓷砖"
+        ],
+        "computedValues": [
+          "对称轴数量",
+          "对应点距离",
+          "空隙数量",
+          "重叠数量"
+        ],
+        "revealSteps": [
+          "观察图形",
+          "尝试折叠",
+          "验证重合",
+          "拼嵌时检查空隙和重叠"
+        ],
+        "childFeedback": "看起来像不等于对称，折过去完全重合才算。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子用折叠或镜面验证，不只靠眼睛猜。",
+        "commonMistake": "左右差不多就当作对称。",
+        "extensionPrompt": "一个图形可以有0条、1条或多条对称轴吗？"
+      },
+      "difficulty": "提高"
+    },
+    {
+      "id": "M37",
+      "title": "三角形分类（边角调节）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K37"
+      ],
+      "model": "三角形可以按角分类，也可以按边分类，同一个三角形可能同时属于两个分类体系。",
+      "variants": [
+        {
+          "id": "M37-V1",
+          "title": "按角分类",
+          "parameters": {
+            "angle": 90
+          },
+          "promptTemplate": "一个三角形有一个 {angle} 度角，它按角属于哪一类？",
+          "solutionSteps": [
+            "观察最大角",
+            "等于90度是直角",
+            "归为直角三角形"
+          ],
+          "answerRule": "有直角就是直角三角形；有钝角就是钝角三角形；三个锐角就是锐角三角形。"
+        },
+        {
+          "id": "M37-V2",
+          "title": "按边分类",
+          "parameters": {
+            "sideA": 5,
+            "sideB": 5,
+            "sideC": 7
+          },
+          "promptTemplate": "三边分别为 {sideA}、{sideB}、{sideC}，按边属于哪一类？",
+          "solutionSteps": [
+            "比较三条边",
+            "发现两条边相等",
+            "归为等腰三角形"
+          ],
+          "answerRule": "两边相等是等腰，三边相等是等边。"
+        },
+        {
+          "id": "M37-V3",
+          "title": "双重分类",
+          "parameters": {
+            "type": "等腰直角"
+          },
+          "promptTemplate": "{type}三角形为什么既能按边命名，也能按角命名？",
+          "solutionSteps": [
+            "按边看有两边相等",
+            "按角看有一个直角",
+            "同时满足两个分类"
+          ],
+          "answerRule": "边的分类和角的分类可以同时成立。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "三角形三个顶点可拖动，系统实时标出边长关系和角的类型。",
+        "manipulatives": [
+          "三角形顶点",
+          "边长标签",
+          "角标记",
+          "分类徽章"
+        ],
+        "controls": [
+          "拖动顶点",
+          "锁定等边/等腰",
+          "显示角度",
+          "切换按边/按角分类"
+        ],
+        "computedValues": [
+          "三条边长",
+          "三个角类型",
+          "按边分类",
+          "按角分类"
+        ],
+        "revealSteps": [
+          "观察角",
+          "观察边",
+          "分别分类",
+          "合并描述"
+        ],
+        "childFeedback": "分类要说清按什么标准：按角看一种，按边看又可能是另一种。"
+      },
+      "parentCoach": {
+        "talkTrack": "问孩子这次是按角分还是按边分，标准先定清。",
+        "commonMistake": "认为等边三角形不是等腰三角形。",
+        "extensionPrompt": "一个三角形可能同时是钝角和等腰吗？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M38",
+      "title": "条形统计图（二）（可调刻度柱图）",
+      "layer": "课内",
+      "knowledgeIds": [
+        "K38",
+        "K08"
+      ],
+      "model": "把统计表数据映射到条形高度，读图时先看一格代表多少。",
+      "variants": [
+        {
+          "id": "M38-V1",
+          "title": "读刻度",
+          "parameters": {
+            "scale": 5
+          },
+          "promptTemplate": "统计图中一格代表 {scale} 人，柱子高4格表示多少人？",
+          "solutionSteps": [
+            "先看刻度单位",
+            "数柱子有几格",
+            "格数乘每格数量"
+          ],
+          "answerRule": "4×scale。"
+        },
+        {
+          "id": "M38-V2",
+          "title": "表到图",
+          "parameters": {
+            "category": "足球",
+            "value": 25,
+            "scale": 5
+          },
+          "promptTemplate": "{category}有 {value} 人，一格代表 {scale} 人，柱子应该画几格？",
+          "solutionSteps": [
+            "用数据除以每格代表数",
+            "得到柱子格数",
+            "画到对应类别上方"
+          ],
+          "answerRule": "value÷scale 格。"
+        },
+        {
+          "id": "M38-V3",
+          "title": "比较与提问",
+          "parameters": {
+            "a": 30,
+            "b": 18
+          },
+          "promptTemplate": "A类有 {a} 人，B类有 {b} 人，A比B多多少人？",
+          "solutionSteps": [
+            "读出两个柱子的实际数据",
+            "用大数减小数",
+            "回答多多少"
+          ],
+          "answerRule": "a-b。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "统计表和条形图并排联动，刻度滑块改变每格代表数量。",
+        "manipulatives": [
+          "数据表",
+          "柱子",
+          "刻度轴",
+          "比较箭头"
+        ],
+        "controls": [
+          "拖动柱高",
+          "调整每格代表数",
+          "表格生成图",
+          "提问卡片"
+        ],
+        "computedValues": [
+          "每格代表数",
+          "柱高格数",
+          "实际数据",
+          "差值"
+        ],
+        "revealSteps": [
+          "先读刻度",
+          "读柱高",
+          "换算实际数量",
+          "比较或回答问题"
+        ],
+        "childFeedback": "看统计图第一眼先看刻度，一格不一定代表1。"
+      },
+      "parentCoach": {
+        "talkTrack": "每次读图先问一格代表多少，再问柱子有几格。",
+        "commonMistake": "默认一格代表1，导致所有数据读小。",
+        "extensionPrompt": "如果最大数据很大，为什么要让一格代表5或10？"
+      },
+      "difficulty": "基础"
+    },
+    {
+      "id": "M39",
+      "title": "借还还原问题（逆推书架）",
+      "layer": "拔高",
+      "knowledgeIds": [
+        "K17",
+        "K02",
+        "K07"
+      ],
+      "model": "把“借出、还回、剩下”看成连续变化，求原来时从最后结果倒着做相反动作。",
+      "variants": [
+        {
+          "id": "M39-V1",
+          "title": "求原来本数",
+          "parameters": {
+            "borrowed": 22,
+            "returned": 12,
+            "remaining": 13
+          },
+          "promptTemplate": "图书角借出 {borrowed} 本，后来还回 {returned} 本，现在还剩 {remaining} 本。原来有多少本？",
+          "solutionSteps": [
+            "从现在还剩开始倒推",
+            "先撤销“还回”，所以减去还回本数",
+            "再撤销“借出”，所以加回借出本数"
+          ],
+          "answerRule": "原来 = 还剩 - 还回 + 借出。"
+        },
+        {
+          "id": "M39-V2",
+          "title": "求借出数量",
+          "parameters": {
+            "original": 25,
+            "returned": 8,
+            "remaining": 17
+          },
+          "promptTemplate": "书架原来有 {original} 本，还回 {returned} 本后还剩 {remaining} 本，中间借出了多少本？",
+          "solutionSteps": [
+            "先写正向关系：原来-借出+还回=还剩",
+            "把借出看成未知量",
+            "借出 = 原来 + 还回 - 还剩"
+          ],
+          "answerRule": "借出 = 原来 + 还回 - 还剩。"
+        },
+        {
+          "id": "M39-V3",
+          "title": "两次变化逆推",
+          "parameters": {
+            "firstOut": 8,
+            "secondOut": 5,
+            "returned": 7,
+            "remaining": 18
+          },
+          "promptTemplate": "书架先借出 {firstOut} 本，又借出 {secondOut} 本，后来还回 {returned} 本，现在还剩 {remaining} 本。原来有多少本？",
+          "solutionSteps": [
+            "把两次借出合成总借出",
+            "从还剩倒推，先减还回",
+            "再加回两次借出的总数"
+          ],
+          "answerRule": "原来 = 还剩 - 还回 + firstOut + secondOut。"
+        }
+      ],
+      "animationSpec": {
+        "scene": "统一书架主舞台使用独立书本图片动态更新数量；左侧借出篮、中央书架、右侧还回篮会随现在、撤销还回、撤销借出、正向验算同步变化。",
+        "manipulatives": [
+          "独立书本图片",
+          "书架",
+          "借出篮",
+          "还回篮",
+          "逆推箭头",
+          "四步回放卡"
+        ],
+        "controls": [
+          "切换求原来/求借出/求还回/求还剩",
+          "调节原来本数",
+          "调节借出本数",
+          "调节还回本数",
+          "调节还剩本数",
+          "切换看现在/撤销还回/撤销借出/正向验算"
+        ],
+        "computedValues": [
+          "借出后本数",
+          "原来本数",
+          "借出本数",
+          "还回本数",
+          "还剩本数",
+          "正向算式",
+          "逆推算式"
+        ],
+        "revealSteps": [
+          "先看最后还剩",
+          "倒着撤销还回：减去还回",
+          "倒着撤销借出：加回借出",
+          "用正向式检查"
+        ],
+        "childFeedback": "还原题像倒放视频：正着是借出就减少、还回就增加；倒着求原来时动作要反过来。"
+      },
+      "parentCoach": {
+        "talkTrack": "让孩子先用一句话说清变化顺序，再从最后结果往前倒着画箭头。",
+        "commonMistake": "看到“还回”就直接加，忘了逆推时要先撤销还回，所以要减。",
+        "extensionPrompt": "如果题目问借出了多少本，能不能先写正向等式再移项？"
+      },
+      "difficulty": "拔高"
+    }
+  ],
+  "knowledgeToArchetypes": {
+    "K01": [
+      "M01",
+      "M02"
+    ],
+    "K02": [
+      "M02",
+      "M17",
+      "M39"
+    ],
+    "K03": [
+      "M03",
+      "M08"
+    ],
+    "K04": [
+      "M04",
+      "M18",
+      "M30"
+    ],
+    "K05": [
+      "M05",
+      "M16"
+    ],
+    "K06": [
+      "M06",
+      "M08"
+    ],
+    "K07": [
+      "M01",
+      "M05",
+      "M07",
+      "M10",
+      "M13",
+      "M17",
+      "M39"
+    ],
+    "K08": [
+      "M03",
+      "M06",
+      "M08",
+      "M09",
+      "M28",
+      "M32",
+      "M38"
+    ],
+    "K09": [
+      "M09"
+    ],
+    "K10": [
+      "M07",
+      "M10",
+      "M14"
+    ],
+    "K11": [
+      "M07",
+      "M11",
+      "M12",
+      "M14"
+    ],
+    "K12": [
+      "M12"
+    ],
+    "K13": [
+      "M13"
+    ],
+    "K14": [
+      "M14",
+      "M21"
+    ],
+    "K15": [
+      "M15"
+    ],
+    "K16": [
+      "M16"
+    ],
+    "K17": [
+      "M17",
+      "M39"
+    ],
+    "K18": [
+      "M18",
+      "M19"
+    ],
+    "K19": [
+      "M19"
+    ],
+    "K20": [
+      "M20"
+    ],
+    "K21": [
+      "M20",
+      "M21"
+    ],
+    "K22": [
+      "M22",
+      "M23"
+    ],
+    "K23": [
+      "M11",
+      "M23"
+    ],
+    "K24": [
+      "M24",
+      "M25",
+      "M26"
+    ],
+    "K25": [
+      "M24",
+      "M25",
+      "M26",
+      "M27"
+    ],
+    "K26": [
+      "M26"
+    ],
+    "K27": [
+      "M27"
+    ],
+    "K28": [
+      "M11",
+      "M12",
+      "M15",
+      "M28"
+    ],
+    "K29": [
+      "M29",
+      "M30",
+      "M32"
+    ],
+    "K30": [
+      "M04",
+      "M29",
+      "M30",
+      "M31",
+      "M35"
+    ],
+    "K31": [
+      "M31"
+    ],
+    "K32": [
+      "M32"
+    ],
+    "K33": [
+      "M33",
+      "M34"
+    ],
+    "K34": [
+      "M33",
+      "M34",
+      "M35"
+    ],
+    "K35": [
+      "M35"
+    ],
+    "K36": [
+      "M36"
+    ],
+    "K37": [
+      "M37"
+    ],
+    "K38": [
+      "M38"
+    ]
+  }
+}

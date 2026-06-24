@@ -1,0 +1,30 @@
+{
+  "source": "m27-fraction-application-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m27-fraction-application/m27-fraction-application-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "total-quantity",
+      "file": "assets/module-frames/m27-fraction-application/m27-fraction-application-00-total-quantity.png"
+    },
+    {
+      "index": 1,
+      "state": "equal-groups",
+      "file": "assets/module-frames/m27-fraction-application/m27-fraction-application-01-equal-groups.png"
+    },
+    {
+      "index": 2,
+      "state": "select-groups",
+      "file": "assets/module-frames/m27-fraction-application/m27-fraction-application-02-select-groups.png"
+    },
+    {
+      "index": 3,
+      "state": "answer-quantity",
+      "file": "assets/module-frames/m27-fraction-application/m27-fraction-application-03-answer-quantity.png"
+    }
+  ]
+}

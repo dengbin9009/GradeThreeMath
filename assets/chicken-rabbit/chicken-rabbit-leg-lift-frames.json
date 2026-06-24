@@ -1,0 +1,132 @@
+{
+  "title": "鸡兔同笼抬腿法图片帧",
+  "method": "抬腿法：每只动物抬起2条腿，鸡剩0条站立腿，兔剩2条站立腿。",
+  "spriteSheet": "chicken-rabbit-leg-lift-sprite.png",
+  "chromaSource": "chicken-rabbit-leg-lift-sprite-chroma.png",
+  "columns": 4,
+  "rows": 2,
+  "frameWidth": 384,
+  "frameHeight": 512,
+  "frames": [
+    {
+      "id": "chicken-standing",
+      "animal": "chicken",
+      "animalName": "鸡",
+      "state": "standing",
+      "stateLabel": "原始站立，所有腿可见",
+      "note": "2条腿抬起后剩余0条站立腿",
+      "file": "chicken-00-standing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "id": "chicken-prepare",
+      "animal": "chicken",
+      "animalName": "鸡",
+      "state": "prepare",
+      "stateLabel": "准备抬腿",
+      "note": "2条腿抬起后剩余0条站立腿",
+      "file": "chicken-01-prepare.png",
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "id": "chicken-lift-two-legs",
+      "animal": "chicken",
+      "animalName": "鸡",
+      "state": "lift-two-legs",
+      "stateLabel": "抬起两条腿",
+      "note": "2条腿抬起后剩余0条站立腿",
+      "file": "chicken-02-lift-two-legs.png",
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "id": "chicken-hold-result",
+      "animal": "chicken",
+      "animalName": "鸡",
+      "state": "hold-result",
+      "stateLabel": "抬腿后保持结果",
+      "note": "2条腿抬起后剩余0条站立腿",
+      "file": "chicken-03-hold-result.png",
+      "frame": {
+        "x": 1152,
+        "y": 0,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "id": "rabbit-standing",
+      "animal": "rabbit",
+      "animalName": "兔",
+      "state": "standing",
+      "stateLabel": "原始站立，所有腿可见",
+      "note": "4条腿抬起后剩余2条站立腿",
+      "file": "rabbit-00-standing.png",
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "id": "rabbit-prepare",
+      "animal": "rabbit",
+      "animalName": "兔",
+      "state": "prepare",
+      "stateLabel": "准备抬腿",
+      "note": "4条腿抬起后剩余2条站立腿",
+      "file": "rabbit-01-prepare.png",
+      "frame": {
+        "x": 384,
+        "y": 512,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "id": "rabbit-lift-two-legs",
+      "animal": "rabbit",
+      "animalName": "兔",
+      "state": "lift-two-legs",
+      "stateLabel": "抬起两条腿",
+      "note": "4条腿抬起后剩余2条站立腿",
+      "file": "rabbit-02-lift-two-legs.png",
+      "frame": {
+        "x": 768,
+        "y": 512,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "id": "rabbit-hold-result",
+      "animal": "rabbit",
+      "animalName": "兔",
+      "state": "hold-result",
+      "stateLabel": "抬腿后保持结果",
+      "note": "4条腿抬起后剩余2条站立腿",
+      "file": "rabbit-03-hold-result.png",
+      "frame": {
+        "x": 1152,
+        "y": 512,
+        "width": 384,
+        "height": 512
+      }
+    }
+  ]
+}

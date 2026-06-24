@@ -1,0 +1,30 @@
+{
+  "source": "m21-profit-loss-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m21-profit-loss/m21-profit-loss-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "surplus-plan",
+      "file": "assets/module-frames/m21-profit-loss/m21-profit-loss-00-surplus-plan.png"
+    },
+    {
+      "index": 1,
+      "state": "shortage-plan",
+      "file": "assets/module-frames/m21-profit-loss/m21-profit-loss-01-shortage-plan.png"
+    },
+    {
+      "index": 2,
+      "state": "compare-gap",
+      "file": "assets/module-frames/m21-profit-loss/m21-profit-loss-02-compare-gap.png"
+    },
+    {
+      "index": 3,
+      "state": "split-gap",
+      "file": "assets/module-frames/m21-profit-loss/m21-profit-loss-03-split-gap.png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "moduleId": "M07",
+  "slug": "m07-inverse-triangle",
+  "source": "m07-inverse-triangle-source-sprite.png",
+  "frames": {
+    "triangle": {
+      "label": "关系三角",
+      "note": "三个相关量站在三角的三个角。",
+      "file": "assets/module-frames/m07-inverse-triangle/m07-inverse-triangle-00-triangle.png"
+    },
+    "known-two": {
+      "label": "已知两个",
+      "note": "先放入已知的两个量。",
+      "file": "assets/module-frames/m07-inverse-triangle/m07-inverse-triangle-01-known-two.png"
+    },
+    "find-missing": {
+      "label": "求缺角",
+      "note": "用乘除关系找到缺少的量。",
+      "file": "assets/module-frames/m07-inverse-triangle/m07-inverse-triangle-02-find-missing.png"
+    },
+    "reverse-check": {
+      "label": "反向验算",
+      "note": "反向走一遍检查是否回到原量。",
+      "file": "assets/module-frames/m07-inverse-triangle/m07-inverse-triangle-03-reverse-check.png"
+    }
+  }
+}

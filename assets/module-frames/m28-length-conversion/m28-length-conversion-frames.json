@@ -1,0 +1,30 @@
+{
+  "source": "m28-length-conversion-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m28-length-conversion/m28-length-conversion-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "ruler-start",
+      "file": "assets/module-frames/m28-length-conversion/m28-length-conversion-00-ruler-start.png"
+    },
+    {
+      "index": 1,
+      "state": "zoom-ticks",
+      "file": "assets/module-frames/m28-length-conversion/m28-length-conversion-01-zoom-ticks.png"
+    },
+    {
+      "index": 2,
+      "state": "nested-units",
+      "file": "assets/module-frames/m28-length-conversion/m28-length-conversion-02-nested-units.png"
+    },
+    {
+      "index": 3,
+      "state": "align-units",
+      "file": "assets/module-frames/m28-length-conversion/m28-length-conversion-03-align-units.png"
+    }
+  ]
+}

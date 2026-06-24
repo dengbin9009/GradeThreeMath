@@ -1,0 +1,30 @@
+{
+  "source": "m26-fraction-compare-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m26-fraction-compare/m26-fraction-compare-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "same-whole",
+      "file": "assets/module-frames/m26-fraction-compare/m26-fraction-compare-00-same-whole.png"
+    },
+    {
+      "index": 1,
+      "state": "first-shade",
+      "file": "assets/module-frames/m26-fraction-compare/m26-fraction-compare-01-first-shade.png"
+    },
+    {
+      "index": 2,
+      "state": "second-shade",
+      "file": "assets/module-frames/m26-fraction-compare/m26-fraction-compare-02-second-shade.png"
+    },
+    {
+      "index": 3,
+      "state": "compare-shades",
+      "file": "assets/module-frames/m26-fraction-compare/m26-fraction-compare-03-compare-shades.png"
+    }
+  ]
+}

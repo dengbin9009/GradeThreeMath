@@ -1,0 +1,30 @@
+{
+  "source": "m13-line-segments-sprite-chroma.png generated with built-in imagegen and chroma-key removal",
+  "previewSprite": "assets/module-frames/m13-line-segments/m13-line-segments-sprite.png",
+  "frameSize": [
+    543,
+    724
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "compare-bars",
+      "file": "assets/module-frames/m13-line-segments/m13-line-segments-00-compare-bars.png"
+    },
+    {
+      "index": 1,
+      "state": "equal-units",
+      "file": "assets/module-frames/m13-line-segments/m13-line-segments-01-equal-units.png"
+    },
+    {
+      "index": 2,
+      "state": "show-total",
+      "file": "assets/module-frames/m13-line-segments/m13-line-segments-02-show-total.png"
+    },
+    {
+      "index": 3,
+      "state": "show-difference",
+      "file": "assets/module-frames/m13-line-segments/m13-line-segments-03-show-difference.png"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+:root {
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--color-ink);
+  background: var(--color-canvas);
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  min-height: var(--control-min);
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-primary) 55%, white);
+  outline-offset: 2px;
+}
+
+.app-root {
+  min-height: 100vh;
+}
+
+.fatal-error {
+  width: min(560px, calc(100% - 32px));
+  margin: 15vh auto 0;
+  padding: 24px;
+  display: grid;
+  gap: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-danger);
+  border-radius: var(--radius-panel);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.boot-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
